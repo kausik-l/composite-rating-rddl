@@ -23,3 +23,4 @@ Install `pyRDDLGym`:
 
 ```bash
 pip install pyRDDLGym
+python run.py
