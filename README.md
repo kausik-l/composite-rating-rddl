@@ -23,4 +23,8 @@ Install `pyRDDLGym`:
 
 ```bash
 pip install pyRDDLGym
+```
+Run the simulation (the plots will be saved automatically):
+```bash
 python run.py
+```
