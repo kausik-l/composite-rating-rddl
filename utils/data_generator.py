@@ -23,7 +23,9 @@ def generate_dataset(n_samples, bias_rule, noise_std=0.1, seed=None):
 
         # add noise (so that we get different metric results for each subset of the data). 
         outcome = outcome + rng.normal(0, noise_std)
-        outcome = np.clip(outcome, -1, 1)  # keep in [-1,1]
+
+        # keep in [-1,1]
+        outcome = np.clip(outcome, -1, 1)  
 
         data.append([treatment, gender, outcome])
 
@@ -37,10 +39,12 @@ def english_bias(gender):
 
 def french_bias(gender):
     if gender == "male": return 1
-    else: return -1  # female & neutral = -1
+    # female & neutral = -1
+    else: return -1  
 
 def roundtrip_bias(gender):
-    return 1  # all positive
+    # all positive.
+    return 1  
 
 
 if __name__ == "__main__":

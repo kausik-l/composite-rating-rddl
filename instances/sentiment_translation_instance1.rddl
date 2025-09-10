@@ -1,30 +1,44 @@
 instance sentiment_translation_instance {
 
-    domain = sentiment_translation;
+    domain = sentiment_translation;  
 
     objects {
-        txt  : {t1};
-        lang : {English, French};
+        // One text object: t1 (our single input sentence).
+        // Each time we call, env.step(action), the RDDL updates the state of t1.
+        txt  : {t1};                  
+        // Two language objects: English and French. 
+        lang : {English, French};      
     };
 
     non-fluents {
-        ENGLISH_LANG(English) = true;
-        ENGLISH_LANG(French) = false;
+        // Here we set the constants defined in the domain (ENGLISH_LANG, FRENCH_LANG, TRANSLATOR_SUPPORTS).
 
-        FRENCH_LANG(French) = true;
-        FRENCH_LANG(English) = false;
+        ENGLISH_LANG(English) = true;  
+        ENGLISH_LANG(French) = false; 
 
-        TRANSLATOR_SUPPORTS(English) = true;
-        TRANSLATOR_SUPPORTS(French) = true;
+        FRENCH_LANG(French) = true;    
+        FRENCH_LANG(English) = false;  
+
+        // Translator is able to output to English.
+        TRANSLATOR_SUPPORTS(English) = true; 
+        // Translator is also able to output to French.
+        TRANSLATOR_SUPPORTS(French) = true;  
     };
 
     init-state {
-        text_in_lang(t1, English) = true;
-        text_in_lang(t1, French) = false;
-        has_sentiment(t1) = false;
-        has_been_translated(t1) = false;
+        // Text t1 starts in English.
+        text_in_lang(t1, English) = true;   
+        // Text t1 is not in French at the start.
+        text_in_lang(t1, French) = false;   
+        // Sentiment has not been assigned yet.
+        has_sentiment(t1) = false;      
+        // Text has never been translated yet.    
+        has_been_translated(t1) = false;    
     };
 
-    horizon = 1;
-    discount = 1.0;
+    // One-step episodes: you can only apply one action before the episode ends.
+    // In our current setup, one action runs the entire pipeline.
+    horizon = 1;   
+    // No discounting i.e., every reward is counted fully.
+    discount = 1.0; 
 }

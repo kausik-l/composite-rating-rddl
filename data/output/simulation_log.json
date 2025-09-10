@@ -5,13 +5,13 @@
       {
         "episode": 1,
         "plan": "roundtrip",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -20,13 +20,13 @@
       {
         "episode": 2,
         "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "reward": -1.9,
+        "wrs": 1.9,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -1.9,
     "final_state": {}
   },
   {
@@ -34,7 +34,7 @@
     "steps": [
       {
         "episode": 3,
-        "plan": "french",
+        "plan": "english",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -50,13 +50,13 @@
       {
         "episode": 4,
         "plan": "french",
-        "reward": -4.9,
-        "wrs": 4.9,
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -4.9,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -64,21 +64,6 @@
     "steps": [
       {
         "episode": 5,
-        "plan": "roundtrip",
-        "reward": -3.6,
-        "wrs": 3.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -3.6,
-    "final_state": {}
-  },
-  {
-    "episode": 6,
-    "steps": [
-      {
-        "episode": 6,
         "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
@@ -90,18 +75,33 @@
     "final_state": {}
   },
   {
+    "episode": 6,
+    "steps": [
+      {
+        "episode": 6,
+        "plan": "french",
+        "reward": -4.6,
+        "wrs": 4.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -4.6,
+    "final_state": {}
+  },
+  {
     "episode": 7,
     "steps": [
       {
         "episode": 7,
         "plan": "roundtrip",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -109,14 +109,14 @@
     "steps": [
       {
         "episode": 8,
-        "plan": "english",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "plan": "french",
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -139,14 +139,14 @@
     "steps": [
       {
         "episode": 10,
-        "plan": "roundtrip",
-        "reward": -1.3,
-        "wrs": 1.3,
+        "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.3,
+    "total_reward": -0.0,
     "final_state": {}
   },
   {
@@ -154,14 +154,14 @@
     "steps": [
       {
         "episode": 11,
-        "plan": "roundtrip",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "plan": "english",
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -0.0,
     "final_state": {}
   },
   {
@@ -169,51 +169,6 @@
     "steps": [
       {
         "episode": 12,
-        "plan": "french",
-        "reward": -0.6,
-        "wrs": 0.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.6,
-    "final_state": {}
-  },
-  {
-    "episode": 13,
-    "steps": [
-      {
-        "episode": 13,
-        "plan": "french",
-        "reward": -3.6,
-        "wrs": 3.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -3.6,
-    "final_state": {}
-  },
-  {
-    "episode": 14,
-    "steps": [
-      {
-        "episode": 14,
-        "plan": "french",
-        "reward": -2.6,
-        "wrs": 2.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -2.6,
-    "final_state": {}
-  },
-  {
-    "episode": 15,
-    "steps": [
-      {
-        "episode": 15,
         "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
@@ -225,11 +180,56 @@
     "final_state": {}
   },
   {
+    "episode": 13,
+    "steps": [
+      {
+        "episode": 13,
+        "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 14,
+    "steps": [
+      {
+        "episode": 14,
+        "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 15,
+    "steps": [
+      {
+        "episode": 15,
+        "plan": "roundtrip",
+        "reward": -1.9,
+        "wrs": 1.9,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.9,
+    "final_state": {}
+  },
+  {
     "episode": 16,
     "steps": [
       {
         "episode": 16,
-        "plan": "french",
+        "plan": "english",
         "reward": -0.6,
         "wrs": 0.6,
         "pie": 0.0,
@@ -244,7 +244,7 @@
     "steps": [
       {
         "episode": 17,
-        "plan": "french",
+        "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -274,82 +274,7 @@
     "steps": [
       {
         "episode": 19,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 20,
-    "steps": [
-      {
-        "episode": 20,
         "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 21,
-    "steps": [
-      {
-        "episode": 21,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 22,
-    "steps": [
-      {
-        "episode": 22,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 23,
-    "steps": [
-      {
-        "episode": 23,
-        "plan": "roundtrip",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 24,
-    "steps": [
-      {
-        "episode": 24,
-        "plan": "roundtrip",
         "reward": -1.9,
         "wrs": 1.9,
         "pie": 0.0,
@@ -360,25 +285,55 @@
     "final_state": {}
   },
   {
-    "episode": 25,
+    "episode": 20,
     "steps": [
       {
-        "episode": 25,
-        "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "episode": 20,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
-    "episode": 26,
+    "episode": 21,
     "steps": [
       {
-        "episode": 26,
+        "episode": 21,
+        "plan": "roundtrip",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
+    "final_state": {}
+  },
+  {
+    "episode": 22,
+    "steps": [
+      {
+        "episode": 22,
+        "plan": "english",
+        "reward": -1.3,
+        "wrs": 1.3,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.3,
+    "final_state": {}
+  },
+  {
+    "episode": 23,
+    "steps": [
+      {
+        "episode": 23,
         "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
@@ -390,41 +345,41 @@
     "final_state": {}
   },
   {
-    "episode": 27,
+    "episode": 24,
     "steps": [
       {
-        "episode": 27,
-        "plan": "roundtrip",
-        "reward": -0.6,
-        "wrs": 0.6,
+        "episode": 24,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.6,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
-    "episode": 28,
+    "episode": 25,
     "steps": [
       {
-        "episode": 28,
-        "plan": "roundtrip",
-        "reward": -3.6,
-        "wrs": 3.6,
+        "episode": 25,
+        "plan": "french",
+        "reward": -4.6,
+        "wrs": 4.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.6,
+    "total_reward": -4.6,
     "final_state": {}
   },
   {
-    "episode": 29,
+    "episode": 26,
     "steps": [
       {
-        "episode": 29,
-        "plan": "roundtrip",
+        "episode": 26,
+        "plan": "french",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -435,11 +390,41 @@
     "final_state": {}
   },
   {
-    "episode": 30,
+    "episode": 27,
     "steps": [
       {
-        "episode": 30,
-        "plan": "roundtrip",
+        "episode": 27,
+        "plan": "french",
+        "reward": -1.2,
+        "wrs": 1.2,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.2,
+    "final_state": {}
+  },
+  {
+    "episode": 28,
+    "steps": [
+      {
+        "episode": 28,
+        "plan": "english",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 29,
+    "steps": [
+      {
+        "episode": 29,
+        "plan": "english",
         "reward": -0.6,
         "wrs": 0.6,
         "pie": 0.0,
@@ -447,6 +432,21 @@
       }
     ],
     "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
+    "episode": 30,
+    "steps": [
+      {
+        "episode": 30,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -455,13 +455,13 @@
       {
         "episode": 31,
         "plan": "roundtrip",
-        "reward": -3.6,
-        "wrs": 3.6,
+        "reward": -4.2,
+        "wrs": 4.2,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.6,
+    "total_reward": -4.2,
     "final_state": {}
   },
   {
@@ -470,21 +470,6 @@
       {
         "episode": 32,
         "plan": "english",
-        "reward": -4.9,
-        "wrs": 4.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -4.9,
-    "final_state": {}
-  },
-  {
-    "episode": 33,
-    "steps": [
-      {
-        "episode": 33,
-        "plan": "english",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -492,6 +477,21 @@
       }
     ],
     "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 33,
+    "steps": [
+      {
+        "episode": 33,
+        "plan": "roundtrip",
+        "reward": -1.2,
+        "wrs": 1.2,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.2,
     "final_state": {}
   },
   {
@@ -500,13 +500,13 @@
       {
         "episode": 34,
         "plan": "french",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "reward": -1.9,
+        "wrs": 1.9,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -1.9,
     "final_state": {}
   },
   {
@@ -515,13 +515,13 @@
       {
         "episode": 35,
         "plan": "english",
-        "reward": -3.6,
-        "wrs": 3.6,
+        "reward": -1.2,
+        "wrs": 1.2,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.6,
+    "total_reward": -1.2,
     "final_state": {}
   },
   {
@@ -529,6 +529,36 @@
     "steps": [
       {
         "episode": 36,
+        "plan": "english",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 37,
+    "steps": [
+      {
+        "episode": 37,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
+    "final_state": {}
+  },
+  {
+    "episode": 38,
+    "steps": [
+      {
+        "episode": 38,
         "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
@@ -540,48 +570,18 @@
     "final_state": {}
   },
   {
-    "episode": 37,
-    "steps": [
-      {
-        "episode": 37,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 38,
-    "steps": [
-      {
-        "episode": 38,
-        "plan": "roundtrip",
-        "reward": -0.6,
-        "wrs": 0.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.6,
-    "final_state": {}
-  },
-  {
     "episode": 39,
     "steps": [
       {
         "episode": 39,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "plan": "roundtrip",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -589,7 +589,7 @@
     "steps": [
       {
         "episode": 40,
-        "plan": "french",
+        "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -604,36 +604,6 @@
     "steps": [
       {
         "episode": 41,
-        "plan": "roundtrip",
-        "reward": -5.2,
-        "wrs": 5.2,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -5.2,
-    "final_state": {}
-  },
-  {
-    "episode": 42,
-    "steps": [
-      {
-        "episode": 42,
-        "plan": "roundtrip",
-        "reward": -2.6,
-        "wrs": 2.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -2.6,
-    "final_state": {}
-  },
-  {
-    "episode": 43,
-    "steps": [
-      {
-        "episode": 43,
         "plan": "french",
         "reward": -0.0,
         "wrs": 0.0,
@@ -645,18 +615,48 @@
     "final_state": {}
   },
   {
+    "episode": 42,
+    "steps": [
+      {
+        "episode": 42,
+        "plan": "roundtrip",
+        "reward": -1.3,
+        "wrs": 1.3,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.3,
+    "final_state": {}
+  },
+  {
+    "episode": 43,
+    "steps": [
+      {
+        "episode": 43,
+        "plan": "roundtrip",
+        "reward": -3.6,
+        "wrs": 3.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -3.6,
+    "final_state": {}
+  },
+  {
     "episode": 44,
     "steps": [
       {
         "episode": 44,
         "plan": "roundtrip",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "reward": -3.6,
+        "wrs": 3.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -3.6,
     "final_state": {}
   },
   {
@@ -664,14 +664,14 @@
     "steps": [
       {
         "episode": 45,
-        "plan": "roundtrip",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "plan": "french",
+        "reward": -1.2,
+        "wrs": 1.2,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -1.2,
     "final_state": {}
   },
   {
@@ -680,13 +680,13 @@
       {
         "episode": 46,
         "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -709,14 +709,14 @@
     "steps": [
       {
         "episode": 48,
-        "plan": "roundtrip",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "plan": "english",
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -724,6 +724,51 @@
     "steps": [
       {
         "episode": 49,
+        "plan": "french",
+        "reward": -0.6,
+        "wrs": 0.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
+    "episode": 50,
+    "steps": [
+      {
+        "episode": 50,
+        "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 51,
+    "steps": [
+      {
+        "episode": 51,
+        "plan": "french",
+        "reward": -0.6,
+        "wrs": 0.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
+    "episode": 52,
+    "steps": [
+      {
+        "episode": 52,
         "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
@@ -735,63 +780,18 @@
     "final_state": {}
   },
   {
-    "episode": 50,
-    "steps": [
-      {
-        "episode": 50,
-        "plan": "english",
-        "reward": -3.6,
-        "wrs": 3.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -3.6,
-    "final_state": {}
-  },
-  {
-    "episode": 51,
-    "steps": [
-      {
-        "episode": 51,
-        "plan": "french",
-        "reward": -1.3,
-        "wrs": 1.3,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.3,
-    "final_state": {}
-  },
-  {
-    "episode": 52,
-    "steps": [
-      {
-        "episode": 52,
-        "plan": "french",
-        "reward": -2.6,
-        "wrs": 2.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -2.6,
-    "final_state": {}
-  },
-  {
     "episode": 53,
     "steps": [
       {
         "episode": 53,
-        "plan": "english",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "plan": "roundtrip",
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -0.0,
     "final_state": {}
   },
   {
@@ -799,7 +799,7 @@
     "steps": [
       {
         "episode": 54,
-        "plan": "english",
+        "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -814,7 +814,37 @@
     "steps": [
       {
         "episode": 55,
+        "plan": "roundtrip",
+        "reward": -3.2,
+        "wrs": 3.2,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -3.2,
+    "final_state": {}
+  },
+  {
+    "episode": 56,
+    "steps": [
+      {
+        "episode": 56,
         "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 57,
+    "steps": [
+      {
+        "episode": 57,
+        "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
         "pie": 0.0,
@@ -825,48 +855,18 @@
     "final_state": {}
   },
   {
-    "episode": 56,
-    "steps": [
-      {
-        "episode": 56,
-        "plan": "roundtrip",
-        "reward": -1.9,
-        "wrs": 1.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.9,
-    "final_state": {}
-  },
-  {
-    "episode": 57,
-    "steps": [
-      {
-        "episode": 57,
-        "plan": "french",
-        "reward": -1.9,
-        "wrs": 1.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.9,
-    "final_state": {}
-  },
-  {
     "episode": 58,
     "steps": [
       {
         "episode": 58,
-        "plan": "french",
-        "reward": -4.2,
-        "wrs": 4.2,
+        "plan": "english",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -4.2,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -889,21 +889,6 @@
     "steps": [
       {
         "episode": 60,
-        "plan": "english",
-        "reward": -0.6,
-        "wrs": 0.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.6,
-    "final_state": {}
-  },
-  {
-    "episode": 61,
-    "steps": [
-      {
-        "episode": 61,
         "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
@@ -915,18 +900,33 @@
     "final_state": {}
   },
   {
-    "episode": 62,
+    "episode": 61,
     "steps": [
       {
-        "episode": 62,
-        "plan": "english",
-        "reward": -2.6,
-        "wrs": 2.6,
+        "episode": 61,
+        "plan": "roundtrip",
+        "reward": -1.9,
+        "wrs": 1.9,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -2.6,
+    "total_reward": -1.9,
+    "final_state": {}
+  },
+  {
+    "episode": 62,
+    "steps": [
+      {
+        "episode": 62,
+        "plan": "french",
+        "reward": -1.3,
+        "wrs": 1.3,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -949,67 +949,7 @@
     "steps": [
       {
         "episode": 64,
-        "plan": "french",
-        "reward": -1.2,
-        "wrs": 1.2,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.2,
-    "final_state": {}
-  },
-  {
-    "episode": 65,
-    "steps": [
-      {
-        "episode": 65,
-        "plan": "roundtrip",
-        "reward": -4.2,
-        "wrs": 4.2,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -4.2,
-    "final_state": {}
-  },
-  {
-    "episode": 66,
-    "steps": [
-      {
-        "episode": 66,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 67,
-    "steps": [
-      {
-        "episode": 67,
-        "plan": "french",
-        "reward": -1.2,
-        "wrs": 1.2,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.2,
-    "final_state": {}
-  },
-  {
-    "episode": 68,
-    "steps": [
-      {
-        "episode": 68,
-        "plan": "french",
+        "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
         "pie": 0.0,
@@ -1020,10 +960,55 @@
     "final_state": {}
   },
   {
-    "episode": 69,
+    "episode": 65,
     "steps": [
       {
-        "episode": 69,
+        "episode": 65,
+        "plan": "english",
+        "reward": -1.9,
+        "wrs": 1.9,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.9,
+    "final_state": {}
+  },
+  {
+    "episode": 66,
+    "steps": [
+      {
+        "episode": 66,
+        "plan": "english",
+        "reward": -0.6,
+        "wrs": 0.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
+    "episode": 67,
+    "steps": [
+      {
+        "episode": 67,
+        "plan": "roundtrip",
+        "reward": -0.0,
+        "wrs": 0.0,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.0,
+    "final_state": {}
+  },
+  {
+    "episode": 68,
+    "steps": [
+      {
+        "episode": 68,
         "plan": "english",
         "reward": -0.0,
         "wrs": 0.0,
@@ -1035,11 +1020,26 @@
     "final_state": {}
   },
   {
+    "episode": 69,
+    "steps": [
+      {
+        "episode": 69,
+        "plan": "english",
+        "reward": -1.3,
+        "wrs": 1.3,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.3,
+    "final_state": {}
+  },
+  {
     "episode": 70,
     "steps": [
       {
         "episode": 70,
-        "plan": "french",
+        "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -1069,14 +1069,14 @@
     "steps": [
       {
         "episode": 72,
-        "plan": "english",
-        "reward": -1.3,
-        "wrs": 1.3,
+        "plan": "roundtrip",
+        "reward": -4.6,
+        "wrs": 4.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.3,
+    "total_reward": -4.6,
     "final_state": {}
   },
   {
@@ -1084,7 +1084,7 @@
     "steps": [
       {
         "episode": 73,
-        "plan": "english",
+        "plan": "french",
         "reward": -2.6,
         "wrs": 2.6,
         "pie": 0.0,
@@ -1099,21 +1099,6 @@
     "steps": [
       {
         "episode": 74,
-        "plan": "french",
-        "reward": -0.0,
-        "wrs": 0.0,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.0,
-    "final_state": {}
-  },
-  {
-    "episode": 75,
-    "steps": [
-      {
-        "episode": 75,
         "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
@@ -1125,18 +1110,33 @@
     "final_state": {}
   },
   {
-    "episode": 76,
+    "episode": 75,
     "steps": [
       {
-        "episode": 76,
-        "plan": "french",
-        "reward": -1.3,
-        "wrs": 1.3,
+        "episode": 75,
+        "plan": "roundtrip",
+        "reward": -0.6,
+        "wrs": 0.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.3,
+    "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
+    "episode": 76,
+    "steps": [
+      {
+        "episode": 76,
+        "plan": "english",
+        "reward": -0.6,
+        "wrs": 0.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.6,
     "final_state": {}
   },
   {
@@ -1144,14 +1144,14 @@
     "steps": [
       {
         "episode": 77,
-        "plan": "english",
-        "reward": -3.6,
-        "wrs": 3.6,
+        "plan": "french",
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.6,
+    "total_reward": -0.0,
     "final_state": {}
   },
   {
@@ -1160,13 +1160,13 @@
       {
         "episode": 78,
         "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "reward": -0.6,
+        "wrs": 0.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -0.6,
     "final_state": {}
   },
   {
@@ -1190,13 +1190,13 @@
       {
         "episode": 80,
         "plan": "roundtrip",
-        "reward": -4.6,
-        "wrs": 4.6,
+        "reward": -0.6,
+        "wrs": 0.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -4.6,
+    "total_reward": -0.6,
     "final_state": {}
   },
   {
@@ -1204,14 +1204,14 @@
     "steps": [
       {
         "episode": 81,
-        "plan": "english",
-        "reward": -1.9,
-        "wrs": 1.9,
+        "plan": "roundtrip",
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.9,
+    "total_reward": -0.0,
     "final_state": {}
   },
   {
@@ -1219,7 +1219,7 @@
     "steps": [
       {
         "episode": 82,
-        "plan": "french",
+        "plan": "roundtrip",
         "reward": -2.6,
         "wrs": 2.6,
         "pie": 0.0,
@@ -1234,52 +1234,7 @@
     "steps": [
       {
         "episode": 83,
-        "plan": "roundtrip",
-        "reward": -0.6,
-        "wrs": 0.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -0.6,
-    "final_state": {}
-  },
-  {
-    "episode": 84,
-    "steps": [
-      {
-        "episode": 84,
-        "plan": "roundtrip",
-        "reward": -1.9,
-        "wrs": 1.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.9,
-    "final_state": {}
-  },
-  {
-    "episode": 85,
-    "steps": [
-      {
-        "episode": 85,
-        "plan": "english",
-        "reward": -1.9,
-        "wrs": 1.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.9,
-    "final_state": {}
-  },
-  {
-    "episode": 86,
-    "steps": [
-      {
-        "episode": 86,
-        "plan": "roundtrip",
+        "plan": "french",
         "reward": -1.3,
         "wrs": 1.3,
         "pie": 0.0,
@@ -1290,25 +1245,40 @@
     "final_state": {}
   },
   {
-    "episode": 87,
+    "episode": 84,
     "steps": [
       {
-        "episode": 87,
+        "episode": 84,
         "plan": "french",
-        "reward": -3.6,
-        "wrs": 3.6,
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.6,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
-    "episode": 88,
+    "episode": 85,
     "steps": [
       {
-        "episode": 88,
+        "episode": 85,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
+    "final_state": {}
+  },
+  {
+    "episode": 86,
+    "steps": [
+      {
+        "episode": 86,
         "plan": "english",
         "reward": -2.6,
         "wrs": 2.6,
@@ -1320,11 +1290,41 @@
     "final_state": {}
   },
   {
+    "episode": 87,
+    "steps": [
+      {
+        "episode": 87,
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
+    "final_state": {}
+  },
+  {
+    "episode": 88,
+    "steps": [
+      {
+        "episode": 88,
+        "plan": "french",
+        "reward": -0.6,
+        "wrs": 0.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -0.6,
+    "final_state": {}
+  },
+  {
     "episode": 89,
     "steps": [
       {
         "episode": 89,
-        "plan": "french",
+        "plan": "english",
         "reward": -1.3,
         "wrs": 1.3,
         "pie": 0.0,
@@ -1340,13 +1340,13 @@
       {
         "episode": 90,
         "plan": "french",
-        "reward": -3.2,
-        "wrs": 3.2,
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -3.2,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -1354,14 +1354,14 @@
     "steps": [
       {
         "episode": 91,
-        "plan": "roundtrip",
-        "reward": -1.9,
-        "wrs": 1.9,
+        "plan": "english",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.9,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -1369,14 +1369,14 @@
     "steps": [
       {
         "episode": 92,
-        "plan": "roundtrip",
-        "reward": -1.9,
-        "wrs": 1.9,
+        "plan": "english",
+        "reward": -1.3,
+        "wrs": 1.3,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.9,
+    "total_reward": -1.3,
     "final_state": {}
   },
   {
@@ -1384,6 +1384,21 @@
     "steps": [
       {
         "episode": 93,
+        "plan": "roundtrip",
+        "reward": -1.3,
+        "wrs": 1.3,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -1.3,
+    "final_state": {}
+  },
+  {
+    "episode": 94,
+    "steps": [
+      {
+        "episode": 94,
         "plan": "roundtrip",
         "reward": -0.0,
         "wrs": 0.0,
@@ -1395,26 +1410,11 @@
     "final_state": {}
   },
   {
-    "episode": 94,
-    "steps": [
-      {
-        "episode": 94,
-        "plan": "english",
-        "reward": -1.9,
-        "wrs": 1.9,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -1.9,
-    "final_state": {}
-  },
-  {
     "episode": 95,
     "steps": [
       {
         "episode": 95,
-        "plan": "french",
+        "plan": "english",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -1429,7 +1429,22 @@
     "steps": [
       {
         "episode": 96,
-        "plan": "roundtrip",
+        "plan": "french",
+        "reward": -2.6,
+        "wrs": 2.6,
+        "pie": 0.0,
+        "ate": 0.0
+      }
+    ],
+    "total_reward": -2.6,
+    "final_state": {}
+  },
+  {
+    "episode": 97,
+    "steps": [
+      {
+        "episode": 97,
+        "plan": "english",
         "reward": -0.0,
         "wrs": 0.0,
         "pie": 0.0,
@@ -1440,26 +1455,11 @@
     "final_state": {}
   },
   {
-    "episode": 97,
-    "steps": [
-      {
-        "episode": 97,
-        "plan": "english",
-        "reward": -4.6,
-        "wrs": 4.6,
-        "pie": 0.0,
-        "ate": 0.0
-      }
-    ],
-    "total_reward": -4.6,
-    "final_state": {}
-  },
-  {
     "episode": 98,
     "steps": [
       {
         "episode": 98,
-        "plan": "english",
+        "plan": "roundtrip",
         "reward": -2.6,
         "wrs": 2.6,
         "pie": 0.0,
@@ -1474,14 +1474,14 @@
     "steps": [
       {
         "episode": 99,
-        "plan": "english",
-        "reward": -0.0,
-        "wrs": 0.0,
+        "plan": "roundtrip",
+        "reward": -2.6,
+        "wrs": 2.6,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -0.0,
+    "total_reward": -2.6,
     "final_state": {}
   },
   {
@@ -1490,13 +1490,13 @@
       {
         "episode": 100,
         "plan": "english",
-        "reward": -1.9,
-        "wrs": 1.9,
+        "reward": -0.0,
+        "wrs": 0.0,
         "pie": 0.0,
         "ate": 0.0
       }
     ],
-    "total_reward": -1.9,
+    "total_reward": -0.0,
     "final_state": {}
   }
 ]
