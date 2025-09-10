@@ -1,0 +1,30 @@
+instance sentiment_translation_instance {
+
+    domain = sentiment_translation;
+
+    objects {
+        txt  : {t1};
+        lang : {English, French};
+    };
+
+    non-fluents {
+        ENGLISH_LANG(English) = true;
+        ENGLISH_LANG(French) = false;
+
+        FRENCH_LANG(French) = true;
+        FRENCH_LANG(English) = false;
+
+        TRANSLATOR_SUPPORTS(English) = true;
+        TRANSLATOR_SUPPORTS(French) = true;
+    };
+
+    init-state {
+        text_in_lang(t1, English) = true;
+        text_in_lang(t1, French) = false;
+        has_sentiment(t1) = false;
+        has_been_translated(t1) = false;
+    };
+
+    horizon = 1;
+    discount = 1.0;
+}
