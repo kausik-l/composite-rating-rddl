@@ -1,78 +1,68 @@
 from pyRDDLGym.core.env import RDDLEnv
 import pandas as pd
-from env.metric_utils import calc_wrs  # (later you'll add calc_pie, calc_ate, etc.)
+from env.metric_utils import calc_wrs
 
-# --------------------------------------------------------------------
-# RatingEnv is a custom environment that extends pyRDDLGym's RDDLEnv.
-# It overrides the reward to use ARC metrics (WRS, PIE, ATE)
-# --------------------------------------------------------------------
 class RatingEnv(RDDLEnv):
     def __init__(self, domain_file, instance_file, data_files, subset_size=100, metric_weights=None):
-        # Initialize the RDDL domain and instance.
         super().__init__(domain_file, instance_file)
 
-        # Load all datasets (english, french, roundtrip).
-        # Each dataset represents outcomes for one pipeline plan.
+        # Load datasets for each plan (english, french, roundtrip)
         self.datasets = {k: pd.read_csv(v) for k, v in data_files.items()}
 
-        # Instead of scoring the full dataset every time, 
-        # we sample random subsets.
+        # Subset size for evaluation
         self.subset_size = subset_size
 
-        # Define which metrics contribute to reward and their weights.
-        # By default, we are only using WRS for now (weight=1.0).
+        # Metric weights (default: only WRS matters)
         self.metric_weights = metric_weights or {"wrs": 1.0}
 
-    def step(self, action):
-        # First, let RDDL update the state
-        #   (e.g., set has_sentiment=True if do_sentiment_english is chosen).
-        # We throw away the RDDL reward (always 0.0 in our domain).
-        next_state, rew, done, truncated, info = super().step(action)
+    def step(self, action_dict):
+        next_state, _, done, truncated, info = super().step(action_dict)
 
-        # ----------------------------------------------------------------
-        # Link action to the dataset:
-        #   If the agent chooses English sentiment, evaluate on english.csv.
-        #   If French sentiment, evaluate on french.csv.
-        #   Otherwise (e.g., roundtrip plan), evaluate on roundtrip.csv.
-        #
-        # This mapping is crude here (based on action name),
-        # but captures the idea: different pipelines → different data outputs.
-        # ----------------------------------------------------------------
-        if "do_sentiment_english" in action:
+        # Which action(s) were chosen?
+        chosen = [a for a, v in action_dict.items() if v == 1]
+        if not chosen:
+            return next_state, -999, True, truncated, info
+        chosen_action = chosen[0]
+
+        # --- Case 1: Translate actions ---
+        if "do_translate" in chosen_action:
+            # No sentiment output → no WRS
+            reward = 0.0
+            info["wrs"] = 0.0
+            info["pie"] = 0.0
+            info["ate"] = 0.0
+            return next_state, reward, done, truncated, info
+
+        # --- Case 2: Sentiment actions ---
+        if "do_sentiment_english" in chosen_action:
             df = self.datasets["english"]
-        elif "do_sentiment_french" in action:
+        elif "do_sentiment_french" in chosen_action:
             df = self.datasets["french"]
         else:
-            df = self.datasets["roundtrip"]
+            # fallback
+            df = self.datasets["english"]
 
-        # ----------------------------------------------------------------
-        # Simulate by sampling a subset of the dataset instead of always 
-        # using the full data.
-        # This introduces some variation episode-to-episode.
-        # ----------------------------------------------------------------
+        # Sample subset
         subset = df.sample(n=min(self.subset_size, len(df)))
 
-        # ----------------------------------------------------------------
-        # Compute ARC metrics on the subset.
-        # Currently:
-        #   - WRS (Weighted Rejection Score) is implemented.
-        #   - PIE and ATE are just placeholders for now.
-        # ----------------------------------------------------------------
+        # Compute metrics
         wrs = calc_wrs(subset, protected_col="gender", output_col="sentiment_outcome")
         pie = 0.0
         ate = 0.0
 
-        # ----------------------------------------------------------------
-        # Combine metrics into a single reward.
-        # reward = - WRS (less bias means higher reward).
-        # ----------------------------------------------------------------
-        reward = -(self.metric_weights["wrs"] * wrs +
-                   self.metric_weights.get("pie", 0.0) * pie +
-                   self.metric_weights.get("ate", 0.0) * ate)
+        # count how many actions were chosen in this step
+        n_actions = sum(v for v in action_dict.values())
+        action_cost = n_actions * self.metric_weights.get("action_cost", 0.0)
 
-        # Attach metrics to info dict for logging and plotting later (see utils folder).
+        # total reward = benefit - cost
+        reward = -(self.metric_weights["wrs"] * wrs +
+                self.metric_weights.get("pie", 0.0) * pie +
+                self.metric_weights.get("ate", 0.0) * ate) - action_cost
+
+
         info["wrs"] = wrs
         info["pie"] = pie
         info["ate"] = ate
 
         return next_state, reward, done, truncated, info
+

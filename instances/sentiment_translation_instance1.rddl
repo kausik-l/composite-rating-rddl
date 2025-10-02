@@ -27,7 +27,7 @@ instance sentiment_translation_instance {
 
     init-state {
         // Text t1 starts in English.
-        text_in_lang(t1, English) = true;   
+        text_in_lang(t1, English) = false;   
         // Text t1 is not in French at the start.
         text_in_lang(t1, French) = false;   
         // Sentiment has not been assigned yet.
@@ -38,7 +38,7 @@ instance sentiment_translation_instance {
 
     // One-step episodes: you can only apply one action before the episode ends.
     // In our current setup, one action runs the entire pipeline.
-    horizon = 1;   
+    horizon = 3;   
     // No discounting i.e., every reward is counted fully.
     discount = 1.0; 
 }

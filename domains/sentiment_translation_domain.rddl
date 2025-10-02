@@ -1,98 +1,69 @@
 domain sentiment_translation {
-    // This reward produces the same value when the state and action are the same.
+
     requirements = { reward-deterministic };
 
     types {
-        txt  : object;   // Represents text items (like one input sentence).
-        lang : object;   // Represents languages (e.g., English, French).
+        txt  : object;   // sentences
+        lang : object;   // languages (English, French)
     };
 
     pvariables {
-        // State fluents (these change over time as actions are applied).
-        
-        // Tracks what language the text is currently in.
-        // For example, initially text t1 is in English, but after translation it may switch to French.
+        // State fluents
         text_in_lang(txt, lang)   : { state-fluent, bool, default = false };
-
-        // Becomes true once sentiment analysis has been applied on the text.
-        // So that we do not apply sentiment analysis again and again.
         has_sentiment(txt)        : { state-fluent, bool, default = false };
-
-        // Tracks whether the text has ever been translated.
-        // Useful for tracking round-trip translation.
         has_been_translated(txt)  : { state-fluent, bool, default = false };
 
-
-        // Action fluents (these are decisions taken by the agent / policy)
-        
-        // Action to translate text from one language (source) to another (target).
+        // Actions
         do_translate(txt, lang, lang) : { action-fluent, bool, default = false };
-
-        // Action to run sentiment analysis using the English model.
         do_sentiment_english(txt)     : { action-fluent, bool, default = false };
-
-        // Action to run sentiment analysis using the French model.
         do_sentiment_french(txt)      : { action-fluent, bool, default = false };
 
-        // Non-fluents (constants that never change during an episode)
-
-        // I am not sure if these are required. But not able to run the program without these.
-        // Marks which lang object is actually 'English' (helps in preconditions).
-        ENGLISH_LANG(lang) : { non-fluent, bool, default = false };
-
-        // Marks which lang object is actually 'French'.
-        FRENCH_LANG(lang)  : { non-fluent, bool, default = false };
-
-        // Marks which languages the translator can handle.
-        // For example, both English and French are supported, but not others (for now).
+        // Non-fluents (constants)
+        ENGLISH_LANG(lang)        : { non-fluent, bool, default = false };
+        FRENCH_LANG(lang)         : { non-fluent, bool, default = false };
         TRANSLATOR_SUPPORTS(lang) : { non-fluent, bool, default = false };
-
     };
 
     cpfs {
-        // How state fluents evolve when actions are taken (the "transition rules").
-
-        // After a translation action, the text is now in the target language (?l_to).
-        // Otherwise, it stays in whatever language it was.
+        // Language updates on translation
+        // Exactly one language is true at a time
         text_in_lang'(?t, ?l_to) =
             if (exists_{?l_from: lang} do_translate(?t, ?l_from, ?l_to))
             then true
-            else text_in_lang(?t, ?l_to);
+            else if (exists_{?l_from: lang} do_translate(?t, ?l_to, ?l_from))
+                then false
+                else text_in_lang(?t, ?l_to);
 
-        // If a translation is performed at any step, this becomes true.
+
+        // Track if text has ever been translated
         has_been_translated'(?t) =
             has_been_translated(?t) |
             exists_{?l1: lang, ?l2: lang} do_translate(?t, ?l1, ?l2);
 
-        // This turns true if:
-        //   - English sentiment is applied and the text is currently in English.
-        //   - OR French sentiment is applied and the text is currently in French.
-        // Once assigned, it stays true.
+        // Sentiment assignment
         has_sentiment'(?t) =
             has_sentiment(?t) |
-            (do_sentiment_english(?t) & exists_{?l: lang} (text_in_lang(?t, ?l) & ENGLISH_LANG(?l))) |
-            (do_sentiment_french(?t)  & exists_{?l: lang} (text_in_lang(?t, ?l) & FRENCH_LANG(?l)));
-
+            (do_sentiment_english(?t) &
+             exists_{?l: lang} (text_in_lang(?t, ?l) & ENGLISH_LANG(?l))) |
+            (do_sentiment_french(?t) &
+             exists_{?l: lang} (text_in_lang(?t, ?l) & FRENCH_LANG(?l)));
     };
 
-    // We ignore RDDL's reward here.
-    // Instead, we overridden the reward in python using our ARC metrics (WRS, PIE, ATE).
+    // Reward (overridden in Python)
     reward = 0.0;
 
-    // Which actions are valid in which situations.
     action-preconditions {
-        // You can only run the English sentiment model if the text is actually in English.
+        // English sentiment only valid if text is in English
         forall_{?t: txt, ?l: lang} 
             do_sentiment_english(?t) => (text_in_lang(?t, ?l) & ENGLISH_LANG(?l));
 
-        // Similarly, French sentiment model only applies to French text.
+        // French sentiment only valid if text is in French
         forall_{?t: txt, ?l: lang} 
             do_sentiment_french(?t)  => (text_in_lang(?t, ?l) & FRENCH_LANG(?l));
 
-        // You can only translate from the current language of the text,
-        // and only into languages that the translator supports.
+        // Translate only if in source language & target is supported
         forall_{?t: txt, ?l_from: lang, ?l_to: lang}
-            do_translate(?t, ?l_from, ?l_to) => (text_in_lang(?t, ?l_from) & TRANSLATOR_SUPPORTS(?l_to));
-
+            do_translate(?t, ?l_from, ?l_to) =>
+                (text_in_lang(?t, ?l_from) & TRANSLATOR_SUPPORTS(?l_to));
     };
 }

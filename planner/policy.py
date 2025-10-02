@@ -4,52 +4,30 @@ import random
 # Base class for all policies. A "policy" here means:
 #   Given the current state of the environment, which PLAN (pipeline)
 #   should we choose to execute? 
-# Plans are high-level for now: "english", "french", "roundtrip".
+# Plans are high-level: "english", "french", "roundtrip".
+# Each plan is represented as a *list of steps*,
+# where each step is a list of RDDL actions.
+#
+# Example:
+#   {
+#     "english": [["do_sentiment_english___t1"]],
+#     "french": [["do_sentiment_french___t1"]],
+#     "roundtrip": [
+#        ["do_translate___t1__English__French"],
+#        ["do_translate___t1__French__English"],
+#        ["do_sentiment_english___t1"]
+#     ]
+#   }
 # --------------------------------------------------------------------
 class BasePolicy:
-    def __init__(self, env, plan_to_actions):
-        """
-        env: the RatingEnv (wraps pyRDDLGym env + WRS).
-        plan_to_actions: dictionary that maps each plan name
-                         to the list of RDDL actions that 
-                         represent that plan.
-            Example:
-              {
-                "english": ["do_sentiment_english___t1"],
-                "french": ["do_sentiment_french___t1"],
-                "roundtrip": [
-                   "do_translate___t1__English__French",
-                   "do_translate___t1__French__English",
-                   "do_sentiment_english___t1"
-                 ]
-              }
-        """
+    def __init__(self, env, possible_plans):
         self.env = env
-        self.plan_to_actions = plan_to_actions
-        # A list of all possible plans.
-        self.possible_plans = list(plan_to_actions.keys())
+        self.possible_plans = possible_plans
 
     def select_plan(self, state):
-        """Each specific policy will implement its own logic for 
-        selecting one plan out of self.possible_plans."""
         raise NotImplementedError
 
-    def build_action_dict(self, plan):
-        """
-        Convert a chosen high-level plan into a dictionary of actions.
-        pyRDDLGym expects env.step() to receive a dictionary where:
-          - keys = all possible actions
-          - values = 0 (inactive) or 1 (active this step)
-        So here:
-          1. Initialize everything to 0.
-          2. Turn on (=1) only those actions that correspond to the chosen plan.
-        """
-        # Start with all actions "off".
-        action_dict = {name: 0 for name in self.env.action_space.spaces.keys()}
-        # Switch on the ones belonging to this plan.
-        for act in self.plan_to_actions[plan]:
-            action_dict[act] = 1
-        return action_dict
+
 
 
 # --------------------------------------------------------------------
@@ -58,6 +36,7 @@ class BasePolicy:
 class RandomPolicy(BasePolicy):
     def select_plan(self, state):
         return random.choice(self.possible_plans)
+
 
 
 # --------------------------------------------------------------------
@@ -75,23 +54,33 @@ class FixedPolicy(BasePolicy):
 # --------------------------------------------------------------------
 # Greedy policy:
 #   - Looks at all possible plans.
-#   - For each plan, it calls env.simulate(action_dict) to estimate
-#     what the immediate reward would be if we chose it.
-#   - Picks the plan with the highest reward.
+#   - For each plan, it simulates the full sequence of steps.
+#   - Picks the plan with the highest cumulative reward.
 #
-# Note: This requires that the environment implements a simulate()
-# method, which runs a mock step and then restores the state.
-# This way we do not permanently advance the environment while evaluating.
+# This requires the environment to implement simulate(),
+# which runs a step without committing state permanently.
 # --------------------------------------------------------------------
 class GreedyPolicy(BasePolicy):
     def select_plan(self, state):
         best_plan, best_reward = None, float("-inf")
+
         for plan in self.possible_plans:
-            # Build the action dictionary for this plan.
-            action_dict = self.build_action_dict(plan)
-            # Run a simulated step to see what reward it would give.
-            next_state, reward, done, truncated, info = self.env.simulate(action_dict)
-            # Keep track of the best one.
-            if reward > best_reward:
-                best_plan, best_reward = plan, reward
+            total_reward = 0
+            # Save state once before simulating whole plan
+            saved_state = self.env.sampler.copy_state(self.env.sampler.state)
+
+            # Simulate each step in the plan
+            for step_actions in self.plan_to_actions[plan]:
+                action_dict = self.build_action_dict(step_actions)
+                _, reward, done, truncated, _ = self.env.simulate(action_dict)
+                total_reward += reward
+                if done or truncated:
+                    break
+
+            # Restore state
+            self.env.sampler.state = saved_state
+
+            if total_reward > best_reward:
+                best_plan, best_reward = plan, total_reward
+
         return best_plan

@@ -4,106 +4,116 @@ from planner.policy import RandomPolicy, FixedPolicy, GreedyPolicy
 from utils.logger import Logger
 from utils.plotter import plot_results
 
+
+# Build a plan dynamically based on the current state.
+def build_plan(state, plan_name):
+    in_english = state.get("text_in_lang___t1__English", False)
+    in_french = state.get("text_in_lang___t1__French", False)
+
+    if plan_name == "english":
+        if in_english:
+            return [["do_sentiment_english___t1"]]
+        elif in_french:
+            return [["do_translate___t1__French__English"],
+                    ["do_sentiment_english___t1"]]
+
+    if plan_name == "french":
+        if in_french:
+            return [["do_sentiment_french___t1"]]
+        elif in_english:
+            return [["do_translate___t1__English__French"],
+                    ["do_sentiment_french___t1"]]
+
+    if plan_name == "roundtrip":
+        if in_english:
+            return [["do_translate___t1__English__French"],
+                    ["do_translate___t1__French__English"],
+                    ["do_sentiment_english___t1"]]
+        elif in_french:
+            return [["do_translate___t1__French__English"],
+                    ["do_translate___t1__English__French"],
+                    ["do_sentiment_french___t1"]]
+
+    raise ValueError(f"Unsupported plan {plan_name} for state {state}")
+
+
 def main():
-    # ----------------------------------------------------------------
-    # Point to the domain and instance files (RDDL definitions).
-    #    - domain_file: defines the rules of the world.
-    #    - instance_file: defines the objects (t1, English, French),
-    #                     initial state, and horizon.
-    # ----------------------------------------------------------------
+    # Load domain and instance files.
     domain_file = "domains/sentiment_translation_domain.rddl"
     instance_file = "instances/sentiment_translation_instance1.rddl"
 
-    # ----------------------------------------------------------------
-    # Point to the datasets (CSV files).
-    #    These datasets correspond to different pipeline plans:
-    #      - english.csv: direct English sentiment analysis
-    #      - french.csv: direct French sentiment analysis
-    #      - roundtrip.csv: EN->FR->EN + English sentiment
-    # ----------------------------------------------------------------
+    # Data files for each plan with predictions.
     data_files = {
         "english": "data/input/english.csv",
         "french": "data/input/french.csv",
         "roundtrip": "data/input/roundtrip.csv"
     }
 
-    # ----------------------------------------------------------------
-    # Create the environment.
-    #    RatingEnv = RDDLEnv + Override reward with ARC metrics.
-    #     - subset_size=100: evaluate each plan on a random subset of 100 rows
-    # ----------------------------------------------------------------
-    env = RatingEnv(domain_file, instance_file, data_files, subset_size=100)
+    # Environment (RDDL + Python wrapper for metrics).
+    env = RatingEnv(domain_file, instance_file, data_files, subset_size=100, metric_weights={"wrs": 1.0, "action_cost": 10})
 
-    # ----------------------------------------------------------------
-    # Define how high-level plans map to the actions.
-    #    Plans = pipeline we choosr (english, french, roundtrip).
-    #    Each plan is converted into the actual RDDL action.
-    # ----------------------------------------------------------------
-    plan_to_actions = {
-        "english": ["do_sentiment_english___t1"],
-        "french": ["do_sentiment_french___t1"],
-        "roundtrip": [
-            "do_translate___t1__English__French",
-            "do_translate___t1__French__English",
-            "do_sentiment_english___t1"
-        ]
-    }
 
-    # ----------------------------------------------------------------
-    # Choose a policy.
-    #    - RandomPolicy: randomly picks english/french/roundtrip each episode.
-    #    - FixedPolicy: always picks the same plan.
-    #    - GreedyPolicy: Simulates each plan, picks the one with the best reward.
-    # ----------------------------------------------------------------
-    policy = RandomPolicy(env, plan_to_actions)
+    # Choosing a policy.
+    policy = RandomPolicy(env, ["english", "french", "roundtrip"])
 
-    # ----------------------------------------------------------------
-    # Run multiple episodes.
-    #    Each episode = pick a plan, run one action, sample dataset subset,
-    #    compute WRS, log results and plot them.
-    # ----------------------------------------------------------------
-    n_episodes = 100
-    results = []
+    n_episodes = 50
     logger = Logger(log_dir="data/output", log_file="simulation_log.json")
 
     for ep in range(n_episodes):
-        # Reset environment to the initial state (text in English, no sentiment yet).
-        state = env.reset()
-        print("\nState:",state)
-
-        # Policy chooses one plan (english/french/roundtrip).
+        state, _ = env.reset()   # unpack: state_fluents, non_fluents
         chosen_plan = policy.select_plan(state)
 
-        # Convert plan -> RDDL action dictionary.
-        action_dict = policy.build_action_dict(chosen_plan)
+        plan_steps = build_plan(state, chosen_plan)
 
-        # Step the environment: 
-        #   - Symbolic state update (RDDL)
-        #   - ARC metrics computed on sampled dataset subset
-        next_state, reward, done, truncated, info = env.step(action_dict)
 
-        # Create a record of this episode for logging and analysis.
+        total_reward = 0
+        episode_steps = []
+
+        print(f"\n=== Episode {ep+1}: Executing plan {chosen_plan} ===")
+
+        for step_idx, step_actions in enumerate(plan_steps, start=1):
+            action_dict = {name: 0 for name in env.action_space.spaces.keys()}
+            for act in step_actions:
+                action_dict[act] = 1
+
+            next_state, reward, done, truncated, info = env.step(action_dict)
+            # unpack new state for next iteration
+            state = next_state  
+
+            total_reward += reward
+
+            # Record this step
+            step_record = {
+                "episode": ep + 1,
+                "plan": chosen_plan,
+                "step_idx": step_idx,
+                "actions": step_actions,
+                "reward": reward,
+                "wrs": info.get("wrs", 0.0),
+                "pie": info.get("pie", 0.0),
+                "ate": info.get("ate", 0.0),
+            }
+            episode_steps.append(step_record)
+
+            print(f" Step {step_idx}: {step_actions}, Reward={reward:.3f}, State={state}")
+
+            if done or truncated:
+                break
+
+        # Record the full episode
         record = {
             "episode": ep + 1,
-            "plan": chosen_plan,
-            "reward": reward,        # reward = -WRS 
-            "wrs": info["wrs"],      # Weighted Rejection Score.
-            "pie": info["pie"],      # placeholder.
-            "ate": info["ate"]       # placeholder.
+            "steps": episode_steps,
+            "total_reward": total_reward,
+            "final_state": state
         }
-        results.append(record)
+        logger.episodes.append(record)
+        print(f"Episode {ep+1} finished. Total Reward={total_reward:.3f}")
 
-        print(f"Episode {ep+1}: Plan={chosen_plan}, Reward={reward:.3f}, Metrics={info}")
-
-        logger.log_episode(ep + 1, [record], total_reward=reward, final_state={})
-
-    # ----------------------------------------------------------------
-    # After all episodes:
-    #    - Write logs to a JSON file.
-    #    - Generate plots.
-    # ----------------------------------------------------------------
+    # Save logs and generate plots.
     logger.save()
     plot_results("data/output/simulation_log.json", save_dir="simulation_plots")
+
 
 if __name__ == "__main__":
     main()
