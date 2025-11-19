@@ -1,118 +1,96 @@
+#!/usr/bin/env python3
+
+import argparse
 import json
+import time
+from pathlib import Path
 from env.rating_env import RatingEnv
-from planner.policy import RandomPolicy, FixedPolicy, GreedyPolicy
-from utils.logger import Logger
-from utils.plotter import plot_results
+from planner.policy import SimplePolicy  # use the small testing policy
+
+class SimpleLogger:
+    def __init__(self, out_dir: str, fname: str = "run_log.json"):
+        self.path = Path(out_dir) / fname
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.data = {"episodes": []}
+
+    def add_episode(self, record):
+        self.data["episodes"].append(record)
+
+    def save(self):
+        with open(self.path, "w") as f:
+            json.dump(self.data, f, indent=2)
+        print(f"Saved results to {self.path}")
 
 
-# Build a plan dynamically based on the current state.
-def build_plan(state, plan_name):
-    in_english = state.get("text_in_lang___t1__English", False)
-    in_french = state.get("text_in_lang___t1__French", False)
+def parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--domain", required=True)
+    p.add_argument("--instance", required=True)
+    p.add_argument("--data", required=True)
+    p.add_argument("--episodes", type=int, default=5)
+    p.add_argument("--subset_size", type=int, default=100)
+    p.add_argument("--out_dir", default="results/run1")
+    return p.parse_args()
 
-    if plan_name == "english":
-        if in_english:
-            return [["do_sentiment_english___t1"]]
-        elif in_french:
-            return [["do_translate___t1__French__English"],
-                    ["do_sentiment_english___t1"]]
 
-    if plan_name == "french":
-        if in_french:
-            return [["do_sentiment_french___t1"]]
-        elif in_english:
-            return [["do_translate___t1__English__French"],
-                    ["do_sentiment_french___t1"]]
+def load_data_mapping(path):
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(p)
+    if p.suffix.lower() == ".json":
+        return json.load(open(p))
+    return {"default": str(p)}
 
-    if plan_name == "roundtrip":
-        if in_english:
-            return [["do_translate___t1__English__French"],
-                    ["do_translate___t1__French__English"],
-                    ["do_sentiment_english___t1"]]
-        elif in_french:
-            return [["do_translate___t1__French__English"],
-                    ["do_translate___t1__English__French"],
-                    ["do_sentiment_french___t1"]]
 
-    raise ValueError(f"Unsupported plan {plan_name} for state {state}")
+def safe_reset(env):
+    r = env.reset()
+    return r[0] if isinstance(r, tuple) else r
 
 
 def main():
-    # Load domain and instance files.
-    domain_file = "domains/sentiment_translation_domain.rddl"
-    instance_file = "instances/sentiment_translation_instance1.rddl"
+    args = parse_args()
+    data_map = load_data_mapping(args.data)
 
-    # Data files for each plan with predictions.
-    data_files = {
-        "english": "data/input/english.csv",
-        "french": "data/input/french.csv",
-        "roundtrip": "data/input/roundtrip.csv"
-    }
+    env = RatingEnv(
+        domain_file=args.domain,
+        instance_file=args.instance,
+        data_files=data_map,
+        subset_size=args.subset_size,
+    )
 
-    # Environment (RDDL + Python wrapper for metrics).
-    env = RatingEnv(domain_file, instance_file, data_files, subset_size=100, metric_weights={"wrs": 1.0, "action_cost": 10})
+    policy = SimplePolicy(env)
+    logger = SimpleLogger(args.out_dir)
 
+    for ep in range(1, args.episodes + 1):
+        state = safe_reset(env)
+        done, total_reward = False, 0.0
+        steps = []
 
-    # Choosing a policy.
-    policy = RandomPolicy(env, ["english", "french", "roundtrip"])
+        print(f"\n=== Episode {ep} ===")
+        print("Initial state keys:", list(state.keys())[:10])
 
-    n_episodes = 50
-    logger = Logger(log_dir="data/output", log_file="simulation_log.json")
+        for step in range(50):
+            action = policy.get_action(state)
+            if not action:
+                print(f"Step {step}: no valid action, stopping.")
+                break
 
-    for ep in range(n_episodes):
-        state, _ = env.reset()   # unpack: state_fluents, non_fluents
-        chosen_plan = policy.select_plan(state)
-
-        plan_steps = build_plan(state, chosen_plan)
-
-
-        total_reward = 0
-        episode_steps = []
-
-        print(f"\n=== Episode {ep+1}: Executing plan {chosen_plan} ===")
-
-        for step_idx, step_actions in enumerate(plan_steps, start=1):
-            action_dict = {name: 0 for name in env.action_space.spaces.keys()}
-            for act in step_actions:
-                action_dict[act] = 1
-
-            next_state, reward, done, truncated, info = env.step(action_dict)
-            # unpack new state for next iteration
-            state = next_state  
-
-            total_reward += reward
-
-            # Record this step
-            step_record = {
-                "episode": ep + 1,
-                "plan": chosen_plan,
-                "step_idx": step_idx,
-                "actions": step_actions,
-                "reward": reward,
-                "wrs": info.get("wrs", 0.0),
-                "pie": info.get("pie", 0.0),
-                "ate": info.get("ate", 0.0),
-            }
-            episode_steps.append(step_record)
-
-            print(f" Step {step_idx}: {step_actions}, Reward={reward:.3f}, State={state}")
-
+            print(f"Step {step}: action -> {list(action.keys())}")
+            next_state, reward, done, truncated, info = env.step(action)
+            steps.append({"step": step, "action": action, "reward": reward, "info": info})
+            total_reward += float(reward or 0.0)
+            state = next_state
             if done or truncated:
                 break
 
-        # Record the full episode
-        record = {
-            "episode": ep + 1,
-            "steps": episode_steps,
-            "total_reward": total_reward,
-            "final_state": state
-        }
-        logger.episodes.append(record)
-        print(f"Episode {ep+1} finished. Total Reward={total_reward:.3f}")
+        logger.add_episode({
+            "episode": ep,
+            "steps": steps,
+            "total_reward": total_reward
+        })
+        print(f"Episode {ep} finished. Total reward = {total_reward:.3f}, steps = {len(steps)}")
 
-    # Save logs and generate plots.
     logger.save()
-    plot_results("data/output/simulation_log.json", save_dir="simulation_plots")
 
 
 if __name__ == "__main__":

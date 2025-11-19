@@ -1,0 +1,1279 @@
+{
+  "episodes": [
+    {
+      "episode": 1,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.04878147344044,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09703829787234038,
+              "Z2": 0.041706122448979484,
+              "Z3": 0.007600000000000029
+            },
+            "wrs_mean": 0.04878147344043996,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.04878147344044
+    },
+    {
+      "episode": 2,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0563072174738841,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.1185555555555556,
+              "Z2": 0.035884615384615286,
+              "Z3": 0.014481481481481305
+            },
+            "wrs_mean": 0.056307217473884064,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.056307217473885
+    },
+    {
+      "episode": 3,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0663599099099097,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.0989499999999999,
+              "Z2": 0.03769999999999997,
+              "Z3": 0.062429729729729495
+            },
+            "wrs_mean": 0.0663599099099098,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.06635990990991
+    },
+    {
+      "episode": 4,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0684114840240697,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.08658421052631576,
+              "Z2": 0.05463913043478259,
+              "Z3": 0.06401111111111099
+            },
+            "wrs_mean": 0.06841148402406978,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.06841148402407
+    },
+    {
+      "episode": 5,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0529803251215015,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09601111111111107,
+              "Z2": 0.04547692307692303,
+              "Z3": 0.01745294117647069
+            },
+            "wrs_mean": 0.0529803251215016,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.052980325121501
+    },
+    {
+      "episode": 6,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0488064828890917,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.011569565217391383,
+              "Z2": 0.05005897435897444,
+              "Z3": 0.08479090909090914
+            },
+            "wrs_mean": 0.04880648288909165,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.048806482889091
+    },
+    {
+      "episode": 7,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.1078840339554625,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.08917346938775511,
+              "Z2": 0.08705555555555561,
+              "Z3": 0.14742307692307716
+            },
+            "wrs_mean": 0.10788403395546263,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.107884033955463
+    },
+    {
+      "episode": 8,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0921420531849102,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.10987551020408164,
+              "Z2": 0.11181428571428575,
+              "Z3": 0.054736363636363555
+            },
+            "wrs_mean": 0.09214205318491031,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.09214205318491
+    },
+    {
+      "episode": 9,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.087314599686028,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.14658461538461529,
+              "Z2": 0.05915918367346921,
+              "Z3": 0.056200000000000035
+            },
+            "wrs_mean": 0.08731459968602817,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.087314599686028
+    },
+    {
+      "episode": 10,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0592484911913485,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.07147551020408173,
+              "Z2": 0.023212820512820496,
+              "Z3": 0.08305714285714291
+            },
+            "wrs_mean": 0.059248491191348375,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.05924849119135
+    },
+    {
+      "episode": 11,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0540438072923088,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09041111111111126,
+              "Z2": 0.06843207547169812,
+              "Z3": 0.003288235294117441
+            },
+            "wrs_mean": 0.05404380729230895,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.05404380729231
+    },
+    {
+      "episode": 12,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0575216082392553,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.06958181818181815,
+              "Z2": 0.03228888888888883,
+              "Z3": 0.07069411764705893
+            },
+            "wrs_mean": 0.057521608239255305,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.057521608239256
+    },
+    {
+      "episode": 13,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0584804822095273,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.041068085106382844,
+              "Z2": 0.06822790697674429,
+              "Z3": 0.06614545454545447
+            },
+            "wrs_mean": 0.058480482209527195,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.058480482209527
+    },
+    {
+      "episode": 14,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0641974948423223,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.11123846153846152,
+              "Z2": 0.07303333333333334,
+              "Z3": 0.008320689655172258
+            },
+            "wrs_mean": 0.06419749484232237,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.064197494842322
+    },
+    {
+      "episode": 15,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.056527838827839,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.05358095238095242,
+              "Z2": 0.08946923076923077,
+              "Z3": 0.026533333333333395
+            },
+            "wrs_mean": 0.05652783882783887,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.056527838827838
+    },
+    {
+      "episode": 16,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0920539969834089,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09960000000000031,
+              "Z2": 0.07213846153846164,
+              "Z3": 0.10442352941176462
+            },
+            "wrs_mean": 0.09205399698340887,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.09205399698341
+    },
+    {
+      "episode": 17,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.078273182645151,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.1258325581395349,
+              "Z2": 0.10682448979591844,
+              "Z3": 0.002162499999999845
+            },
+            "wrs_mean": 0.07827318264515105,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.078273182645152
+    },
+    {
+      "episode": 18,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.05418836098542,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09001666666666665,
+              "Z2": 0.051217647058823534,
+              "Z3": 0.021330769230769396
+            },
+            "wrs_mean": 0.054188360985419855,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.05418836098542
+    },
+    {
+      "episode": 19,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0513587930587929,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.06639090909090893,
+              "Z2": 0.023077777777777787,
+              "Z3": 0.06460769230769214
+            },
+            "wrs_mean": 0.051358793058792956,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.051358793058792
+    },
+    {
+      "episode": 20,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.1120949409648917,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.09146666666666672,
+              "Z2": 0.07148367346938782,
+              "Z3": 0.17333448275862073
+            },
+            "wrs_mean": 0.11209494096489175,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.11209494096489
+    },
+    {
+      "episode": 21,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.0664883435771222,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.08680232558139526,
+              "Z2": 0.03451754385964922,
+              "Z3": 0.07814516129032231
+            },
+            "wrs_mean": 0.06648834357712226,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.066488343577122
+    },
+    {
+      "episode": 22,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.1292243841126193,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.14903333333333338,
+              "Z2": 0.07217058823529396,
+              "Z3": 0.16646923076923065
+            },
+            "wrs_mean": 0.12922438411261933,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.12922438411262
+    },
+    {
+      "episode": 23,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.086712715389186,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.11916666666666666,
+              "Z2": 0.05460784313725486,
+              "Z3": 0.08636363636363643
+            },
+            "wrs_mean": 0.08671271538918597,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.086712715389186
+    },
+    {
+      "episode": 24,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.057545342312009,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.06285454545454565,
+              "Z2": 0.02090000000000001,
+              "Z3": 0.08888148148148137
+            },
+            "wrs_mean": 0.05754534231200901,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.05754534231201
+    },
+    {
+      "episode": 25,
+      "steps": [
+        {
+          "step": 0,
+          "action": {
+            "choose_model___s1__dataset__m11": true
+          },
+          "reward": -1.061266917293233,
+          "info": {
+            "wrs_per_protected": {
+              "Z1": 0.08914285714285705,
+              "Z2": 0.05450000000000006,
+              "Z3": 0.04015789473684207
+            },
+            "wrs_mean": 0.06126691729323306,
+            "_debug_action_cost": 1.0,
+            "_debug_total_sampled": 100
+          }
+        },
+        {
+          "step": 1,
+          "action": {
+            "choose_model___s2__dataset__m11": true
+          },
+          "reward": -11.0,
+          "info": {
+            "_missing_output_column_for": "s2,dataset,m11",
+            "_available_columns": [
+              "Z1",
+              "Z2",
+              "Z3",
+              "T1",
+              "T2",
+              "s1_m11",
+              "s1_m12",
+              "s2_m21",
+              "s2_m22"
+            ],
+            "_debug_action_cost": 1.0,
+            "wrs_per_protected": {
+              "Z1": null,
+              "Z2": null,
+              "Z3": null
+            },
+            "wrs_mean": null
+          }
+        }
+      ],
+      "total_reward": -12.061266917293233
+    }
+  ]
+}

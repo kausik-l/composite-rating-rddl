@@ -1,71 +1,69 @@
-import itertools
+# metric_utils.py
 import numpy as np
-from scipy.stats import ttest_ind
+import pandas as pd
+
 
 def calc_wrs(
-    df,
-    protected_col="gender",
-    output_col="sentiment_outcome",
-    alphas=(0.05, 0.30, 0.40),  
-    weights=(1.0, 0.7, 0.6),     
-    alternative="two-sided",   
-    # need at least 2 samples in a group.  
-    min_per_group=2              
-):
+    df: pd.DataFrame,
+    protected_col: str = None,
+    output_col: str = None,
+    min_per_group: int = 2
+) -> float:
     """
-    Args:
-        df: pandas DataFrame containing the data.
-        protected_col: column with protected attribute (e.g., "gender").
-        output_col: column with model outputs (e.g., "sentiment_outcome").
-        alphas: list of significance levels for hypothesis tests.
-        weights: corresponding weights for each alpha.
-        alternative: 'two-sided' test (default).
-        min_per_group: minimum rows per group required to run a test.
+    Compute a simple Weighted Rejection Score (WRS) for a single protected attribute.
 
-    Returns:
-        wrs (float): Weighted Rejection Score. Higher = more bias detected.
+    Formula (for a binary protected attribute Z):
+        WRS = p * | mean(pred | Z=1) - mean(pred | Z=0) |
+    where p = P(Z = 1) (prevalence of group 1).
+
+    Notes:
+    - This implementation expects `protected_col` to be provided (no arbitrary default).
+    - If the column isn't strictly binary, we coerce values to binary via (val > 0).
+      This makes the function robust for many synthetic datasets.
+    - If either group has fewer than `min_per_group` samples, returns 0.0.
+    - The default output column is "__MODEL_OUTPUT__" to match RatingEnv's normalized column.
     """
 
-    # -------------------------------------------------------------
-    # Group the data by protected attribute (e.g., male/female/neutral).
-    # -------------------------------------------------------------
-    grouped = (
-        df.groupby(protected_col)[output_col]
-        .apply(lambda x: x.dropna().values)
-        .to_dict()
-    )
-    groups = list(grouped.keys())
-    k = len(groups)
+    if protected_col is None:
+        raise ValueError("protected_col must be provided (e.g. 'Z1').")
 
-    # If we have fewer than 2 groups, WRS is meaningless -> return 0.
-    if k < 2:
+    if output_col not in df.columns:
+        # Missing output column -> cannot compute
+        return 0.0
+    
+    
+
+    # Extract columns and drop rows where either is missing
+    sub = df[[protected_col, output_col]].dropna()
+    if len(sub) == 0:
         return 0.0
 
-    wrs = 0.0        
-    pvals = {}       
+    z = sub[protected_col]
+    y = sub[output_col].astype(float)
 
-    # -------------------------------------------------------------
-    #    For every pair of groups, run t-test.
-    # -------------------------------------------------------------
-    for g1, g2 in itertools.combinations(groups, 2):
-        d1, d2 = grouped[g1], grouped[g2]
+    # Coerce protected attribute to binary (treat any positive value as 1)
+    unique_vals = set(pd.unique(z))
+    if not unique_vals.issubset({0, 1}):
+        z = (z > 0).astype(int)
+    else:
+        z = z.astype(int)
 
-        # Skip pairs if one group is too small.
-        if len(d1) < min_per_group or len(d2) < min_per_group:
-            continue
+    # If only one group present, no gap
+    groups_present = set(z.unique())
+    if len(groups_present) < 2:
+        return 0.0
 
-        # Welch's t-test: compare means of the two groups
-        stat, p = ttest_ind(d1, d2, equal_var=False, alternative=alternative)
-        pvals[(g1, g2)] = p
+    # Ensure minimum per-group count
+    n1 = int((z == 1).sum())
+    n0 = int((z == 0).sum())
+    if n1 < min_per_group or n0 < min_per_group:
+        return 0.0
 
-    # -------------------------------------------------------------
-    # For each significance threshold (alpha),
-    #    check if the difference between groups is "significant".
-    #    If yes, then add the corresponding weight to WRS.
-    # -------------------------------------------------------------
-    for alpha, w in zip(alphas, weights):
-        for p in pvals.values():
-            if np.isfinite(p) and p < alpha:
-                wrs += w
+    mean1 = float(y[z == 1].mean())
+    mean0 = float(y[z == 0].mean())
+    p = float(n1 / (n0 + n1))
 
-    return round(wrs, 2)
+    gap = abs(mean1 - mean0)
+    wrs = p * gap
+
+    return float(wrs)

@@ -1,86 +1,44 @@
+# planner/policy.py
 import random
 
-# --------------------------------------------------------------------
-# Base class for all policies. A "policy" here means:
-#   Given the current state of the environment, which PLAN (pipeline)
-#   should we choose to execute? 
-# Plans are high-level: "english", "french", "roundtrip".
-# Each plan is represented as a *list of steps*,
-# where each step is a list of RDDL actions.
-#
-# Example:
-#   {
-#     "english": [["do_sentiment_english___t1"]],
-#     "french": [["do_sentiment_french___t1"]],
-#     "roundtrip": [
-#        ["do_translate___t1__English__French"],
-#        ["do_translate___t1__French__English"],
-#        ["do_sentiment_english___t1"]
-#     ]
-#   }
-# --------------------------------------------------------------------
-class BasePolicy:
-    def __init__(self, env, possible_plans):
+class SimplePolicy:
+    """
+    Extremely small policy for quick testing.
+    - Scans env.state for keys starting with 'model_used'
+    - Picks the first (stage,input,model) whose corresponding processed(stage,input) is False
+    - Returns action dict with the same flattening, by replacing 'model_used' -> 'choose_model'
+    """
+
+    def __init__(self, env, seed=None):
         self.env = env
-        self.possible_plans = possible_plans
+        if seed is not None:
+            random.seed(seed)
 
-    def select_plan(self, state):
-        raise NotImplementedError
-
-
-
-
-# --------------------------------------------------------------------
-# Policy that just picks randomly between available plans.
-# --------------------------------------------------------------------
-class RandomPolicy(BasePolicy):
-    def select_plan(self, state):
-        return random.choice(self.possible_plans)
-
-
-
-# --------------------------------------------------------------------
-# Policy that always returns the same plan, no matter the state.
-# --------------------------------------------------------------------
-class FixedPolicy(BasePolicy):
-    def __init__(self, env, plan_to_actions, fixed_plan):
-        super().__init__(env, plan_to_actions)
-        self.fixed_plan = fixed_plan   # e.g., "english"
-
-    def select_plan(self, state):
-        return self.fixed_plan
-
-
-# --------------------------------------------------------------------
-# Greedy policy:
-#   - Looks at all possible plans.
-#   - For each plan, it simulates the full sequence of steps.
-#   - Picks the plan with the highest cumulative reward.
-#
-# This requires the environment to implement simulate(),
-# which runs a step without committing state permanently.
-# --------------------------------------------------------------------
-class GreedyPolicy(BasePolicy):
-    def select_plan(self, state):
-        best_plan, best_reward = None, float("-inf")
-
-        for plan in self.possible_plans:
-            total_reward = 0
-            # Save state once before simulating whole plan
-            saved_state = self.env.sampler.copy_state(self.env.sampler.state)
-
-            # Simulate each step in the plan
-            for step_actions in self.plan_to_actions[plan]:
-                action_dict = self.build_action_dict(step_actions)
-                _, reward, done, truncated, _ = self.env.simulate(action_dict)
-                total_reward += reward
-                if done or truncated:
-                    break
-
-            # Restore state
-            self.env.sampler.state = saved_state
-
-            if total_reward > best_reward:
-                best_plan, best_reward = plan, total_reward
-
-        return best_plan
+    def get_action(self, state):
+        state = state or {}
+        # find all model_used keys (flattened form). Keep order deterministic.
+        keys = sorted(k for k in state.keys() if k.startswith("model_used"))
+        for mu_key in keys:
+            # example mu_key: model_used___s1__dataset__m11
+            parts = mu_key.split("__")
+            # Accept both 4-part and 5+ part splits (env flattening may produce extra leading underscores)
+            if len(parts) < 4:
+                continue
+            # last three parts are expected to be s, i, m (may contain leading underscores)
+            s = parts[-3].strip("_")
+            i = parts[-2].strip("_")
+            m = parts[-1].strip("_")
+            if not s or not i or not m:
+                continue
+            # check processed using several common variants (flattened or paren)
+            proc_flat1 = f"processed__{s}__{i}"
+            proc_flat2 = f"processed___{s}__{i}"
+            proc_paren = f"processed({s},{i})"
+            if state.get(proc_flat1, False) or state.get(proc_flat2, False) or state.get(proc_paren, False):
+                # already processed, skip
+                continue
+            # build action key using same prefix/flattening as the observed model_used key
+            action_key = mu_key.replace("model_used", "choose_model", 1)
+            return {action_key: True}
+        # nothing to do
+        return {}
