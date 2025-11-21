@@ -1,63 +1,75 @@
-# debug_wrs.py -- quick check for why calc_wrs returns 0
-import pandas as pd
-import itertools
+import os
+import sys
 import numpy as np
-from scipy.stats import ttest_ind
-from pathlib import Path
+from env.dynamic_chain_env import DynamicChainRatingEnv
+from planner.baselines import FixedPipelinePlanner
+from utils.generate_scenario import generate_large_scenario
 
-CSV = "data/input/synthetic_chain.csv"   # <- change this to the path you used
-df = pd.read_csv(CSV)
-print("File:", CSV)
-print("Columns:", list(df.columns))
-print("\nFirst 6 rows:\n", df.head(6).to_string(index=False))
-
-# candidate protected columns to try (add any other names you use)
-candidate_protected = ["Z1", "Z", "gender", "protected", "stock_symbol"]
-found_protected = [c for c in candidate_protected if c in df.columns]
-print("\nFound protected columns (from candidates):", found_protected)
-
-# try to infer output columns of the form s1_m11 or s1_m11 / s1_m1 etc.
-possible_output_cols = [c for c in df.columns if ("s1" in c or "s2" in c or c.startswith("s")) and ("m" in c)]
-print("\nLikely output columns (sample):", possible_output_cols[:50])
-
-# If you expect names like s1_m11 exactly, list those explicitly and check
-expected_cols = [
-    "s1_m11", "s1_m12", "s2_m21", "s2_m22",
-    # also try variants with different separators your runner produced
-    "call_model___d1__s1__m11", "call_model__d1__s1__m11"
-]
-present_expected = [c for c in expected_cols if c in df.columns]
-print("\nExpected output columns present:", present_expected)
-
-# helper to compute pairwise ttests and group sizes
-def pairwise_tests(df, protected_col, output_col, min_per_group=2):
-    grouped = df.groupby(protected_col)[output_col].apply(lambda x: x.dropna().values).to_dict()
-    groups = list(grouped.keys())
-    print(f"\nTesting output_col='{output_col}' with protected_col='{protected_col}' -> groups: {groups}")
-    if len(groups) < 2:
-        print("  <only one group found; cannot test>")
-        return
-    for g in groups:
-        print(f"  group '{g}': n={len(grouped[g])}, sample (up to 5): {grouped[g][:5]}")
-    for g1, g2 in itertools.combinations(groups, 2):
-        d1, d2 = grouped[g1], grouped[g2]
-        if len(d1) < min_per_group or len(d2) < min_per_group:
-            print(f"  pair ({g1}, {g2}) skipped: group sizes {len(d1)} / {len(d2)} < min_per_group={min_per_group}")
-            continue
-        stat, p = ttest_ind(d1, d2, equal_var=False)
-        print(f"  pair ({g1} vs {g2}): t={stat:.4f}, p={p:.4e}")
-
-# Run tests on combinations we can find
-protected_to_test = found_protected if found_protected else ([c for c in df.columns if c.lower().startswith("z")] or [])
-if not protected_to_test:
-    print("\nNo obvious protected column found. Add the correct protected_col name to candidate_protected or call me with the column name.")
-else:
-    # choose output columns to test: prefer expected, else fallback to possible_output_cols
-    outputs = present_expected if present_expected else possible_output_cols[:20]
-    if not outputs:
-        print("\nNo output-like columns detected. Make sure your dataset has columns like 's1_m11', 's2_m21', etc.")
+def debug_episode():
+    print("=== STARTING DEBUG SESSION ===")
+    
+    # 1. Generate a small test case (2 stages, 2 models) to keep logs readable
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    N, M = 2, 2
+    domain_path, inst_path, csv_path = generate_large_scenario(N, M, output_dir=root_dir)
+    
+    print(f"\n[1] Loading Environment: {inst_path}")
+    env = DynamicChainRatingEnv(domain_path, inst_path, csv_path)
+    
+    # 2. Inspect the Stage Map (This is likely where the bug is)
+    print("\n[2] Inspecting Environment Stage Map:")
+    print(f"    Map Keys: {list(env.stage_model_map.keys())}")
+    if len(env.stage_model_map) > 0:
+        first_key = list(env.stage_model_map.keys())[0]
+        print(f"    Example Entry ['{first_key}']: {env.stage_model_map[first_key]}")
     else:
-        for pcol in protected_to_test:
-            for out in outputs:
-                if out in df.columns:
-                    pairwise_tests(df, pcol, out, min_per_group=2)
+        print("    [ERROR] The Map is EMPTY! The planner will not work.")
+    
+    # 3. Initialize Agent
+    agent = FixedPipelinePlanner(env.stage_model_map, 0)
+    print(f"\n[3] Initialized FixedPipelinePlanner (Target: Index 0)")
+    
+    # 4. Run Episode Step-by-Step
+    print("\n[4] Running Episode...")
+    state, _ = env.reset()
+    
+    for step in range(10):
+        print(f"\n--- STEP {step+1} ---")
+        
+        # A. Check State
+        # Find the 'True' state keys
+        active_states = [k for k, v in state.items() if v == True]
+        print(f"    Raw State: {active_states}")
+        
+        # B. Check Agent Perception
+        # Mimic the planner's internal logic
+        current_stage = None
+        for key in active_states:
+            if "current_stage" in key:
+                current_stage = key.split("___")[-1]
+                break
+        print(f"    Planner perceives stage as: '{current_stage}'")
+        
+        if current_stage in env.stage_model_map:
+            print(f"    [OK] Stage '{current_stage}' found in map.")
+        else:
+            print(f"    [FAIL] Stage '{current_stage}' NOT found in map!")
+        
+        # C. Check Action
+        action = agent.sample_action(state)
+        print(f"    Action Selected: {action}")
+        
+        if not action:
+            print("    [WARNING] Agent returned NoOp (Empty Action)")
+            
+        # D. Execute
+        next_state, reward, done, trunc, _ = env.step(action)
+        print(f"    Reward: {reward}")
+        
+        state = next_state
+        if done:
+            print("\n[DONE] Episode Finished.")
+            break
+
+if __name__ == "__main__":
+    debug_episode()

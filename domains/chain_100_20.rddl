@@ -1,0 +1,52 @@
+domain chain_domain_100_20 {
+    types {
+        stage : object;
+        model : object;
+    };
+
+    pvariables {
+        // Non-Fluents (Static facts about the map)
+        valid_model(stage, model) : { non-fluent, bool, default = false };
+        next_stage(stage, stage)  : { non-fluent, bool, default = false };
+        is_start_stage(stage)     : { non-fluent, bool, default = false };
+        is_final_stage(stage)     : { non-fluent, bool, default = false };
+        model_call_cost           : { non-fluent, real, default = 0.05 };
+
+        // State Fluents (Variables that change during the episode)
+        current_stage(stage)      : { state-fluent, bool, default = false };
+        pipeline_done             : { state-fluent, bool, default = false };
+
+        // Action Fluents (What the agent controls)
+        select_model(model)       : { action-fluent, bool, default = false };
+    };
+
+    cpfs {
+        // Transition Logic: How 'current_stage' updates
+        current_stage'(?next) = 
+            if (pipeline_done) then false
+            // If we are at ?curr, pick ?m, and ?curr leads to ?next... move to ?next
+            else if (exists_{?curr : stage, ?m : model} [
+                current_stage(?curr) ^ select_model(?m) ^ next_stage(?curr, ?next)
+            ]) then true
+            // If we didn't pick an action, stay where we are
+            else if (current_stage(?next) ^ ~(exists_{?m : model} [select_model(?m)])) then true
+            else false; 
+
+        // Termination Logic: We are done if we pick a model at the final stage
+        pipeline_done' = 
+            pipeline_done | 
+            exists_{?s : stage, ?m : model} [
+                current_stage(?s) ^ is_final_stage(?s) ^ select_model(?m)
+            ];
+    };
+
+    // Preconditions: You can only pick a model valid for the current stage
+    action-preconditions {
+        forall_{?m : model} [
+            select_model(?m) => exists_{?s : stage} [current_stage(?s) ^ valid_model(?s, ?m)]
+        ];
+    };
+
+    // Reward: Simple cost per step (-5.0). The Fairness penalty is added in Python.
+    reward = sum_{?m : model} [ -model_call_cost * select_model(?m) ];
+}

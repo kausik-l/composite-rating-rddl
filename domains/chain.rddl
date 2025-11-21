@@ -1,54 +1,48 @@
-domain composite_pipeline {
-    requirements = { reward-deterministic };
-
+domain chain_pipeline {
     types {
-        ip      : object;   // inputs
-        mdl     : object;   // models (m11, m12, m21, m22, ...)
-        stg     : object;   // stages (s1, s2, ...)
+        stage : object;
+        model : object;
     };
 
     pvariables {
-        // --- State fluents ---
-        processed(stg, ip)           : { state-fluent, bool, default = false };   // whether (stage,input) has been processed
-        model_used(stg, ip, mdl)     : { state-fluent, bool, default = false };   // true if model mdl was used for (stage,input)
+        // Non-Fluents
+        valid_model(stage, model) : { non-fluent, bool, default = false };
+        next_stage(stage, stage)  : { non-fluent, bool, default = false };
+        is_start_stage(stage)     : { non-fluent, bool, default = false };
+        is_final_stage(stage)     : { non-fluent, bool, default = false };
+        model_call_cost           : { non-fluent, real, default = 5.0 };
 
-        // --- Action fluents ---
-        choose_model(stg, ip, mdl)   : { action-fluent, bool, default = false };  // planner action: choose mdl for (stage,input)
-
-        // --- Non-fluents (problem instance will fill these) ---
-        MODEL_AVAILABLE(mdl)         : { non-fluent, bool, default = false };
-        STAGE_ORDER(stg, stg)        : { non-fluent, bool, default = false }; // STAGE_ORDER(p,s)=true means p is a predecessor of s
-        HAS_INPUT(ip)                : { non-fluent, bool, default = false };
-        VALID_MODEL_FOR_STAGE(stg, mdl) : { non-fluent, bool, default = false }; // which models are valid in which stage
+        // Fluents
+        current_stage(stage)      : { state-fluent, bool, default = false };
+        pipeline_done             : { state-fluent, bool, default = false };
+        select_model(model)       : { action-fluent, bool, default = false };
     };
 
     cpfs {
-        // Mark that (stage, input) was processed if any model was chosen in that stage for that input.
-        processed'(?s, ?i) =
-            processed(?s, ?i) |
-            exists_{?m: mdl} ( choose_model(?s, ?i, ?m) );
+        // FIX: Mutually exclusive stage logic
+        current_stage'(?next) = 
+            if (pipeline_done) then false
+            // We moved from ?curr to ?next
+            else if (exists_{?curr : stage, ?m : model} [
+                current_stage(?curr) ^ select_model(?m) ^ next_stage(?curr, ?next)
+            ]) then true
+            //  We are at ?next and did NOT take an action
+            else if (current_stage(?next) ^ ~(exists_{?m : model} [select_model(?m)])) then true
+            // Otherwise, we are not in this stage
+            else false; 
 
-        // Record which model was used for (stage, input).
-        model_used'(?s, ?i, ?m) =
-            if ( choose_model(?s, ?i, ?m) ) then true else model_used(?s, ?i, ?m);
+        pipeline_done' = 
+            pipeline_done | 
+            exists_{?s : stage, ?m : model} [
+                current_stage(?s) ^ is_final_stage(?s) ^ select_model(?m)
+            ];
     };
-
-    reward = 0.0;
 
     action-preconditions {
-        // Basic: input must exist, model must be available, and the (stage,input) must not already be processed.
-        forall_{?s: stg, ?i: ip, ?m: mdl}
-            choose_model(?s, ?i, ?m) =>
-                ( HAS_INPUT(?i) & MODEL_AVAILABLE(?m) & ~processed(?s, ?i) );
-
-        // Enforce stage ordering: cannot run stage s if any predecessor p (STAGE_ORDER(p,s)=true)
-        // has not yet been processed for the same input.
-        forall_{?s: stg, ?i: ip, ?m: mdl}
-            choose_model(?s, ?i, ?m) =>
-                ( ~ ( exists_{?p: stg} ( STAGE_ORDER(?p, ?s) & ~processed(?p, ?i) ) ) );
-
-        // NOTE: validity of model-for-stage (VALID_MODEL_FOR_STAGE) is *not* enforced here;
-        // planner can choose invalid actions (to be penalized later in reward computation).
+        forall_{?m : model} [
+            select_model(?m) => exists_{?s : stage} [current_stage(?s) ^ valid_model(?s, ?m)]
+        ];
     };
 
+    reward = sum_{?m : model} [ -model_call_cost * select_model(?m) ];
 }
