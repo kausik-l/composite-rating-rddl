@@ -1,0 +1,81 @@
+non-fluents nf_10_step_sticky {
+    domain = chain_pipeline_sticky;
+    
+    objects {
+        stage : {s1, s2, s3, s4, s5, s6, s7, s8, s9, s10};
+        model : {
+            m1_cpu, m1_gpu, m2_cpu, m2_gpu, m3_cpu, m3_gpu, m4_cpu, m4_gpu, 
+            m5_cpu, m5_gpu, m6_cpu, m6_gpu, m7_cpu, m7_gpu, m8_cpu, m8_gpu, 
+            m9_cpu, m9_gpu, m10_cpu, m10_gpu
+        };
+        family : {f_cpu, f_gpu};
+    };
+
+    non-fluents {
+        // --- 1. Topology & Constraints ---
+        is_start_stage(s1);
+        is_final_stage(s10);
+        
+        // Define the 9 transitions
+        next_stage(s1, s2); next_stage(s2, s3); next_stage(s3, s4); next_stage(s4, s5); 
+        next_stage(s5, s6); next_stage(s6, s7); next_stage(s7, s8); next_stage(s8, s9); 
+        next_stage(s9, s10);
+        
+        // The Penalty for Switching Lanes (High)
+        switching_penalty = 10.0; 
+
+        // --- 2. CPU Family Configuration (The Greedy Trap Lane) ---
+        
+        // Link all CPU models to the f_cpu family
+        model_family(m1_cpu, f_cpu); model_family(m2_cpu, f_cpu); model_family(m3_cpu, f_cpu);
+        model_family(m4_cpu, f_cpu); model_family(m5_cpu, f_cpu); model_family(m6_cpu, f_cpu);
+        model_family(m7_cpu, f_cpu); model_family(m8_cpu, f_cpu); model_family(m9_cpu, f_cpu);
+        model_family(m10_cpu, f_cpu);
+
+        // Define model validity at each stage
+        valid_model(s1, m1_cpu); valid_model(s2, m2_cpu); valid_model(s3, m3_cpu);
+        valid_model(s4, m4_cpu); valid_model(s5, m5_cpu); valid_model(s6, m6_cpu);
+        valid_model(s7, m7_cpu); valid_model(s8, m8_cpu); valid_model(s9, m9_cpu);
+        valid_model(s10, m10_cpu);
+
+        // Consistent, moderate cost (Cost 5.0 at every step)
+        base_cost(m1_cpu) = 5.0; base_cost(m2_cpu) = 5.0; base_cost(m3_cpu) = 5.0;
+        base_cost(m4_cpu) = 5.0; base_cost(m5_cpu) = 5.0; base_cost(m6_cpu) = 5.0;
+        base_cost(m7_cpu) = 5.0; base_cost(m8_cpu) = 5.0; base_cost(m9_cpu) = 5.0;
+        base_cost(m10_cpu) = 5.0; 
+        
+        // --- 3. GPU Family Configuration (The Optimal Investment Lane) ---
+
+        // Link all GPU models to the f_gpu family
+        model_family(m1_gpu, f_gpu); model_family(m2_gpu, f_gpu); model_family(m3_gpu, f_gpu);
+        model_family(m4_gpu, f_gpu); model_family(m5_gpu, f_gpu); model_family(m6_gpu, f_gpu);
+        model_family(m7_gpu, f_gpu); model_family(m8_gpu, f_gpu); model_family(m9_gpu, f_gpu);
+        model_family(m10_gpu, f_gpu);
+
+        valid_model(s1, m1_gpu); valid_model(s2, m2_gpu); valid_model(s3, m3_gpu);
+        valid_model(s4, m4_gpu); valid_model(s5, m5_gpu); valid_model(s6, m6_gpu);
+        valid_model(s7, m7_gpu); valid_model(s8, m8_gpu); valid_model(s9, m9_gpu);
+        valid_model(s10, m10_gpu);
+
+        // High initial cost (15.0) followed by low recurring cost (2.0)
+        base_cost(m1_gpu) = 15.0; // The barrier to entry
+        base_cost(m2_gpu) = 2.0; 
+        base_cost(m3_gpu) = 2.0; base_cost(m4_gpu) = 2.0; base_cost(m5_gpu) = 2.0;
+        base_cost(m6_gpu) = 2.0; base_cost(m7_gpu) = 2.0; base_cost(m8_gpu) = 2.0;
+        base_cost(m9_gpu) = 2.0; base_cost(m10_gpu) = 2.0;
+    };
+}
+
+instance inst_10_step_sticky {
+    domain = chain_pipeline_sticky;
+    non-fluents = nf_10_step_sticky;
+    
+    init-state {
+        current_stage(s1);
+        // last_family_used is false by default
+    };
+
+    max-nondef-actions = 1;
+    horizon = 15; // Set horizon higher than 10 steps to allow for small errors
+    discount = 1.0;
+}

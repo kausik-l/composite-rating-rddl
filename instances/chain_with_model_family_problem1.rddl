@@ -1,0 +1,75 @@
+non-fluents nf_sticky_lanes {
+    domain = chain_pipeline_sticky;
+    
+    objects {
+        stage : {s1, s2, s3};
+        model : {
+            // Models for Stage 1
+            m1_cpu, m1_gpu,
+            // Models for Stage 2
+            m2_cpu, m2_gpu,
+            // Models for Stage 3
+            m3_cpu, m3_gpu
+        };
+        family : {f_cpu, f_gpu};
+    };
+
+    non-fluents {
+        // --- 1. The Map ---
+        is_start_stage(s1);
+        next_stage(s1, s2);
+        next_stage(s2, s3);
+        is_final_stage(s3);
+
+        // --- 2. The Penalty ---
+        // High penalty makes it costly to switch "lanes" once you start
+        switching_penalty = 10.0; 
+
+        // --- 3. Model Configuration ---
+        
+        // --- FAMILY 1: "CPU" (The Consistent, Average Lane) ---
+        model_family(m1_cpu, f_cpu);
+        model_family(m2_cpu, f_cpu);
+        model_family(m3_cpu, f_cpu);
+
+        valid_model(s1, m1_cpu);
+        valid_model(s2, m2_cpu);
+        valid_model(s3, m3_cpu);
+
+        // Costs are steady and moderate
+        base_cost(m1_cpu) = 5.0; 
+        base_cost(m2_cpu) = 5.0;
+        base_cost(m3_cpu) = 5.0; 
+        // Total Path Cost = 15.0
+
+        // --- FAMILY 2: "GPU" (The High-Start, Low-End Lane) ---
+        model_family(m1_gpu, f_gpu);
+        model_family(m2_gpu, f_gpu);
+        model_family(m3_gpu, f_gpu);
+
+        valid_model(s1, m1_gpu);
+        valid_model(s2, m2_gpu);
+        valid_model(s3, m3_gpu);
+
+        // Costs start HIGH, but drop significantly
+        base_cost(m1_gpu) = 8.0; // Greedy agent hates this!
+        base_cost(m2_gpu) = 1.0; 
+        base_cost(m3_gpu) = 1.0;
+        // Total Path Cost = 10.0
+    };
+}
+
+instance inst_sticky_lanes {
+    domain = chain_pipeline_sticky;
+    non-fluents = nf_sticky_lanes;
+    
+    init-state {
+        current_stage(s1);
+        // pipeline_done is false by default
+        // last_family_used is false by default (no history at start)
+    };
+
+    max-nondef-actions = 1;
+    horizon = 10;
+    discount = 1.0;
+}
