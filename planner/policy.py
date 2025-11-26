@@ -1,111 +1,99 @@
 import numpy as np
 import random
 
-class PipelineQPlanner:
+class ContextAwareQPlanner:
     """
-    The Q-Learning Agent.
+    Intelligent Agent: Context-Aware Q-Learning.
     
-    This agent learns from trial and error. 
-    It has a memory (Q-Table) that tracks which models perform best at each stage.
-    It balances 'Exploration' with 'Exploitation' .
+    Unlike standard planners, this agent incorporates 'Context' (History) into its state.
+    It tracks not just the current stage, but also the 'Family' of the model used previously.
+    
+    This allows it to learn 'Lanes': "If I am in the CPU lane, I should stay in the CPU lane."
+    It balances this inertia against the need to find the Fair Family.
     """
     def __init__(self, action_space, stage_map, alpha=0.1, gamma=0.99, epsilon=0.1):
-        """
-        Args:
-            stage_map: Dictionary mapping Stage -> List of Valid Models.
-            alpha: Learning Rate (0.1). How much we trust new information vs old memory.
-            gamma: Discount Factor (0.99). How much we care about future rewards.
-            epsilon: Exploration Rate (0.1). Probability of taking a random action.
-        """
-        # Stores values like q_table['s1']['m11'] = -12.5
         self.q_table = {} 
-        
-        # Hyperparameters
-        self.alpha = alpha
-        self.gamma = gamma
-        self.epsilon = epsilon
+        self.alpha = alpha      # Learning Rate
+        self.gamma = gamma      # Discount Factor
+        self.epsilon = epsilon  # Exploration Rate
         
         self.action_space = action_space
         self.stage_map = stage_map 
 
-    def get_current_stage(self, state):
-        """
-        Parses the RDDL state dictionary to find where we are (e.g., 's1').
-        State dict looks like: {'current_stage___s1': True, ...}
-        """
+    def _parse_rddl_state(self, state):
+        """Extracts (CurrentStage, LastFamily) from the raw state dict."""
+        curr_stage = None
+        last_fam = "unknown"
+        
         for key, val in state.items():
-            if "current_stage" in key and val == True:
-                # Extract the stage name from the variable key
-                return key.split("___")[-1] 
-        return None
+            if val == True or val == 1:
+                if "current_stage" in key:
+                    curr_stage = key.split("___")[-1]
+                elif "last_used_family" in key:
+                    last_fam = key.split("___")[-1]
+        
+        return curr_stage, last_fam
+
+    def get_state_key(self, state):
+        """Unique String Key for the Q-Table: 's1__fam_1'"""
+        s, f = self._parse_rddl_state(state)
+        if not s: return "DONE"
+        return f"{s}__{f}"
 
     def sample_action(self, state):
-        """
-        Decides the next move using Epsilon-Greedy Strategy.
-        """
-        # Where are we?
-        current_stage = self.get_current_stage(state)
+        """Epsilon-Greedy Action Selection."""
+        state_key = self.get_state_key(state)
+        stage, _ = self._parse_rddl_state(state)
         
-        # If stage is unknown or invalid, do nothing
-        if not current_stage or current_stage not in self.stage_map:
+        if state_key == "DONE" or stage not in self.stage_map:
             return {}
 
-        valid_models = self.stage_map[current_stage]
+        valid_models = self.stage_map[stage]
         
-        # Initialize Memory if this is a new stage
-        if current_stage not in self.q_table:
-            self.q_table[current_stage] = {m: 0.0 for m in valid_models}
+        # Init Q-Table if new state encountered
+        if state_key not in self.q_table:
+            self.q_table[state_key] = {m: 0.0 for m in valid_models}
 
-        # Make a Choice
-        # Exploration: Roll a die. If < epsilon, pick purely randomly.
+        # Exploration (Random)
         if random.uniform(0, 1) < self.epsilon:
-            chosen_model = random.choice(valid_models)
-        
-        # Exploitation: Otherwise, pick the model with the highest Q-Value.
+            chosen = random.choice(valid_models)
+        # Exploitation (Best Known)
         else:
-            qs = self.q_table[current_stage]
-            # Find key with max value. If tie, this picks the first one.
-            chosen_model = max(qs, key=qs.get)
+            qs = self.q_table[state_key]
+            chosen = max(qs, key=qs.get)
 
-        # Return properly formatted action
-        return {f"select_model___{chosen_model}": 1}
+        return {f"select_model___{chosen}": 1}
 
     def update(self, state, action, reward, next_state):
-        """
-        Bellman Equation.
-        Updates the Q-Value of the action we just took based on the reward we got.
-        """
-        # Identify Context
-        curr_stage = self.get_current_stage(state)
-        next_stage_id = self.get_current_stage(next_state)
+        """Standard Bellman Update."""
+        curr_key = self.get_state_key(state)
+        next_key = self.get_state_key(next_state)
         
-        # Parse the action we took to find the model name 
+        # Parse action string to get model name
         used_model = None
         for k, v in action.items():
             if v == 1 and "select_model" in k:
                 used_model = k.split("___")[-1]
                 break
         
-        if curr_stage and used_model:
-            # Make sure entries exist (in case update runs before sample)
-            if curr_stage not in self.q_table:
-                 self.q_table[curr_stage] = {m: 0.0 for m in self.stage_map[curr_stage]}
-            if used_model not in self.q_table[curr_stage]:
-                 self.q_table[curr_stage][used_model] = 0.0
+        if curr_key != "DONE" and used_model:
+            if curr_key not in self.q_table:
+                stage, _ = self._parse_rddl_state(state)
+                self.q_table[curr_key] = {m: 0.0 for m in self.stage_map[stage]}
 
-            # Get Old Value
-            old_q = self.q_table[curr_stage][used_model]
+            old_q = self.q_table[curr_key][used_model]
             
-            # Estimate Future Value (Max Q of the next state)
+            # Calculate Max Q for next state
             next_max_q = 0.0
-            if next_stage_id and next_stage_id in self.q_table:
-                # What is the best I can do from the next stage?
-                next_max_q = max(self.q_table[next_stage_id].values())
-            
-            # Update Rule
-            # New = Old + Alpha * (Target - Old)
-            # Target = Immediate Reward + Discounted Future Value
-            target = reward + self.gamma * next_max_q
-            new_q = old_q + self.alpha * (target - old_q)
-            
-            self.q_table[curr_stage][used_model] = new_q
+            if next_key != "DONE":
+                if next_key not in self.q_table:
+                    n_stage, _ = self._parse_rddl_state(next_state)
+                    if n_stage:
+                        self.q_table[next_key] = {m: 0.0 for m in self.stage_map[n_stage]}
+                
+                if next_key in self.q_table:
+                    next_max_q = max(self.q_table[next_key].values())
+
+            # Update
+            new_q = old_q + self.alpha * (reward + self.gamma * next_max_q - old_q)
+            self.q_table[curr_key][used_model] = new_q

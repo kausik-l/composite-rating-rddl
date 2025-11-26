@@ -1,0 +1,1102 @@
+[
+    [
+        {
+            "episode": 1,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.188850602012205,
+            "done": false
+        },
+        {
+            "episode": 1,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.5857037770080815,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 2,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.120315384615385,
+            "done": false
+        },
+        {
+            "episode": 2,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.446174175824176,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 3,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.23951185770751,
+            "done": false
+        },
+        {
+            "episode": 3,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.720565217391304,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 4,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.14581923076923,
+            "done": false
+        },
+        {
+            "episode": 4,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.454856410256411,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 5,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.182904984239559,
+            "done": false
+        },
+        {
+            "episode": 5,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.450607525610716,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 6,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.1589186998187,
+            "done": false
+        },
+        {
+            "episode": 6,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.526015954415955,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 7,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.165863213530655,
+            "done": false
+        },
+        {
+            "episode": 7,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.356442048390887,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 8,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.285025750136389,
+            "done": false
+        },
+        {
+            "episode": 8,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.515892853246045,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 9,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.169637668941523,
+            "done": false
+        },
+        {
+            "episode": 9,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.354380775235292,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 10,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.156874021554168,
+            "done": false
+        },
+        {
+            "episode": 10,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.512990785907856,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 11,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.228402797202797,
+            "done": false
+        },
+        {
+            "episode": 11,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.699305827505828,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 12,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.209610160427808,
+            "done": false
+        },
+        {
+            "episode": 12,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.43078320459497,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 13,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.140883639047017,
+            "done": false
+        },
+        {
+            "episode": 13,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.384605186590765,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 14,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.153164334205636,
+            "done": false
+        },
+        {
+            "episode": 14,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.505218204573898,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 15,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.219998964803312,
+            "done": false
+        },
+        {
+            "episode": 15,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.501604968944099,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 16,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.198060135889502,
+            "done": false
+        },
+        {
+            "episode": 16,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.618830457111869,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 17,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.194899922884133,
+            "done": false
+        },
+        {
+            "episode": 17,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.62938677462888,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 18,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.287036396220268,
+            "done": false
+        },
+        {
+            "episode": 18,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.501548756381014,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 19,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.201910080395795,
+            "done": false
+        },
+        {
+            "episode": 19,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.363275324675325,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 20,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.172385185185185,
+            "done": false
+        },
+        {
+            "episode": 20,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.57013888888889,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 21,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.165670967741935,
+            "done": false
+        },
+        {
+            "episode": 21,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.182117204301074,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 22,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.143100420757364,
+            "done": false
+        },
+        {
+            "episode": 22,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.6066597475455815,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 23,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.324352701080432,
+            "done": false
+        },
+        {
+            "episode": 23,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.617560428309254,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 24,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.166218189884649,
+            "done": false
+        },
+        {
+            "episode": 24,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.493527950310559,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 25,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.114071317829458,
+            "done": false
+        },
+        {
+            "episode": 25,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.191380232558139,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 26,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.1697731427992295,
+            "done": false
+        },
+        {
+            "episode": 26,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.2586511198945995,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 27,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.2059518821603925,
+            "done": false
+        },
+        {
+            "episode": 27,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.48141014729951,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 28,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.174278306878307,
+            "done": false
+        },
+        {
+            "episode": 28,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.63485336356765,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 29,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.1224923076923075,
+            "done": false
+        },
+        {
+            "episode": 29,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.301102564102564,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 30,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.168385273492286,
+            "done": false
+        },
+        {
+            "episode": 30,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.537887798036467,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 31,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.179106000118113,
+            "done": false
+        },
+        {
+            "episode": 31,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.44266669816335,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 32,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.3013128234617595,
+            "done": false
+        },
+        {
+            "episode": 32,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -6.075357791834389,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 33,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.203144444444445,
+            "done": false
+        },
+        {
+            "episode": 33,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.475977777777775,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 34,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.114422820037106,
+            "done": false
+        },
+        {
+            "episode": 34,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.270016079158935,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 35,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.262708010335917,
+            "done": false
+        },
+        {
+            "episode": 35,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.576163824289406,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 36,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.151465765765765,
+            "done": false
+        },
+        {
+            "episode": 36,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.4544410621147446,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 37,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.080130769230769,
+            "done": false
+        },
+        {
+            "episode": 37,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.796588461538461,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 38,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.168782113821138,
+            "done": false
+        },
+        {
+            "episode": 38,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.432674796747968,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 39,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.215287179487179,
+            "done": false
+        },
+        {
+            "episode": 39,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.542314219114218,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 40,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.149311408199644,
+            "done": false
+        },
+        {
+            "episode": 40,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.348357219251337,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 41,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.190614005602241,
+            "done": false
+        },
+        {
+            "episode": 41,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.625252100840337,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 42,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.1086614741292165,
+            "done": false
+        },
+        {
+            "episode": 42,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.817986104218361,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 43,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.155234161490683,
+            "done": false
+        },
+        {
+            "episode": 43,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.464064596273294,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 44,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.219657462253194,
+            "done": false
+        },
+        {
+            "episode": 44,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.565376306620209,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 45,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.17276679407549,
+            "done": false
+        },
+        {
+            "episode": 45,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.5984254180602,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 46,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.183948951048951,
+            "done": false
+        },
+        {
+            "episode": 46,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.586903496503497,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 47,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.198638095238095,
+            "done": false
+        },
+        {
+            "episode": 47,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.6488,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 48,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.1237832298136645,
+            "done": false
+        },
+        {
+            "episode": 48,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.327095593019816,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 49,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m11",
+            "reward": -5.292687461115795,
+            "done": false
+        },
+        {
+            "episode": 49,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m21",
+            "reward": -5.497195422081383,
+            "done": true
+        }
+    ],
+    [
+        {
+            "episode": 50,
+            "step": 1,
+            "state": {
+                "s1": true
+            },
+            "action": "m12",
+            "reward": -5.2247076619396395,
+            "done": false
+        },
+        {
+            "episode": 50,
+            "step": 2,
+            "state": {
+                "s2": true
+            },
+            "action": "m22",
+            "reward": -5.703818347098851,
+            "done": true
+        }
+    ]
+]
