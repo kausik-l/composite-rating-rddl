@@ -1,47 +1,41 @@
 import numpy as np
 import random
+import pickle
+import os
 
 class ContextAwareQPlanner:
     """
     Intelligent Agent: Context-Aware Q-Learning.
-    
-    Unlike standard planners, this agent incorporates 'Context' (History) into its state.
-    It tracks not just the current stage, but also the 'Family' of the model used previously.
-    
-    This allows it to learn 'Lanes': "If I am in the CPU lane, I should stay in the CPU lane."
-    It balances this inertia against the need to find the Fair Family.
     """
     def __init__(self, action_space, stage_map, alpha=0.1, gamma=0.99, epsilon=0.1):
         self.q_table = {} 
-        self.alpha = alpha      # Learning Rate
-        self.gamma = gamma      # Discount Factor
-        self.epsilon = epsilon  # Exploration Rate
+        self.alpha = alpha      
+        self.gamma = gamma      
+        self.epsilon = epsilon  
         
         self.action_space = action_space
         self.stage_map = stage_map 
+        
+        # New: Store history inside the agent instance for easy saving
+        self.training_history = [] 
 
     def _parse_rddl_state(self, state):
-        """Extracts (CurrentStage, LastFamily) from the raw state dict."""
         curr_stage = None
         last_fam = "unknown"
-        
         for key, val in state.items():
             if val == True or val == 1:
                 if "current_stage" in key:
                     curr_stage = key.split("___")[-1]
                 elif "last_used_family" in key:
                     last_fam = key.split("___")[-1]
-        
         return curr_stage, last_fam
 
     def get_state_key(self, state):
-        """Unique String Key for the Q-Table: 's1__fam_1'"""
         s, f = self._parse_rddl_state(state)
         if not s: return "DONE"
         return f"{s}__{f}"
 
     def sample_action(self, state):
-        """Epsilon-Greedy Action Selection."""
         state_key = self.get_state_key(state)
         stage, _ = self._parse_rddl_state(state)
         
@@ -49,15 +43,11 @@ class ContextAwareQPlanner:
             return {}
 
         valid_models = self.stage_map[stage]
-        
-        # Init Q-Table if new state encountered
         if state_key not in self.q_table:
             self.q_table[state_key] = {m: 0.0 for m in valid_models}
 
-        # Exploration (Random)
         if random.uniform(0, 1) < self.epsilon:
             chosen = random.choice(valid_models)
-        # Exploitation (Best Known)
         else:
             qs = self.q_table[state_key]
             chosen = max(qs, key=qs.get)
@@ -65,11 +55,9 @@ class ContextAwareQPlanner:
         return {f"select_model___{chosen}": 1}
 
     def update(self, state, action, reward, next_state):
-        """Standard Bellman Update."""
         curr_key = self.get_state_key(state)
         next_key = self.get_state_key(next_state)
         
-        # Parse action string to get model name
         used_model = None
         for k, v in action.items():
             if v == 1 and "select_model" in k:
@@ -83,7 +71,6 @@ class ContextAwareQPlanner:
 
             old_q = self.q_table[curr_key][used_model]
             
-            # Calculate Max Q for next state
             next_max_q = 0.0
             if next_key != "DONE":
                 if next_key not in self.q_table:
@@ -94,6 +81,28 @@ class ContextAwareQPlanner:
                 if next_key in self.q_table:
                     next_max_q = max(self.q_table[next_key].values())
 
-            # Update
             new_q = old_q + self.alpha * (reward + self.gamma * next_max_q - old_q)
             self.q_table[curr_key][used_model] = new_q
+
+    def save_agent(self, filepath="q_agent.pkl"):
+        """Saves Q-Table AND Training History."""
+        data = {
+            "q_table": self.q_table,
+            "hyperparams": {"alpha": self.alpha, "gamma": self.gamma, "epsilon": self.epsilon},
+            "history": self.training_history # Save the training curve!
+        }
+        with open(filepath, 'wb') as f:
+            pickle.dump(data, f)
+        print(f"Agent saved to {filepath}")
+
+    def load_agent(self, filepath="q_agent.pkl"):
+        if os.path.exists(filepath):
+            with open(filepath, 'rb') as f:
+                data = pickle.load(f)
+            self.q_table = data["q_table"]
+            # Load history if it exists (old files might not have it)
+            self.training_history = data.get("history", [])
+            print(f"Agent loaded from {filepath} (History: {len(self.training_history)} eps)")
+            return True
+        else:
+            return False

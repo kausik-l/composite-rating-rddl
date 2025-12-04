@@ -1,0 +1,52 @@
+non-fluents nf_sentiment {
+    domain = sentiment_pipeline;
+    objects {
+        stage : {s1, s2};
+        component : {
+            trans_none, trans_danish, trans_spanish,
+            m_bf, m_dbert, m_gru, m_random, m_textblob
+        };
+    };
+    
+    non-fluents {
+        next_stage(s1, s2);
+        is_final_stage(s2);
+
+        // Stage 1: Translation Choices
+        valid_component(s1, trans_none);
+        valid_component(s1, trans_danish);
+        valid_component(s1, trans_spanish);
+
+        // Stage 2: Model Choices
+        valid_component(s2, m_bf);
+        valid_component(s2, m_dbert);
+        valid_component(s2, m_gru);
+        valid_component(s2, m_random);
+        valid_component(s2, m_textblob);
+
+        // --- COSTS ---
+        // Translation is "Expensive" (Cost 0.5)
+        component_cost(trans_none)    = 0.0;
+        component_cost(trans_danish)  = 0.5; 
+        component_cost(trans_spanish) = 0.5;
+        
+        // Inference is "Cheap" (Cost 0.1)
+        component_cost(m_bf)       = 0.1;
+        component_cost(m_dbert)    = 0.1;
+        component_cost(m_gru)      = 0.1;
+        component_cost(m_random)   = 0.1;
+        component_cost(m_textblob) = 0.1;
+    };
+}
+
+instance sentiment_inst_1 {
+    domain = sentiment_pipeline;
+    non-fluents = nf_sentiment;
+    init-state {
+        current_stage(s1);
+        pipeline_done = false;
+    };
+    max-nondef-actions = 1;
+    horizon = 5;
+    discount = 1.0;
+}

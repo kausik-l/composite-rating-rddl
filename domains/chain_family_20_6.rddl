@@ -6,29 +6,22 @@ domain chain_family_20_6 {
     };
 
     pvariables {
-        // Topology Definitions
         valid_model(stage, model) : { non-fluent, bool, default = false };
         next_stage(stage, stage)  : { non-fluent, bool, default = false };
         is_start_stage(stage)     : { non-fluent, bool, default = false };
         is_final_stage(stage)     : { non-fluent, bool, default = false };
         is_in_family(model, family) : { non-fluent, bool, default = false };
         
-        // Cost Configuration
-        // We set costs low (0.5) to allow the agent to make trade-offs easily.
         base_cost      : { non-fluent, real, default = 0.5 };
         switching_cost : { non-fluent, real, default = 0.5 }; 
 
-        // State Tracking
         current_stage(stage)      : { state-fluent, bool, default = false };
         last_used_family(family)  : { state-fluent, bool, default = false };
         pipeline_done             : { state-fluent, bool, default = false };
-        
-        // Actions
         select_model(model)       : { action-fluent, bool, default = false };
     };
 
     cpfs {
-        // Transition: Move to next stage if valid move taken
         current_stage'(?next) = 
             if (pipeline_done) then false
             else if (exists_{?curr : stage, ?m : model} [
@@ -37,7 +30,6 @@ domain chain_family_20_6 {
             else if (current_stage(?next) ^ ~(exists_{?m : model} [select_model(?m)])) then true
             else false; 
 
-        // Memory: Track which family was just used
         last_used_family'(?next_fam) = 
             if (exists_{?m : model} [ select_model(?m) ^ is_in_family(?m, ?next_fam) ])
             then true
@@ -58,8 +50,6 @@ domain chain_family_20_6 {
         ];
     };
 
-    // Reward Function: Base Cost + Switching Cost
-    // Fairness penalty is added externally by the Python Environment.
     reward = 
         (sum_{?m : model} [ -base_cost * select_model(?m) ]) +
         (sum_{?m : model, ?new_fam : family, ?old_fam : family} [
