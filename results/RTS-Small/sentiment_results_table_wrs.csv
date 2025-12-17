@@ -1,0 +1,5 @@
+Agent,Avg Reward,Avg Cost,Avg WRS,Avg DIE,Time (ms),Top 3 Pipelines
+Q-Learning (WRS),-0.3618719620778355,0.129,0.02328719620778355,0.0,0.010076284408569336,[1: trans_none -> m_textblob (90.6%)] [2: trans_spanish -> m_textblob (3.4%)] [3: trans_danish -> m_textblob (2.0%)]
+Heuristic,-0.25287191147903876,0.1,0.015287191147903875,0.0,1.2215588092803955,[1: trans_none -> m_textblob (77.6%)] [2: trans_none -> m_random (13.4%)] [3: trans_none -> m_dbert (6.2%)]
+Fixed (Biased),-7.6512,0.1,0.75512,0.0,0.0013020038604736328,[1: trans_none -> m_bf (100.0%)]
+Random,-2.2969990409843164,0.4479999999999999,0.18489990409843166,0.0,0.0017387866973876953,[1: trans_spanish -> m_gru (8.2%)] [2: trans_spanish -> m_random (8.2%)] [3: trans_danish -> m_random (7.8%)]

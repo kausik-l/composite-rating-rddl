@@ -1,86 +1,108 @@
+import numpy as np
 import random
+import pickle
+import os
 
-# --------------------------------------------------------------------
-# Base class for all policies. A "policy" here means:
-#   Given the current state of the environment, which PLAN (pipeline)
-#   should we choose to execute? 
-# Plans are high-level: "english", "french", "roundtrip".
-# Each plan is represented as a *list of steps*,
-# where each step is a list of RDDL actions.
-#
-# Example:
-#   {
-#     "english": [["do_sentiment_english___t1"]],
-#     "french": [["do_sentiment_french___t1"]],
-#     "roundtrip": [
-#        ["do_translate___t1__English__French"],
-#        ["do_translate___t1__French__English"],
-#        ["do_sentiment_english___t1"]
-#     ]
-#   }
-# --------------------------------------------------------------------
-class BasePolicy:
-    def __init__(self, env, possible_plans):
-        self.env = env
-        self.possible_plans = possible_plans
+class ContextAwareQPlanner:
+    """
+    Intelligent Agent: Context-Aware Q-Learning.
+    """
+    def __init__(self, action_space, stage_map, alpha=0.1, gamma=0.99, epsilon=0.1):
+        self.q_table = {} 
+        self.alpha = alpha      
+        self.gamma = gamma      
+        self.epsilon = epsilon  
+        
+        self.action_space = action_space
+        self.stage_map = stage_map 
+        
+        # New: Store history inside the agent instance for easy saving
+        self.training_history = [] 
 
-    def select_plan(self, state):
-        raise NotImplementedError
+    def _parse_rddl_state(self, state):
+        curr_stage = None
+        last_fam = "unknown"
+        for key, val in state.items():
+            if val == True or val == 1:
+                if "current_stage" in key:
+                    curr_stage = key.split("___")[-1]
+                elif "last_used_family" in key:
+                    last_fam = key.split("___")[-1]
+        return curr_stage, last_fam
 
+    def get_state_key(self, state):
+        s, f = self._parse_rddl_state(state)
+        if not s: return "DONE"
+        return f"{s}__{f}"
 
+    def sample_action(self, state):
+        state_key = self.get_state_key(state)
+        stage, _ = self._parse_rddl_state(state)
+        
+        if state_key == "DONE" or stage not in self.stage_map:
+            return {}
 
+        valid_models = self.stage_map[stage]
+        if state_key not in self.q_table:
+            self.q_table[state_key] = {m: 0.0 for m in valid_models}
 
-# --------------------------------------------------------------------
-# Policy that just picks randomly between available plans.
-# --------------------------------------------------------------------
-class RandomPolicy(BasePolicy):
-    def select_plan(self, state):
-        return random.choice(self.possible_plans)
+        if random.uniform(0, 1) < self.epsilon:
+            chosen = random.choice(valid_models)
+        else:
+            qs = self.q_table[state_key]
+            chosen = max(qs, key=qs.get)
 
+        return {f"select_model___{chosen}": 1}
 
+    def update(self, state, action, reward, next_state):
+        curr_key = self.get_state_key(state)
+        next_key = self.get_state_key(next_state)
+        
+        used_model = None
+        for k, v in action.items():
+            if v == 1 and "select_model" in k:
+                used_model = k.split("___")[-1]
+                break
+        
+        if curr_key != "DONE" and used_model:
+            if curr_key not in self.q_table:
+                stage, _ = self._parse_rddl_state(state)
+                self.q_table[curr_key] = {m: 0.0 for m in self.stage_map[stage]}
 
-# --------------------------------------------------------------------
-# Policy that always returns the same plan, no matter the state.
-# --------------------------------------------------------------------
-class FixedPolicy(BasePolicy):
-    def __init__(self, env, plan_to_actions, fixed_plan):
-        super().__init__(env, plan_to_actions)
-        self.fixed_plan = fixed_plan   # e.g., "english"
+            old_q = self.q_table[curr_key][used_model]
+            
+            next_max_q = 0.0
+            if next_key != "DONE":
+                if next_key not in self.q_table:
+                    n_stage, _ = self._parse_rddl_state(next_state)
+                    if n_stage:
+                        self.q_table[next_key] = {m: 0.0 for m in self.stage_map[n_stage]}
+                
+                if next_key in self.q_table:
+                    next_max_q = max(self.q_table[next_key].values())
 
-    def select_plan(self, state):
-        return self.fixed_plan
+            new_q = old_q + self.alpha * (reward + self.gamma * next_max_q - old_q)
+            self.q_table[curr_key][used_model] = new_q
 
+    def save_agent(self, filepath="q_agent.pkl"):
+        """Saves Q-Table AND Training History."""
+        data = {
+            "q_table": self.q_table,
+            "hyperparams": {"alpha": self.alpha, "gamma": self.gamma, "epsilon": self.epsilon},
+            "history": self.training_history # Save the training curve!
+        }
+        with open(filepath, 'wb') as f:
+            pickle.dump(data, f)
+        print(f"Agent saved to {filepath}")
 
-# --------------------------------------------------------------------
-# Greedy policy:
-#   - Looks at all possible plans.
-#   - For each plan, it simulates the full sequence of steps.
-#   - Picks the plan with the highest cumulative reward.
-#
-# This requires the environment to implement simulate(),
-# which runs a step without committing state permanently.
-# --------------------------------------------------------------------
-class GreedyPolicy(BasePolicy):
-    def select_plan(self, state):
-        best_plan, best_reward = None, float("-inf")
-
-        for plan in self.possible_plans:
-            total_reward = 0
-            # Save state once before simulating whole plan
-            saved_state = self.env.sampler.copy_state(self.env.sampler.state)
-
-            # Simulate each step in the plan
-            for step_actions in self.plan_to_actions[plan]:
-                action_dict = self.build_action_dict(step_actions)
-                _, reward, done, truncated, _ = self.env.simulate(action_dict)
-                total_reward += reward
-                if done or truncated:
-                    break
-
-            # Restore state
-            self.env.sampler.state = saved_state
-
-            if total_reward > best_reward:
-                best_plan, best_reward = plan, total_reward
-
-        return best_plan
+    def load_agent(self, filepath="q_agent.pkl"):
+        if os.path.exists(filepath):
+            with open(filepath, 'rb') as f:
+                data = pickle.load(f)
+            self.q_table = data["q_table"]
+            # Load history if it exists (old files might not have it)
+            self.training_history = data.get("history", [])
+            print(f"Agent loaded from {filepath} (History: {len(self.training_history)} eps)")
+            return True
+        else:
+            return False
