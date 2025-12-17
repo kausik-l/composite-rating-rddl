@@ -20,7 +20,7 @@ class RandomPipelinePlanner:
             choice = random.choice(options)
             return {f"select_model___{choice}": 1}
         return {}
-
+        
     def update(self, state, action, reward, next_state): pass
 
 
@@ -53,14 +53,13 @@ class LookaheadFairnessPlanner:
     Baseline 3: Greedy Fairness Heuristic (k=1 Lookahead).
     
     Strategy:
-    - "Myopic Optimization": At stage 'i', evaluate only the immediate options for stage 'i'.
+    - At stage 'i', evaluate only the immediate options for stage 'i'.
     - Calculate immediate Switching Cost (based on history).
     - Calculate immediate Fairness Penalty (WRS of the column).
-    - Pick the model that minimizes (Cost + Penalty) for *this step only*.
+    - Pick the model that minimizes (Cost + Penalty) for this step only.
     
     Why k=1?
-    - Scalable: Works for any pipeline length (10, 50, 100).
-    - Realistic: Simulates a system that tries to be fair locally but lacks long-term planning.
+    - Simulates a system that tries to be fair locally but lacks long-term planning.
     """
     def __init__(self, stage_map, env, name="Heuristic (Fairness Lookahead)"):
         self.stage_map = stage_map
@@ -87,7 +86,7 @@ class LookaheadFairnessPlanner:
             return "unknown"
 
     def sample_action(self, state):
-        # 1. Sense Context
+        # Sense Context
         current_stage, last_family = self._get_active_features(state)
         
         if not current_stage or current_stage not in self.stage_map:
@@ -109,7 +108,7 @@ class LookaheadFairnessPlanner:
                 if this_family != last_family:
                     switch_cost = 0.5 # Switching penalty from generator
             
-            # B. Calculate Fairness Cost (WRS)
+            # Calculate Fairness Cost (WRS)
             # Peek at the dataframe column for this model
             col_name = f"{current_stage}_{model}"
             fairness_cost = 0.0
@@ -122,7 +121,7 @@ class LookaheadFairnessPlanner:
                 except:
                     pass
             
-            # C. Total Immediate Cost
+            # Total Immediate Cost
             # Scale WRS by 10.0 (same as Environment Reward function)
             total_score = switch_cost + (fairness_cost * 10.0)
             

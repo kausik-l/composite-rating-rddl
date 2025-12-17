@@ -45,8 +45,16 @@ class DynamicChainRatingEnv(RDDLEnv):
         obs, rddl_reward, terminated, truncated, info = super().step(action)
         done = terminated or truncated
         
+        # [MODIFIED] Initialize robust metrics dictionary
         if 'metrics' not in info:
-            info['metrics'] = {'rddl_reward': 0.0, 'fairness_penalty': 0.0, 'merit_reward': 0.0}
+            info['metrics'] = {
+                'rddl_reward': float(rddl_reward), 
+                'fairness_penalty': 0.0, 
+                'merit_reward': 0.0,
+                'raw_wrs': 0.0,   # For Logging
+                'raw_ate': 0.0,   # For Logging
+                'raw_die': 0.0    # For Logging
+            }
         
         selected_model_rddl = None
         for k, v in action.items():
@@ -68,28 +76,41 @@ class DynamicChainRatingEnv(RDDLEnv):
                     self.selected_pipeline_cols.append(col_name)
                     
                     try:
-                        # WRS (Statistical Bias) -> Penalty
-                        if self.reward_mode in ["WRS", "BOTH"]:
-                            wrs_val = sum(calc_wrs(self.sampled_df, z, col_name) for z in ['Z1','Z2','Z3'])
-                            fairness_penalty += (wrs_val * 10.0)
+                        # -----------------------------------------------------
+                        # 1. ALWAYS Calculate Raw Metrics (For CSV Tracing)
+                        # -----------------------------------------------------
+                        
+                        # Calculate WRS
+                        raw_wrs_val = sum(calc_wrs(self.sampled_df, z, col_name) for z in ['Z1','Z2','Z3'])
+                        info['metrics']['raw_wrs'] = float(raw_wrs_val)
 
-                        # DIE (Causal Metrics)
+                        # Calculate Causal (ATE/DIE)
+                        # Note: This adds computational time, but is necessary for the "Trace"
+                        metrics = compute_arc_metrics(self.sampled_df, treatment_col='T', outcome_col=col_name, confounders=['Z1'])
+                        info['metrics']['raw_ate'] = float(metrics['ATE_Merit'])
+                        info['metrics']['raw_die'] = float(metrics['DIE_Confounding'])
+
+                        # -----------------------------------------------------
+                        # 2. Apply Rewards based on Mode
+                        # -----------------------------------------------------
+                        
+                        # Mode: WRS or BOTH
+                        if self.reward_mode in ["WRS", "BOTH"]:
+                            fairness_penalty += (raw_wrs_val * 10.0)
+
+                        # Mode: DIE or BOTH
                         if self.reward_mode in ["DIE", "BOTH"]:
-                            # Calculate Merit & Confounding
-                            metrics = compute_arc_metrics(self.sampled_df, treatment_col='T', outcome_col=col_name, confounders=['Z1'])
-                            
-                            # Reward: True Merit (ATE)
                             merit_reward += (metrics['ATE_Merit'] * 10.0)
-                            
-                            # Penalty: Confounding Impact (DIE)
                             fairness_penalty += (metrics['DIE_Confounding'] * 20.0)
 
-                    except:
+                    except Exception as e:
+                        # print(f"Error calculating metrics: {e}") 
                         pass
 
         # Final Reward = RDDL_Cost - Fairness_Penalty + Merit_Reward
         total_reward = rddl_reward - fairness_penalty + merit_reward
         
+        # Update Info with Final Reward Components
         info['metrics']['rddl_reward'] = float(rddl_reward)
         info['metrics']['fairness_penalty'] = float(fairness_penalty)
         info['metrics']['merit_reward'] = float(merit_reward)

@@ -11,9 +11,9 @@ def merge_unibot_data_robust():
     3. Concatenate horizontally to create the master file.
     4. Preserves all rows, even if C_num is duplicated.
     """
-    root_dir = os.path.join("data", "input", "real_world", "unibot")
+    root_dir = os.path.join("data", "input", "real_world", "allure")
     output_dir = os.path.join("data", "input", "real_world")
-    output_path = os.path.join(output_dir, "master_sentiment.csv")
+    output_path = os.path.join(output_dir, "master_sentiment_allure.csv")
     
     languages = ['eng', 'spa', 'dan']
     models = ['bf', 'dbert', 'gru', 'random', 'textblob']
@@ -62,7 +62,7 @@ def merge_unibot_data_robust():
                 # If this is the first file, keep metadata
                 if base_df is None:
                     # Keep C_num, User_gender (and maybe Text/UB for debugging)
-                    meta_cols = ['C_num', 'User_gender']
+                    meta_cols = ['C_num', 'UB', 'User_gender']
                     # Check if cols exist
                     existing_meta = [c for c in meta_cols if c in df_chunk.columns]
                     base_df = df_chunk[existing_meta].reset_index(drop=True)

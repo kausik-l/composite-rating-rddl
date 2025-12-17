@@ -1,0 +1,60 @@
+domain chain_family_20_10 {
+    types {
+        stage : object;
+        model : object;
+        family : object; 
+    };
+
+    pvariables {
+        valid_model(stage, model) : { non-fluent, bool, default = false };
+        next_stage(stage, stage)  : { non-fluent, bool, default = false };
+        is_start_stage(stage)     : { non-fluent, bool, default = false };
+        is_final_stage(stage)     : { non-fluent, bool, default = false };
+        is_in_family(model, family) : { non-fluent, bool, default = false };
+        
+        base_cost      : { non-fluent, real, default = 0.5 };
+        switching_cost : { non-fluent, real, default = 0.5 }; 
+
+        current_stage(stage)      : { state-fluent, bool, default = false };
+        last_used_family(family)  : { state-fluent, bool, default = false };
+        pipeline_done             : { state-fluent, bool, default = false };
+        select_model(model)       : { action-fluent, bool, default = false };
+    };
+
+    cpfs {
+        current_stage'(?next) = 
+            if (pipeline_done) then false
+            else if (exists_{?curr : stage, ?m : model} [
+                current_stage(?curr) ^ select_model(?m) ^ next_stage(?curr, ?next)
+            ]) then true
+            else if (current_stage(?next) ^ ~(exists_{?m : model} [select_model(?m)])) then true
+            else false; 
+
+        last_used_family'(?next_fam) = 
+            if (exists_{?m : model} [ select_model(?m) ^ is_in_family(?m, ?next_fam) ])
+            then true
+            else if (~(exists_{?m : model} [select_model(?m)]) ^ last_used_family(?next_fam))
+            then true
+            else false;
+
+        pipeline_done' = 
+            pipeline_done | 
+            exists_{?s : stage, ?m : model} [
+                current_stage(?s) ^ is_final_stage(?s) ^ select_model(?m)
+            ];
+    };
+
+    action-preconditions {
+        forall_{?m : model} [
+            select_model(?m) => exists_{?s : stage} [current_stage(?s) ^ valid_model(?s, ?m)]
+        ];
+    };
+
+    reward = 
+        (sum_{?m : model} [ -base_cost * select_model(?m) ]) +
+        (sum_{?m : model, ?new_fam : family, ?old_fam : family} [
+            if (select_model(?m) ^ is_in_family(?m, ?new_fam) ^ last_used_family(?old_fam) ^ (?new_fam ~= ?old_fam))
+            then -switching_cost
+            else 0.0
+        ]);
+}

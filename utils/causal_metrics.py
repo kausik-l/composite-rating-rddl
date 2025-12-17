@@ -29,6 +29,7 @@ def compute_arc_metrics(df, treatment_col, outcome_col, confounders, increase_pc
     X = df[features]
     y = df[outcome_col]
     
+
     # Use fast HistGradientBoosting
     model_causal = HistGradientBoostingRegressor(max_iter=50, max_depth=5, random_state=42)
     ate_merit = 0.0
