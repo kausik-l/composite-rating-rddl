@@ -229,9 +229,9 @@ def run_experiment_full_trace():
         else:
              plt.plot(rew, label=name, color=col)
     
-    plt.title("RTS-Large Evaluation under 'BOTH' mode (WRS + DIE)")
+    plt.title("RTS-Large Evaluation")
     plt.xlabel("Evaluation Episode")
-    plt.ylabel("Total Reward (Penalized by WRS + DIE)")
+    plt.ylabel("Total Reward")
     plt.legend()
     plt.savefig("rts_large_comparison_plot_full.png")
     print("\nSaved plot to 'rts_large_comparison_plot_full.png'")

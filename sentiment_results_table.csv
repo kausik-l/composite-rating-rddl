@@ -1,0 +1,5 @@
+Agent,Train Mode,Eval Mode,Avg Reward,Avg Cost,Avg WRS,Avg DIE,Time (ms),Top 3 Pipelines
+Q-Learning (WRS),WRS,BOTH,-0.6648,0.12300000000000001,0.5418,0.0,0.02942943572998047,[1: trans_none -> m_textblob (90.8%)] [2: trans_spanish -> m_textblob (2.4%)] [3: trans_danish -> m_textblob (2.2%)]
+Heuristic,N/A,BOTH,-0.26339999999999997,0.1,0.1634,0.0,10.476921081542969,[1: trans_none -> m_dbert (37.8%)] [2: trans_none -> m_random (32.6%)] [3: trans_none -> m_textblob (24.0%)]
+Fixed (Biased),N/A,BOTH,-2.3999999999999995,0.1,2.3,0.0,0.004998922348022461,[1: trans_none -> m_bf (100.0%)]
+Random,N/A,BOTH,-1.431,0.4519999999999999,0.979,0.0,0.0062847137451171875,[1: trans_spanish -> m_textblob (9.0%)] [2: trans_danish -> m_random (7.6%)] [3: trans_danish -> m_bf (7.6%)]

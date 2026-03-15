@@ -90,7 +90,7 @@ class SentimentPipelineEnv(RDDLEnv):
                 # 3. APPLY REWARD PENALTY
                 # -------------------------------------------------------------
                 # if self.reward_mode == "WRS":
-                fairness_penalty += (raw_wrs * 10.0)
+                fairness_penalty += (raw_wrs)
 
                 # elif self.reward_mode == "DIE":
                 #     fairness_penalty += (raw_die * 10.0)
