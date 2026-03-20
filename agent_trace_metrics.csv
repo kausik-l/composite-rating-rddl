@@ -1,0 +1,4001 @@
+Agent,Episode,Stage,Action,Reward_Step,Raw_WRS,Raw_DIE,Penalty_Fairness
+Q-Learning (WRS),0,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),0,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),1,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),1,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),2,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),2,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),3,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),3,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),4,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),4,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),5,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),5,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),6,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),6,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),7,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),7,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),8,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),8,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),9,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),9,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),10,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),10,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),11,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),11,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),12,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),12,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),13,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),13,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),14,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),14,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),15,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),15,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),16,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),16,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),17,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),17,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),18,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),18,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),19,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),19,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),20,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),20,2,m_bf,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),21,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),21,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),22,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),22,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),23,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),23,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),24,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),24,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),25,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),25,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),26,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),26,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),27,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),27,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),28,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),28,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),29,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),29,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),30,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),30,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),31,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),31,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),32,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),32,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),33,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),33,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),34,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),34,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),35,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),35,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),36,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),36,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),37,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),37,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),38,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),38,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),39,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),39,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),40,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),40,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),41,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),41,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),42,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),42,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),43,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),43,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),44,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),44,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),45,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),45,2,m_gru,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),46,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),46,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),47,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),47,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),48,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),48,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),49,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),49,2,m_random,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),50,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),50,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),51,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),51,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),52,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),52,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),53,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),53,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),54,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),54,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),55,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),55,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),56,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),56,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),57,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),57,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),58,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),58,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),59,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),59,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),60,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),60,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),61,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),61,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),62,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),62,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),63,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),63,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),64,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),64,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),65,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),65,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),66,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),66,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),67,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),67,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),68,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),68,2,m_bf,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),69,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),69,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),70,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),70,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),71,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),71,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),72,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),72,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),73,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),73,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),74,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),74,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),75,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),75,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),76,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),76,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),77,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),77,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),78,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),78,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),79,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),79,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),80,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),80,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),81,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),81,2,m_gru,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),82,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),82,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),83,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),83,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),84,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),84,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),85,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),85,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),86,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),86,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),87,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),87,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),88,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),88,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),89,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),89,2,m_random,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),90,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),90,2,m_gru,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),91,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),91,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),92,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),92,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),93,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),93,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),94,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),94,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),95,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),95,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),96,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),96,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),97,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),97,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),98,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),98,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),99,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),99,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),100,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),100,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),101,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),101,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),102,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),102,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),103,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),103,2,m_gru,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),104,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),104,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),105,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),105,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),106,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),106,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),107,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),107,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),108,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),108,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),109,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),109,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),110,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),110,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),111,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),111,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),112,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),112,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),113,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),113,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),114,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),114,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),115,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),115,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),116,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),116,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),117,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),117,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),118,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),118,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),119,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),119,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),120,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),120,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),121,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),121,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),122,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),122,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),123,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),123,2,m_gru,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),124,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),124,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),125,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),125,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),126,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),126,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),127,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),127,2,m_dbert,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),128,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),128,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),129,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),129,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),130,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),130,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),131,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),131,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),132,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),132,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),133,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),133,2,m_dbert,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),134,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),134,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),135,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),135,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),136,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),136,2,m_gru,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),137,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),137,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),138,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),138,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),139,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),139,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),140,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),140,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),141,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),141,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),142,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),142,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),143,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),143,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),144,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),144,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),145,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),145,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),146,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),146,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),147,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),147,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),148,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),148,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),149,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),149,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),150,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),150,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),151,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),151,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),152,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),152,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),153,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),153,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),154,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),154,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),155,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),155,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),156,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),156,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),157,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),157,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),158,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),158,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),159,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),159,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),160,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),160,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),161,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),161,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),162,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),162,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),163,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),163,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),164,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),164,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),165,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),165,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),166,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),166,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),167,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),167,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),168,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),168,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),169,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),169,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),170,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),170,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),171,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),171,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),172,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),172,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),173,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),173,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),174,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),174,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),175,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),175,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),176,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),176,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),177,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),177,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),178,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),178,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),179,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),179,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),180,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),180,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),181,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),181,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),182,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),182,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),183,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),183,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),184,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),184,2,m_gru,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),185,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),185,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),186,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),186,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),187,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),187,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),188,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),188,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),189,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),189,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),190,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),190,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),191,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),191,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),192,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),192,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),193,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),193,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),194,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),194,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),195,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),195,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),196,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),196,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),197,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),197,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),198,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),198,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),199,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),199,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),200,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),200,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),201,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),201,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),202,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),202,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),203,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),203,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),204,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),204,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),205,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),205,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),206,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),206,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),207,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),207,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),208,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),208,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),209,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),209,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),210,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),210,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),211,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),211,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),212,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),212,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),213,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),213,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),214,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),214,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),215,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),215,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),216,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),216,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),217,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),217,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),218,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),218,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),219,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),219,2,m_gru,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),220,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),220,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),221,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),221,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),222,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),222,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),223,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),223,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),224,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),224,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),225,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),225,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),226,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),226,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),227,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),227,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),228,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),228,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),229,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),229,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),230,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),230,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),231,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),231,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),232,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),232,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),233,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),233,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),234,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),234,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),235,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),235,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),236,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),236,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),237,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),237,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),238,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),238,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),239,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),239,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),240,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),240,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),241,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),241,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),242,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),242,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),243,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),243,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),244,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),244,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),245,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),245,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),246,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),246,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),247,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),247,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),248,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),248,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),249,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),249,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),250,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),250,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),251,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),251,2,m_dbert,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),252,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),252,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),253,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),253,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),254,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),254,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),255,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),255,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),256,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),256,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),257,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),257,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),258,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),258,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),259,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),259,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),260,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),260,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),261,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),261,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),262,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),262,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),263,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),263,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),264,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),264,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),265,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),265,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),266,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),266,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),267,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),267,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),268,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),268,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),269,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),269,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),270,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),270,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),271,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),271,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),272,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),272,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),273,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),273,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),274,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),274,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),275,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),275,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),276,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),276,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),277,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),277,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),278,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),278,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),279,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),279,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),280,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),280,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),281,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),281,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),282,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),282,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),283,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),283,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),284,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),284,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),285,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),285,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),286,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),286,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),287,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),287,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),288,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),288,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),289,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),289,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),290,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),290,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),291,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),291,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),292,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),292,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),293,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),293,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),294,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),294,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),295,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),295,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),296,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),296,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),297,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),297,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),298,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),298,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),299,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),299,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),300,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),300,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),301,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),301,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),302,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),302,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),303,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),303,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),304,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),304,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),305,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),305,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),306,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),306,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),307,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),307,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),308,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),308,2,m_random,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),309,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),309,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),310,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),310,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),311,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),311,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),312,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),312,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),313,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),313,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),314,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),314,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),315,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),315,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),316,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),316,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),317,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),317,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),318,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),318,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),319,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),319,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),320,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),320,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),321,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),321,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),322,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),322,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),323,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),323,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),324,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),324,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),325,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),325,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),326,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),326,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),327,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),327,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),328,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),328,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),329,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),329,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),330,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),330,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),331,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),331,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),332,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),332,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),333,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),333,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),334,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),334,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),335,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),335,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),336,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),336,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),337,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),337,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),338,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),338,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),339,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),339,2,m_bf,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),340,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),340,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),341,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),341,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),342,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),342,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),343,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),343,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),344,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),344,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),345,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),345,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),346,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),346,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),347,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),347,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),348,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),348,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),349,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),349,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),350,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),350,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),351,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),351,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),352,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),352,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),353,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),353,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),354,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),354,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),355,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),355,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),356,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),356,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),357,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),357,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),358,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),358,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),359,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),359,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),360,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),360,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),361,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),361,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),362,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),362,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),363,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),363,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),364,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),364,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),365,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),365,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),366,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),366,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),367,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),367,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),368,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),368,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),369,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),369,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),370,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),370,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),371,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),371,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),372,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),372,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),373,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),373,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),374,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),374,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),375,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),375,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),376,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),376,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),377,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),377,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),378,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),378,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),379,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),379,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),380,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),380,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),381,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),381,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),382,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),382,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),383,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),383,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),384,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),384,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),385,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),385,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),386,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),386,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),387,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),387,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),388,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),388,2,m_gru,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),389,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),389,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),390,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),390,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),391,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),391,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),392,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),392,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),393,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),393,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),394,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),394,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),395,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),395,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),396,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),396,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),397,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),397,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),398,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),398,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),399,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),399,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),400,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),400,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),401,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),401,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),402,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),402,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),403,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),403,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),404,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),404,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),405,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),405,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),406,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),406,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),407,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),407,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),408,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),408,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),409,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),409,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),410,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),410,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),411,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),411,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),412,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),412,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),413,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),413,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),414,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),414,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),415,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),415,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),416,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),416,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),417,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),417,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),418,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),418,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),419,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),419,2,m_random,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),420,1,trans_spanish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),420,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),421,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),421,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),422,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),422,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),423,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),423,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),424,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),424,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),425,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),425,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),426,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),426,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),427,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),427,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),428,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),428,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),429,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),429,2,m_bf,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),430,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),430,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),431,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),431,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),432,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),432,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),433,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),433,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),434,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),434,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),435,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),435,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),436,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),436,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),437,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),437,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),438,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),438,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),439,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),439,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),440,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),440,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),441,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),441,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),442,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),442,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),443,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),443,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),444,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),444,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),445,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),445,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),446,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),446,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),447,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),447,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),448,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),448,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),449,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),449,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),450,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),450,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),451,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),451,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),452,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),452,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),453,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),453,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),454,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),454,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),455,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),455,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),456,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),456,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),457,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),457,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),458,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),458,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),459,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),459,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),460,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),460,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),461,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),461,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),462,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),462,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),463,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),463,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),464,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),464,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),465,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),465,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),466,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),466,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),467,1,trans_danish,-0.5,0.0,0.0,0.0
+Q-Learning (WRS),467,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),468,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),468,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),469,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),469,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),470,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),470,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),471,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),471,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),472,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),472,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),473,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),473,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),474,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),474,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),475,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),475,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),476,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),476,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),477,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),477,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),478,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),478,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),479,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),479,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),480,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),480,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),481,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),481,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),482,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),482,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),483,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),483,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),484,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),484,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),485,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),485,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),486,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),486,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),487,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),487,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),488,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),488,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),489,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),489,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),490,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),490,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),491,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),491,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),492,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),492,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),493,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),493,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),494,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),494,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Q-Learning (WRS),495,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),495,2,m_textblob,-0.7,0.6,0.0,0.6
+Q-Learning (WRS),496,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),496,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),497,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),497,2,m_textblob,-2.4,2.3,0.0,2.3
+Q-Learning (WRS),498,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),498,2,m_textblob,-0.1,0.0,0.0,0.0
+Q-Learning (WRS),499,1,trans_none,0.0,0.0,0.0,0.0
+Q-Learning (WRS),499,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,0,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,0,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,1,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,1,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,2,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,2,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,3,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,3,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,4,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,4,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,5,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,5,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,6,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,6,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,7,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,7,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,8,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,8,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,9,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,9,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,10,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,10,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,11,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,11,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,12,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,12,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,13,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,13,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,14,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,14,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,15,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,15,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,16,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,16,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,17,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,17,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,18,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,18,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,19,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,19,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,20,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,20,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,21,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,21,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,22,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,22,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,23,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,23,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,24,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,24,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,25,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,25,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,26,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,26,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,27,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,27,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,28,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,28,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,29,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,29,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,30,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,30,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,31,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,31,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,32,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,32,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,33,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,33,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,34,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,34,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,35,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,35,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,36,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,36,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,37,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,37,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,38,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,38,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,39,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,39,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,40,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,40,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,41,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,41,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,42,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,42,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,43,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,43,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,44,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,44,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,45,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,45,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,46,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,46,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,47,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,47,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,48,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,48,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,49,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,49,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,50,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,50,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,51,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,51,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,52,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,52,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,53,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,53,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,54,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,54,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,55,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,55,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,56,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,56,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,57,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,57,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,58,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,58,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,59,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,59,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,60,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,60,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,61,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,61,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,62,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,62,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,63,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,63,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,64,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,64,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,65,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,65,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,66,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,66,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,67,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,67,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,68,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,68,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,69,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,69,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,70,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,70,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,71,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,71,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,72,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,72,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,73,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,73,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,74,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,74,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,75,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,75,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,76,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,76,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,77,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,77,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,78,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,78,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,79,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,79,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,80,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,80,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,81,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,81,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,82,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,82,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,83,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,83,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,84,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,84,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,85,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,85,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,86,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,86,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,87,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,87,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,88,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,88,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,89,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,89,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,90,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,90,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,91,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,91,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,92,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,92,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,93,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,93,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,94,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,94,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,95,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,95,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,96,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,96,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,97,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,97,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,98,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,98,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,99,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,99,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,100,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,100,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,101,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,101,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,102,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,102,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,103,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,103,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,104,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,104,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,105,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,105,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,106,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,106,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,107,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,107,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,108,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,108,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,109,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,109,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,110,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,110,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,111,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,111,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,112,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,112,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,113,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,113,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,114,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,114,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,115,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,115,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,116,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,116,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,117,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,117,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,118,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,118,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,119,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,119,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,120,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,120,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,121,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,121,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,122,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,122,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,123,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,123,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,124,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,124,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,125,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,125,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,126,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,126,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,127,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,127,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,128,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,128,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,129,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,129,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,130,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,130,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,131,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,131,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,132,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,132,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,133,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,133,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,134,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,134,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,135,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,135,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,136,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,136,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,137,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,137,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,138,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,138,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,139,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,139,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,140,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,140,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,141,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,141,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,142,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,142,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,143,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,143,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,144,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,144,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,145,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,145,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,146,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,146,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,147,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,147,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,148,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,148,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,149,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,149,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,150,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,150,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,151,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,151,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,152,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,152,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,153,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,153,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,154,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,154,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,155,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,155,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,156,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,156,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,157,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,157,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,158,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,158,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,159,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,159,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,160,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,160,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,161,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,161,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,162,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,162,2,m_gru,-0.7,0.6,0.0,0.6
+Heuristic,163,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,163,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,164,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,164,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,165,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,165,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,166,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,166,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,167,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,167,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,168,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,168,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,169,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,169,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,170,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,170,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,171,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,171,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,172,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,172,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,173,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,173,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,174,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,174,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,175,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,175,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,176,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,176,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,177,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,177,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,178,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,178,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,179,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,179,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,180,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,180,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,181,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,181,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,182,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,182,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,183,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,183,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,184,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,184,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,185,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,185,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,186,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,186,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,187,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,187,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,188,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,188,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,189,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,189,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,190,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,190,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,191,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,191,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,192,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,192,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,193,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,193,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,194,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,194,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,195,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,195,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,196,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,196,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,197,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,197,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,198,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,198,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,199,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,199,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,200,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,200,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,201,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,201,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,202,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,202,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,203,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,203,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,204,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,204,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,205,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,205,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,206,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,206,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,207,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,207,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,208,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,208,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,209,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,209,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,210,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,210,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,211,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,211,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,212,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,212,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,213,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,213,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,214,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,214,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,215,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,215,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,216,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,216,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,217,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,217,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,218,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,218,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,219,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,219,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,220,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,220,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,221,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,221,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,222,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,222,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,223,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,223,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,224,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,224,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,225,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,225,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,226,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,226,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,227,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,227,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,228,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,228,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,229,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,229,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,230,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,230,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,231,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,231,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,232,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,232,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,233,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,233,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,234,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,234,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,235,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,235,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,236,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,236,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,237,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,237,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,238,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,238,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,239,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,239,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,240,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,240,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,241,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,241,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,242,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,242,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,243,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,243,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,244,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,244,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,245,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,245,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,246,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,246,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,247,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,247,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,248,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,248,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,249,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,249,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,250,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,250,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,251,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,251,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,252,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,252,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,253,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,253,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,254,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,254,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,255,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,255,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,256,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,256,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,257,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,257,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,258,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,258,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,259,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,259,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,260,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,260,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,261,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,261,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,262,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,262,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,263,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,263,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,264,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,264,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,265,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,265,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,266,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,266,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,267,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,267,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,268,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,268,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,269,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,269,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,270,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,270,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,271,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,271,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,272,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,272,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,273,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,273,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,274,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,274,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,275,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,275,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,276,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,276,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,277,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,277,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,278,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,278,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,279,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,279,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,280,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,280,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,281,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,281,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,282,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,282,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,283,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,283,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,284,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,284,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,285,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,285,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,286,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,286,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,287,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,287,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,288,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,288,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,289,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,289,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,290,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,290,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,291,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,291,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,292,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,292,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,293,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,293,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,294,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,294,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,295,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,295,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,296,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,296,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,297,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,297,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,298,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,298,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,299,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,299,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,300,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,300,2,m_bf,-2.4,2.3,0.0,2.3
+Heuristic,301,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,301,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,302,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,302,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,303,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,303,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,304,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,304,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,305,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,305,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,306,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,306,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,307,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,307,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,308,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,308,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,309,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,309,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,310,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,310,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,311,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,311,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,312,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,312,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,313,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,313,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,314,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,314,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,315,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,315,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,316,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,316,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,317,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,317,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,318,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,318,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,319,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,319,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,320,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,320,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,321,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,321,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,322,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,322,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,323,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,323,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,324,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,324,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,325,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,325,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,326,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,326,2,m_dbert,-0.7,0.6,0.0,0.6
+Heuristic,327,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,327,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,328,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,328,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,329,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,329,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,330,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,330,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,331,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,331,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,332,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,332,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,333,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,333,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,334,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,334,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,335,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,335,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,336,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,336,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,337,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,337,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,338,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,338,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,339,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,339,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,340,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,340,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,341,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,341,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,342,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,342,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,343,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,343,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,344,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,344,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,345,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,345,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,346,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,346,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,347,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,347,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,348,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,348,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,349,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,349,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,350,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,350,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,351,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,351,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,352,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,352,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,353,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,353,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,354,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,354,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,355,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,355,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,356,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,356,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,357,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,357,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,358,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,358,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,359,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,359,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,360,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,360,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,361,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,361,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,362,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,362,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,363,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,363,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,364,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,364,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,365,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,365,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,366,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,366,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,367,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,367,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,368,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,368,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,369,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,369,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,370,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,370,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,371,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,371,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,372,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,372,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,373,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,373,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,374,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,374,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,375,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,375,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,376,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,376,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,377,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,377,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,378,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,378,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,379,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,379,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,380,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,380,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,381,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,381,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,382,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,382,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,383,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,383,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,384,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,384,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,385,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,385,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,386,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,386,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,387,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,387,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,388,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,388,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,389,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,389,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,390,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,390,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,391,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,391,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,392,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,392,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,393,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,393,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,394,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,394,2,m_gru,-0.7,0.6,0.0,0.6
+Heuristic,395,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,395,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,396,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,396,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,397,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,397,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,398,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,398,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,399,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,399,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,400,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,400,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,401,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,401,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,402,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,402,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,403,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,403,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,404,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,404,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,405,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,405,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,406,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,406,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,407,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,407,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,408,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,408,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,409,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,409,2,m_gru,-0.7,0.6,0.0,0.6
+Heuristic,410,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,410,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,411,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,411,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,412,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,412,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,413,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,413,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,414,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,414,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,415,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,415,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,416,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,416,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,417,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,417,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,418,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,418,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,419,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,419,2,m_textblob,-0.7,0.6,0.0,0.6
+Heuristic,420,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,420,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,421,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,421,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,422,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,422,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,423,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,423,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,424,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,424,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,425,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,425,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,426,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,426,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,427,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,427,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,428,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,428,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,429,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,429,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,430,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,430,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,431,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,431,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,432,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,432,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,433,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,433,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,434,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,434,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,435,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,435,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,436,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,436,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,437,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,437,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,438,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,438,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,439,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,439,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,440,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,440,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,441,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,441,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,442,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,442,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,443,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,443,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,444,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,444,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,445,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,445,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,446,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,446,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,447,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,447,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,448,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,448,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,449,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,449,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,450,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,450,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,451,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,451,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,452,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,452,2,m_gru,-0.7,0.6,0.0,0.6
+Heuristic,453,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,453,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,454,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,454,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,455,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,455,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,456,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,456,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,457,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,457,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,458,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,458,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,459,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,459,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,460,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,460,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,461,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,461,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,462,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,462,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,463,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,463,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,464,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,464,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,465,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,465,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,466,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,466,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,467,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,467,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,468,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,468,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,469,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,469,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,470,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,470,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,471,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,471,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,472,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,472,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,473,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,473,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,474,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,474,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,475,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,475,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,476,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,476,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,477,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,477,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,478,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,478,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,479,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,479,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,480,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,480,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,481,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,481,2,m_gru,-0.7,0.6,0.0,0.6
+Heuristic,482,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,482,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,483,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,483,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,484,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,484,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,485,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,485,2,m_random,-0.7,0.6,0.0,0.6
+Heuristic,486,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,486,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,487,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,487,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,488,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,488,2,m_textblob,-0.1,0.0,0.0,0.0
+Heuristic,489,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,489,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,490,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,490,2,m_gru,-0.1,0.0,0.0,0.0
+Heuristic,491,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,491,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,492,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,492,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,493,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,493,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,494,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,494,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,495,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,495,2,m_dbert,-0.1,0.0,0.0,0.0
+Heuristic,496,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,496,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,497,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,497,2,m_random,-0.1,0.0,0.0,0.0
+Heuristic,498,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,498,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Heuristic,499,1,trans_none,0.0,0.0,0.0,0.0
+Heuristic,499,2,m_random,-0.1,0.0,0.0,0.0
+Fixed (Biased),0,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),0,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),1,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),1,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),2,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),2,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),3,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),3,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),4,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),4,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),5,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),5,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),6,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),6,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),7,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),7,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),8,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),8,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),9,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),9,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),10,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),10,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),11,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),11,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),12,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),12,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),13,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),13,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),14,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),14,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),15,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),15,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),16,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),16,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),17,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),17,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),18,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),18,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),19,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),19,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),20,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),20,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),21,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),21,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),22,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),22,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),23,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),23,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),24,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),24,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),25,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),25,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),26,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),26,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),27,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),27,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),28,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),28,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),29,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),29,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),30,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),30,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),31,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),31,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),32,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),32,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),33,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),33,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),34,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),34,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),35,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),35,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),36,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),36,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),37,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),37,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),38,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),38,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),39,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),39,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),40,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),40,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),41,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),41,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),42,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),42,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),43,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),43,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),44,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),44,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),45,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),45,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),46,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),46,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),47,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),47,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),48,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),48,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),49,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),49,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),50,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),50,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),51,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),51,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),52,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),52,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),53,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),53,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),54,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),54,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),55,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),55,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),56,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),56,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),57,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),57,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),58,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),58,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),59,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),59,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),60,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),60,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),61,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),61,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),62,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),62,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),63,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),63,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),64,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),64,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),65,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),65,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),66,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),66,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),67,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),67,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),68,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),68,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),69,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),69,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),70,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),70,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),71,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),71,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),72,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),72,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),73,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),73,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),74,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),74,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),75,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),75,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),76,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),76,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),77,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),77,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),78,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),78,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),79,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),79,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),80,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),80,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),81,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),81,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),82,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),82,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),83,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),83,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),84,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),84,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),85,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),85,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),86,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),86,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),87,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),87,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),88,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),88,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),89,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),89,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),90,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),90,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),91,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),91,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),92,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),92,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),93,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),93,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),94,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),94,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),95,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),95,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),96,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),96,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),97,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),97,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),98,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),98,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),99,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),99,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),100,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),100,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),101,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),101,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),102,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),102,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),103,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),103,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),104,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),104,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),105,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),105,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),106,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),106,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),107,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),107,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),108,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),108,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),109,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),109,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),110,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),110,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),111,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),111,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),112,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),112,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),113,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),113,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),114,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),114,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),115,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),115,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),116,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),116,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),117,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),117,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),118,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),118,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),119,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),119,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),120,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),120,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),121,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),121,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),122,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),122,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),123,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),123,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),124,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),124,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),125,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),125,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),126,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),126,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),127,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),127,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),128,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),128,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),129,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),129,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),130,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),130,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),131,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),131,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),132,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),132,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),133,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),133,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),134,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),134,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),135,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),135,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),136,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),136,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),137,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),137,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),138,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),138,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),139,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),139,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),140,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),140,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),141,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),141,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),142,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),142,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),143,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),143,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),144,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),144,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),145,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),145,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),146,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),146,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),147,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),147,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),148,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),148,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),149,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),149,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),150,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),150,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),151,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),151,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),152,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),152,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),153,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),153,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),154,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),154,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),155,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),155,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),156,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),156,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),157,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),157,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),158,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),158,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),159,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),159,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),160,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),160,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),161,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),161,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),162,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),162,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),163,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),163,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),164,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),164,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),165,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),165,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),166,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),166,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),167,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),167,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),168,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),168,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),169,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),169,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),170,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),170,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),171,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),171,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),172,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),172,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),173,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),173,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),174,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),174,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),175,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),175,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),176,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),176,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),177,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),177,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),178,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),178,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),179,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),179,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),180,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),180,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),181,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),181,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),182,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),182,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),183,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),183,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),184,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),184,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),185,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),185,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),186,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),186,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),187,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),187,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),188,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),188,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),189,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),189,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),190,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),190,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),191,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),191,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),192,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),192,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),193,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),193,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),194,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),194,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),195,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),195,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),196,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),196,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),197,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),197,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),198,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),198,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),199,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),199,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),200,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),200,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),201,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),201,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),202,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),202,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),203,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),203,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),204,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),204,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),205,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),205,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),206,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),206,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),207,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),207,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),208,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),208,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),209,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),209,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),210,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),210,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),211,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),211,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),212,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),212,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),213,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),213,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),214,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),214,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),215,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),215,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),216,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),216,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),217,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),217,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),218,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),218,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),219,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),219,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),220,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),220,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),221,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),221,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),222,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),222,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),223,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),223,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),224,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),224,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),225,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),225,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),226,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),226,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),227,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),227,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),228,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),228,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),229,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),229,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),230,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),230,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),231,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),231,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),232,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),232,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),233,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),233,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),234,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),234,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),235,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),235,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),236,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),236,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),237,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),237,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),238,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),238,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),239,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),239,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),240,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),240,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),241,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),241,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),242,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),242,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),243,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),243,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),244,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),244,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),245,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),245,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),246,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),246,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),247,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),247,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),248,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),248,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),249,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),249,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),250,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),250,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),251,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),251,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),252,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),252,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),253,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),253,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),254,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),254,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),255,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),255,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),256,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),256,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),257,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),257,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),258,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),258,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),259,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),259,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),260,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),260,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),261,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),261,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),262,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),262,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),263,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),263,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),264,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),264,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),265,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),265,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),266,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),266,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),267,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),267,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),268,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),268,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),269,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),269,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),270,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),270,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),271,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),271,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),272,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),272,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),273,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),273,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),274,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),274,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),275,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),275,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),276,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),276,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),277,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),277,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),278,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),278,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),279,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),279,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),280,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),280,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),281,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),281,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),282,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),282,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),283,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),283,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),284,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),284,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),285,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),285,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),286,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),286,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),287,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),287,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),288,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),288,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),289,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),289,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),290,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),290,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),291,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),291,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),292,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),292,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),293,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),293,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),294,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),294,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),295,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),295,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),296,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),296,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),297,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),297,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),298,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),298,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),299,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),299,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),300,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),300,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),301,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),301,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),302,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),302,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),303,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),303,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),304,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),304,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),305,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),305,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),306,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),306,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),307,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),307,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),308,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),308,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),309,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),309,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),310,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),310,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),311,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),311,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),312,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),312,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),313,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),313,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),314,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),314,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),315,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),315,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),316,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),316,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),317,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),317,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),318,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),318,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),319,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),319,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),320,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),320,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),321,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),321,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),322,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),322,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),323,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),323,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),324,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),324,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),325,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),325,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),326,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),326,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),327,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),327,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),328,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),328,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),329,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),329,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),330,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),330,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),331,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),331,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),332,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),332,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),333,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),333,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),334,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),334,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),335,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),335,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),336,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),336,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),337,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),337,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),338,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),338,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),339,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),339,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),340,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),340,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),341,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),341,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),342,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),342,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),343,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),343,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),344,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),344,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),345,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),345,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),346,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),346,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),347,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),347,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),348,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),348,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),349,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),349,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),350,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),350,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),351,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),351,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),352,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),352,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),353,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),353,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),354,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),354,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),355,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),355,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),356,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),356,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),357,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),357,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),358,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),358,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),359,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),359,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),360,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),360,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),361,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),361,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),362,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),362,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),363,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),363,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),364,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),364,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),365,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),365,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),366,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),366,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),367,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),367,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),368,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),368,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),369,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),369,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),370,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),370,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),371,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),371,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),372,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),372,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),373,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),373,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),374,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),374,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),375,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),375,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),376,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),376,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),377,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),377,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),378,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),378,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),379,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),379,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),380,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),380,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),381,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),381,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),382,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),382,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),383,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),383,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),384,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),384,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),385,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),385,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),386,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),386,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),387,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),387,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),388,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),388,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),389,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),389,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),390,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),390,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),391,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),391,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),392,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),392,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),393,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),393,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),394,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),394,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),395,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),395,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),396,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),396,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),397,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),397,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),398,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),398,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),399,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),399,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),400,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),400,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),401,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),401,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),402,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),402,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),403,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),403,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),404,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),404,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),405,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),405,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),406,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),406,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),407,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),407,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),408,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),408,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),409,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),409,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),410,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),410,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),411,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),411,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),412,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),412,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),413,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),413,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),414,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),414,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),415,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),415,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),416,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),416,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),417,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),417,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),418,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),418,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),419,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),419,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),420,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),420,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),421,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),421,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),422,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),422,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),423,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),423,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),424,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),424,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),425,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),425,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),426,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),426,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),427,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),427,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),428,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),428,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),429,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),429,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),430,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),430,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),431,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),431,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),432,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),432,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),433,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),433,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),434,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),434,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),435,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),435,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),436,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),436,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),437,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),437,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),438,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),438,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),439,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),439,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),440,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),440,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),441,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),441,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),442,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),442,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),443,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),443,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),444,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),444,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),445,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),445,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),446,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),446,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),447,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),447,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),448,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),448,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),449,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),449,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),450,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),450,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),451,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),451,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),452,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),452,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),453,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),453,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),454,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),454,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),455,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),455,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),456,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),456,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),457,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),457,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),458,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),458,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),459,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),459,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),460,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),460,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),461,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),461,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),462,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),462,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),463,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),463,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),464,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),464,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),465,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),465,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),466,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),466,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),467,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),467,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),468,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),468,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),469,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),469,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),470,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),470,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),471,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),471,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),472,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),472,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),473,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),473,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),474,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),474,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),475,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),475,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),476,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),476,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),477,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),477,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),478,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),478,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),479,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),479,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),480,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),480,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),481,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),481,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),482,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),482,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),483,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),483,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),484,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),484,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),485,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),485,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),486,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),486,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),487,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),487,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),488,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),488,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),489,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),489,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),490,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),490,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),491,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),491,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),492,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),492,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),493,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),493,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),494,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),494,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),495,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),495,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),496,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),496,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),497,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),497,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),498,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),498,2,m_bf,-2.4,2.3,0.0,2.3
+Fixed (Biased),499,1,trans_none,0.0,0.0,0.0,0.0
+Fixed (Biased),499,2,m_bf,-2.4,2.3,0.0,2.3
+Random,0,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,0,2,m_random,-0.1,0.0,0.0,0.0
+Random,1,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,1,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,2,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,2,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,3,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,3,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,4,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,4,2,m_random,-2.4,2.3,0.0,2.3
+Random,5,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,5,2,m_random,-0.1,0.0,0.0,0.0
+Random,6,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,6,2,m_random,-2.4,2.3,0.0,2.3
+Random,7,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,7,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,8,1,trans_none,0.0,0.0,0.0,0.0
+Random,8,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,9,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,9,2,m_bf,-2.4,2.3,0.0,2.3
+Random,10,1,trans_none,0.0,0.0,0.0,0.0
+Random,10,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,11,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,11,2,m_random,-0.1,0.0,0.0,0.0
+Random,12,1,trans_none,0.0,0.0,0.0,0.0
+Random,12,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,13,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,13,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,14,1,trans_none,0.0,0.0,0.0,0.0
+Random,14,2,m_gru,-0.1,0.0,0.0,0.0
+Random,15,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,15,2,m_bf,-2.4,2.3,0.0,2.3
+Random,16,1,trans_none,0.0,0.0,0.0,0.0
+Random,16,2,m_random,-0.1,0.0,0.0,0.0
+Random,17,1,trans_none,0.0,0.0,0.0,0.0
+Random,17,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,18,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,18,2,m_bf,-2.4,2.3,0.0,2.3
+Random,19,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,19,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,20,1,trans_none,0.0,0.0,0.0,0.0
+Random,20,2,m_bf,-2.4,2.3,0.0,2.3
+Random,21,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,21,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,22,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,22,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,23,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,23,2,m_bf,-2.4,2.3,0.0,2.3
+Random,24,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,24,2,m_bf,-2.4,2.3,0.0,2.3
+Random,25,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,25,2,m_random,-0.1,0.0,0.0,0.0
+Random,26,1,trans_none,0.0,0.0,0.0,0.0
+Random,26,2,m_bf,-2.4,2.3,0.0,2.3
+Random,27,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,27,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,28,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,28,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,29,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,29,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,30,1,trans_none,0.0,0.0,0.0,0.0
+Random,30,2,m_random,-0.7,0.6,0.0,0.6
+Random,31,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,31,2,m_bf,-2.4,2.3,0.0,2.3
+Random,32,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,32,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,33,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,33,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,34,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,34,2,m_bf,-2.4,2.3,0.0,2.3
+Random,35,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,35,2,m_gru,-0.1,0.0,0.0,0.0
+Random,36,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,36,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,37,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,37,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,38,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,38,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,39,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,39,2,m_random,-0.7,0.6,0.0,0.6
+Random,40,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,40,2,m_bf,-2.4,2.3,0.0,2.3
+Random,41,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,41,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,42,1,trans_none,0.0,0.0,0.0,0.0
+Random,42,2,m_gru,-2.4,2.3,0.0,2.3
+Random,43,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,43,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,44,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,44,2,m_gru,-2.4,2.3,0.0,2.3
+Random,45,1,trans_none,0.0,0.0,0.0,0.0
+Random,45,2,m_bf,-2.4,2.3,0.0,2.3
+Random,46,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,46,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,47,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,47,2,m_gru,-0.1,0.0,0.0,0.0
+Random,48,1,trans_none,0.0,0.0,0.0,0.0
+Random,48,2,m_random,-0.1,0.0,0.0,0.0
+Random,49,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,49,2,m_gru,-0.1,0.0,0.0,0.0
+Random,50,1,trans_none,0.0,0.0,0.0,0.0
+Random,50,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,51,1,trans_none,0.0,0.0,0.0,0.0
+Random,51,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,52,1,trans_none,0.0,0.0,0.0,0.0
+Random,52,2,m_gru,-2.4,2.3,0.0,2.3
+Random,53,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,53,2,m_random,-0.1,0.0,0.0,0.0
+Random,54,1,trans_none,0.0,0.0,0.0,0.0
+Random,54,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,55,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,55,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,56,1,trans_none,0.0,0.0,0.0,0.0
+Random,56,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,57,1,trans_none,0.0,0.0,0.0,0.0
+Random,57,2,m_gru,-0.7,0.6,0.0,0.6
+Random,58,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,58,2,m_bf,-2.4,2.3,0.0,2.3
+Random,59,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,59,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,60,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,60,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,61,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,61,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,62,1,trans_none,0.0,0.0,0.0,0.0
+Random,62,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,63,1,trans_none,0.0,0.0,0.0,0.0
+Random,63,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,64,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,64,2,m_bf,-2.4,2.3,0.0,2.3
+Random,65,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,65,2,m_random,-0.1,0.0,0.0,0.0
+Random,66,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,66,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,67,1,trans_none,0.0,0.0,0.0,0.0
+Random,67,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,68,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,68,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,69,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,69,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,70,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,70,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,71,1,trans_none,0.0,0.0,0.0,0.0
+Random,71,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,72,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,72,2,m_gru,-0.1,0.0,0.0,0.0
+Random,73,1,trans_none,0.0,0.0,0.0,0.0
+Random,73,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,74,1,trans_none,0.0,0.0,0.0,0.0
+Random,74,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,75,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,75,2,m_random,-0.1,0.0,0.0,0.0
+Random,76,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,76,2,m_gru,-2.4,2.3,0.0,2.3
+Random,77,1,trans_none,0.0,0.0,0.0,0.0
+Random,77,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,78,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,78,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,79,1,trans_none,0.0,0.0,0.0,0.0
+Random,79,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,80,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,80,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,81,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,81,2,m_gru,-2.4,2.3,0.0,2.3
+Random,82,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,82,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,83,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,83,2,m_gru,-2.4,2.3,0.0,2.3
+Random,84,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,84,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,85,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,85,2,m_random,-0.1,0.0,0.0,0.0
+Random,86,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,86,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,87,1,trans_none,0.0,0.0,0.0,0.0
+Random,87,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,88,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,88,2,m_bf,-2.4,2.3,0.0,2.3
+Random,89,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,89,2,m_bf,-2.4,2.3,0.0,2.3
+Random,90,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,90,2,m_random,-0.1,0.0,0.0,0.0
+Random,91,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,91,2,m_gru,-0.7,0.6,0.0,0.6
+Random,92,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,92,2,m_random,-0.1,0.0,0.0,0.0
+Random,93,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,93,2,m_bf,-2.4,2.3,0.0,2.3
+Random,94,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,94,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,95,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,95,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,96,1,trans_none,0.0,0.0,0.0,0.0
+Random,96,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,97,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,97,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,98,1,trans_none,0.0,0.0,0.0,0.0
+Random,98,2,m_bf,-2.4,2.3,0.0,2.3
+Random,99,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,99,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,100,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,100,2,m_random,-0.1,0.0,0.0,0.0
+Random,101,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,101,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,102,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,102,2,m_bf,-2.4,2.3,0.0,2.3
+Random,103,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,103,2,m_gru,-0.1,0.0,0.0,0.0
+Random,104,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,104,2,m_bf,-2.4,2.3,0.0,2.3
+Random,105,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,105,2,m_random,-0.1,0.0,0.0,0.0
+Random,106,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,106,2,m_bf,-2.4,2.3,0.0,2.3
+Random,107,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,107,2,m_bf,-2.4,2.3,0.0,2.3
+Random,108,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,108,2,m_bf,-2.4,2.3,0.0,2.3
+Random,109,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,109,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,110,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,110,2,m_gru,-0.1,0.0,0.0,0.0
+Random,111,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,111,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,112,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,112,2,m_bf,-2.4,2.3,0.0,2.3
+Random,113,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,113,2,m_bf,-2.4,2.3,0.0,2.3
+Random,114,1,trans_none,0.0,0.0,0.0,0.0
+Random,114,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,115,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,115,2,m_random,-0.7,0.6,0.0,0.6
+Random,116,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,116,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,117,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,117,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,118,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,118,2,m_bf,-2.4,2.3,0.0,2.3
+Random,119,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,119,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,120,1,trans_none,0.0,0.0,0.0,0.0
+Random,120,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,121,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,121,2,m_bf,-2.4,2.3,0.0,2.3
+Random,122,1,trans_none,0.0,0.0,0.0,0.0
+Random,122,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,123,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,123,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,124,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,124,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,125,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,125,2,m_random,-0.1,0.0,0.0,0.0
+Random,126,1,trans_none,0.0,0.0,0.0,0.0
+Random,126,2,m_bf,-2.4,2.3,0.0,2.3
+Random,127,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,127,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,128,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,128,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,129,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,129,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,130,1,trans_none,0.0,0.0,0.0,0.0
+Random,130,2,m_random,-0.1,0.0,0.0,0.0
+Random,131,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,131,2,m_bf,-2.4,2.3,0.0,2.3
+Random,132,1,trans_none,0.0,0.0,0.0,0.0
+Random,132,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,133,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,133,2,m_bf,-2.4,2.3,0.0,2.3
+Random,134,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,134,2,m_random,-0.1,0.0,0.0,0.0
+Random,135,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,135,2,m_gru,-2.4,2.3,0.0,2.3
+Random,136,1,trans_none,0.0,0.0,0.0,0.0
+Random,136,2,m_bf,-2.4,2.3,0.0,2.3
+Random,137,1,trans_none,0.0,0.0,0.0,0.0
+Random,137,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,138,1,trans_none,0.0,0.0,0.0,0.0
+Random,138,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,139,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,139,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,140,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,140,2,m_bf,-2.4,2.3,0.0,2.3
+Random,141,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,141,2,m_gru,-0.7,0.6,0.0,0.6
+Random,142,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,142,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,143,1,trans_none,0.0,0.0,0.0,0.0
+Random,143,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,144,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,144,2,m_bf,-2.4,2.3,0.0,2.3
+Random,145,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,145,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,146,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,146,2,m_random,-0.1,0.0,0.0,0.0
+Random,147,1,trans_none,0.0,0.0,0.0,0.0
+Random,147,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,148,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,148,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,149,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,149,2,m_bf,-2.4,2.3,0.0,2.3
+Random,150,1,trans_none,0.0,0.0,0.0,0.0
+Random,150,2,m_random,-0.7,0.6,0.0,0.6
+Random,151,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,151,2,m_bf,-2.4,2.3,0.0,2.3
+Random,152,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,152,2,m_bf,-2.4,2.3,0.0,2.3
+Random,153,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,153,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,154,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,154,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,155,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,155,2,m_bf,-2.4,2.3,0.0,2.3
+Random,156,1,trans_none,0.0,0.0,0.0,0.0
+Random,156,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,157,1,trans_none,0.0,0.0,0.0,0.0
+Random,157,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,158,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,158,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,159,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,159,2,m_random,-0.1,0.0,0.0,0.0
+Random,160,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,160,2,m_random,-0.7,0.6,0.0,0.6
+Random,161,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,161,2,m_random,-0.1,0.0,0.0,0.0
+Random,162,1,trans_none,0.0,0.0,0.0,0.0
+Random,162,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,163,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,163,2,m_random,-0.7,0.6,0.0,0.6
+Random,164,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,164,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,165,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,165,2,m_random,-0.7,0.6,0.0,0.6
+Random,166,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,166,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,167,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,167,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,168,1,trans_none,0.0,0.0,0.0,0.0
+Random,168,2,m_bf,-2.4,2.3,0.0,2.3
+Random,169,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,169,2,m_random,-0.1,0.0,0.0,0.0
+Random,170,1,trans_none,0.0,0.0,0.0,0.0
+Random,170,2,m_gru,-0.1,0.0,0.0,0.0
+Random,171,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,171,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,172,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,172,2,m_bf,-2.4,2.3,0.0,2.3
+Random,173,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,173,2,m_random,-0.1,0.0,0.0,0.0
+Random,174,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,174,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,175,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,175,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,176,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,176,2,m_random,-0.1,0.0,0.0,0.0
+Random,177,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,177,2,m_random,-0.7,0.6,0.0,0.6
+Random,178,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,178,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,179,1,trans_none,0.0,0.0,0.0,0.0
+Random,179,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,180,1,trans_none,0.0,0.0,0.0,0.0
+Random,180,2,m_gru,-2.4,2.3,0.0,2.3
+Random,181,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,181,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,182,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,182,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,183,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,183,2,m_gru,-0.7,0.6,0.0,0.6
+Random,184,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,184,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,185,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,185,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,186,1,trans_none,0.0,0.0,0.0,0.0
+Random,186,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,187,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,187,2,m_gru,-0.7,0.6,0.0,0.6
+Random,188,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,188,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,189,1,trans_none,0.0,0.0,0.0,0.0
+Random,189,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,190,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,190,2,m_gru,-0.7,0.6,0.0,0.6
+Random,191,1,trans_none,0.0,0.0,0.0,0.0
+Random,191,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,192,1,trans_none,0.0,0.0,0.0,0.0
+Random,192,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,193,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,193,2,m_random,-0.1,0.0,0.0,0.0
+Random,194,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,194,2,m_gru,-0.1,0.0,0.0,0.0
+Random,195,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,195,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,196,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,196,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,197,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,197,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,198,1,trans_none,0.0,0.0,0.0,0.0
+Random,198,2,m_bf,-2.4,2.3,0.0,2.3
+Random,199,1,trans_none,0.0,0.0,0.0,0.0
+Random,199,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,200,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,200,2,m_bf,-2.4,2.3,0.0,2.3
+Random,201,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,201,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,202,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,202,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,203,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,203,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,204,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,204,2,m_random,-0.1,0.0,0.0,0.0
+Random,205,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,205,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,206,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,206,2,m_random,-0.7,0.6,0.0,0.6
+Random,207,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,207,2,m_gru,-0.1,0.0,0.0,0.0
+Random,208,1,trans_none,0.0,0.0,0.0,0.0
+Random,208,2,m_bf,-2.4,2.3,0.0,2.3
+Random,209,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,209,2,m_random,-0.1,0.0,0.0,0.0
+Random,210,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,210,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,211,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,211,2,m_bf,-2.4,2.3,0.0,2.3
+Random,212,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,212,2,m_bf,-2.4,2.3,0.0,2.3
+Random,213,1,trans_none,0.0,0.0,0.0,0.0
+Random,213,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,214,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,214,2,m_gru,-0.1,0.0,0.0,0.0
+Random,215,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,215,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,216,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,216,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,217,1,trans_none,0.0,0.0,0.0,0.0
+Random,217,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,218,1,trans_none,0.0,0.0,0.0,0.0
+Random,218,2,m_random,-2.4,2.3,0.0,2.3
+Random,219,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,219,2,m_gru,-0.1,0.0,0.0,0.0
+Random,220,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,220,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,221,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,221,2,m_gru,-2.4,2.3,0.0,2.3
+Random,222,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,222,2,m_random,-0.1,0.0,0.0,0.0
+Random,223,1,trans_none,0.0,0.0,0.0,0.0
+Random,223,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,224,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,224,2,m_gru,-0.1,0.0,0.0,0.0
+Random,225,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,225,2,m_gru,-0.1,0.0,0.0,0.0
+Random,226,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,226,2,m_random,-0.1,0.0,0.0,0.0
+Random,227,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,227,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,228,1,trans_none,0.0,0.0,0.0,0.0
+Random,228,2,m_random,-0.1,0.0,0.0,0.0
+Random,229,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,229,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,230,1,trans_none,0.0,0.0,0.0,0.0
+Random,230,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,231,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,231,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,232,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,232,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,233,1,trans_none,0.0,0.0,0.0,0.0
+Random,233,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,234,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,234,2,m_gru,-0.1,0.0,0.0,0.0
+Random,235,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,235,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,236,1,trans_none,0.0,0.0,0.0,0.0
+Random,236,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,237,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,237,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,238,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,238,2,m_bf,-2.4,2.3,0.0,2.3
+Random,239,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,239,2,m_gru,-0.7,0.6,0.0,0.6
+Random,240,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,240,2,m_bf,-2.4,2.3,0.0,2.3
+Random,241,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,241,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,242,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,242,2,m_bf,-2.4,2.3,0.0,2.3
+Random,243,1,trans_none,0.0,0.0,0.0,0.0
+Random,243,2,m_random,-0.1,0.0,0.0,0.0
+Random,244,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,244,2,m_bf,-2.4,2.3,0.0,2.3
+Random,245,1,trans_none,0.0,0.0,0.0,0.0
+Random,245,2,m_gru,-2.4,2.3,0.0,2.3
+Random,246,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,246,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,247,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,247,2,m_random,-0.1,0.0,0.0,0.0
+Random,248,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,248,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,249,1,trans_none,0.0,0.0,0.0,0.0
+Random,249,2,m_random,-0.1,0.0,0.0,0.0
+Random,250,1,trans_none,0.0,0.0,0.0,0.0
+Random,250,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,251,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,251,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,252,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,252,2,m_bf,-2.4,2.3,0.0,2.3
+Random,253,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,253,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,254,1,trans_none,0.0,0.0,0.0,0.0
+Random,254,2,m_random,-0.1,0.0,0.0,0.0
+Random,255,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,255,2,m_bf,-2.4,2.3,0.0,2.3
+Random,256,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,256,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,257,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,257,2,m_textblob,-2.4,2.3,0.0,2.3
+Random,258,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,258,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,259,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,259,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,260,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,260,2,m_random,-0.1,0.0,0.0,0.0
+Random,261,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,261,2,m_gru,-0.1,0.0,0.0,0.0
+Random,262,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,262,2,m_bf,-2.4,2.3,0.0,2.3
+Random,263,1,trans_none,0.0,0.0,0.0,0.0
+Random,263,2,m_bf,-2.4,2.3,0.0,2.3
+Random,264,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,264,2,m_gru,-0.1,0.0,0.0,0.0
+Random,265,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,265,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,266,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,266,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,267,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,267,2,m_bf,-2.4,2.3,0.0,2.3
+Random,268,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,268,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,269,1,trans_none,0.0,0.0,0.0,0.0
+Random,269,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,270,1,trans_none,0.0,0.0,0.0,0.0
+Random,270,2,m_bf,-2.4,2.3,0.0,2.3
+Random,271,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,271,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,272,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,272,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,273,1,trans_none,0.0,0.0,0.0,0.0
+Random,273,2,m_bf,-2.4,2.3,0.0,2.3
+Random,274,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,274,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,275,1,trans_none,0.0,0.0,0.0,0.0
+Random,275,2,m_random,-0.7,0.6,0.0,0.6
+Random,276,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,276,2,m_bf,-2.4,2.3,0.0,2.3
+Random,277,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,277,2,m_textblob,-2.4,2.3,0.0,2.3
+Random,278,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,278,2,m_random,-0.1,0.0,0.0,0.0
+Random,279,1,trans_none,0.0,0.0,0.0,0.0
+Random,279,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,280,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,280,2,m_random,-0.1,0.0,0.0,0.0
+Random,281,1,trans_none,0.0,0.0,0.0,0.0
+Random,281,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,282,1,trans_none,0.0,0.0,0.0,0.0
+Random,282,2,m_bf,-2.4,2.3,0.0,2.3
+Random,283,1,trans_none,0.0,0.0,0.0,0.0
+Random,283,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,284,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,284,2,m_gru,-0.1,0.0,0.0,0.0
+Random,285,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,285,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,286,1,trans_none,0.0,0.0,0.0,0.0
+Random,286,2,m_random,-0.1,0.0,0.0,0.0
+Random,287,1,trans_none,0.0,0.0,0.0,0.0
+Random,287,2,m_bf,-2.4,2.3,0.0,2.3
+Random,288,1,trans_none,0.0,0.0,0.0,0.0
+Random,288,2,m_bf,-2.4,2.3,0.0,2.3
+Random,289,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,289,2,m_random,-0.1,0.0,0.0,0.0
+Random,290,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,290,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,291,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,291,2,m_gru,-0.1,0.0,0.0,0.0
+Random,292,1,trans_none,0.0,0.0,0.0,0.0
+Random,292,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,293,1,trans_none,0.0,0.0,0.0,0.0
+Random,293,2,m_gru,-0.1,0.0,0.0,0.0
+Random,294,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,294,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,295,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,295,2,m_gru,-0.1,0.0,0.0,0.0
+Random,296,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,296,2,m_bf,-2.4,2.3,0.0,2.3
+Random,297,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,297,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,298,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,298,2,m_random,-0.1,0.0,0.0,0.0
+Random,299,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,299,2,m_random,-0.1,0.0,0.0,0.0
+Random,300,1,trans_none,0.0,0.0,0.0,0.0
+Random,300,2,m_bf,-2.4,2.3,0.0,2.3
+Random,301,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,301,2,m_gru,-0.1,0.0,0.0,0.0
+Random,302,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,302,2,m_bf,-2.4,2.3,0.0,2.3
+Random,303,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,303,2,m_bf,-2.4,2.3,0.0,2.3
+Random,304,1,trans_none,0.0,0.0,0.0,0.0
+Random,304,2,m_random,-0.1,0.0,0.0,0.0
+Random,305,1,trans_none,0.0,0.0,0.0,0.0
+Random,305,2,m_bf,-2.4,2.3,0.0,2.3
+Random,306,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,306,2,m_bf,-2.4,2.3,0.0,2.3
+Random,307,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,307,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,308,1,trans_none,0.0,0.0,0.0,0.0
+Random,308,2,m_bf,-2.4,2.3,0.0,2.3
+Random,309,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,309,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,310,1,trans_none,0.0,0.0,0.0,0.0
+Random,310,2,m_gru,-0.7,0.6,0.0,0.6
+Random,311,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,311,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,312,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,312,2,m_gru,-2.4,2.3,0.0,2.3
+Random,313,1,trans_none,0.0,0.0,0.0,0.0
+Random,313,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,314,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,314,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,315,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,315,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,316,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,316,2,m_textblob,-2.4,2.3,0.0,2.3
+Random,317,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,317,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,318,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,318,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,319,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,319,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,320,1,trans_none,0.0,0.0,0.0,0.0
+Random,320,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,321,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,321,2,m_bf,-2.4,2.3,0.0,2.3
+Random,322,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,322,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,323,1,trans_none,0.0,0.0,0.0,0.0
+Random,323,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,324,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,324,2,m_bf,-2.4,2.3,0.0,2.3
+Random,325,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,325,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,326,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,326,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,327,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,327,2,m_bf,-2.4,2.3,0.0,2.3
+Random,328,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,328,2,m_gru,-0.1,0.0,0.0,0.0
+Random,329,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,329,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,330,1,trans_none,0.0,0.0,0.0,0.0
+Random,330,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,331,1,trans_none,0.0,0.0,0.0,0.0
+Random,331,2,m_random,-0.1,0.0,0.0,0.0
+Random,332,1,trans_none,0.0,0.0,0.0,0.0
+Random,332,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,333,1,trans_none,0.0,0.0,0.0,0.0
+Random,333,2,m_bf,-2.4,2.3,0.0,2.3
+Random,334,1,trans_none,0.0,0.0,0.0,0.0
+Random,334,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,335,1,trans_none,0.0,0.0,0.0,0.0
+Random,335,2,m_gru,-2.4,2.3,0.0,2.3
+Random,336,1,trans_none,0.0,0.0,0.0,0.0
+Random,336,2,m_random,-0.1,0.0,0.0,0.0
+Random,337,1,trans_none,0.0,0.0,0.0,0.0
+Random,337,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,338,1,trans_none,0.0,0.0,0.0,0.0
+Random,338,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,339,1,trans_none,0.0,0.0,0.0,0.0
+Random,339,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,340,1,trans_none,0.0,0.0,0.0,0.0
+Random,340,2,m_gru,-2.4,2.3,0.0,2.3
+Random,341,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,341,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,342,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,342,2,m_random,-0.1,0.0,0.0,0.0
+Random,343,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,343,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,344,1,trans_none,0.0,0.0,0.0,0.0
+Random,344,2,m_random,-0.1,0.0,0.0,0.0
+Random,345,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,345,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,346,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,346,2,m_random,-0.1,0.0,0.0,0.0
+Random,347,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,347,2,m_random,-0.1,0.0,0.0,0.0
+Random,348,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,348,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,349,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,349,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,350,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,350,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,351,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,351,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,352,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,352,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,353,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,353,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,354,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,354,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,355,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,355,2,m_random,-0.7,0.6,0.0,0.6
+Random,356,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,356,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,357,1,trans_none,0.0,0.0,0.0,0.0
+Random,357,2,m_bf,-2.4,2.3,0.0,2.3
+Random,358,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,358,2,m_random,-0.7,0.6,0.0,0.6
+Random,359,1,trans_none,0.0,0.0,0.0,0.0
+Random,359,2,m_gru,-2.4,2.3,0.0,2.3
+Random,360,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,360,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,361,1,trans_none,0.0,0.0,0.0,0.0
+Random,361,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,362,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,362,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,363,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,363,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,364,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,364,2,m_bf,-2.4,2.3,0.0,2.3
+Random,365,1,trans_none,0.0,0.0,0.0,0.0
+Random,365,2,m_gru,-2.4,2.3,0.0,2.3
+Random,366,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,366,2,m_random,-0.7,0.6,0.0,0.6
+Random,367,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,367,2,m_bf,-2.4,2.3,0.0,2.3
+Random,368,1,trans_none,0.0,0.0,0.0,0.0
+Random,368,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,369,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,369,2,m_gru,-0.1,0.0,0.0,0.0
+Random,370,1,trans_none,0.0,0.0,0.0,0.0
+Random,370,2,m_gru,-2.4,2.3,0.0,2.3
+Random,371,1,trans_none,0.0,0.0,0.0,0.0
+Random,371,2,m_bf,-2.4,2.3,0.0,2.3
+Random,372,1,trans_none,0.0,0.0,0.0,0.0
+Random,372,2,m_random,-2.4,2.3,0.0,2.3
+Random,373,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,373,2,m_bf,-2.4,2.3,0.0,2.3
+Random,374,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,374,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,375,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,375,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,376,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,376,2,m_random,-0.1,0.0,0.0,0.0
+Random,377,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,377,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,378,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,378,2,m_random,-0.1,0.0,0.0,0.0
+Random,379,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,379,2,m_bf,-2.4,2.3,0.0,2.3
+Random,380,1,trans_none,0.0,0.0,0.0,0.0
+Random,380,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,381,1,trans_none,0.0,0.0,0.0,0.0
+Random,381,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,382,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,382,2,m_bf,-2.4,2.3,0.0,2.3
+Random,383,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,383,2,m_textblob,-2.4,2.3,0.0,2.3
+Random,384,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,384,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,385,1,trans_none,0.0,0.0,0.0,0.0
+Random,385,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,386,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,386,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,387,1,trans_none,0.0,0.0,0.0,0.0
+Random,387,2,m_gru,-2.4,2.3,0.0,2.3
+Random,388,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,388,2,m_bf,-2.4,2.3,0.0,2.3
+Random,389,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,389,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,390,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,390,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,391,1,trans_none,0.0,0.0,0.0,0.0
+Random,391,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,392,1,trans_none,0.0,0.0,0.0,0.0
+Random,392,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,393,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,393,2,m_gru,-2.4,2.3,0.0,2.3
+Random,394,1,trans_none,0.0,0.0,0.0,0.0
+Random,394,2,m_random,-2.4,2.3,0.0,2.3
+Random,395,1,trans_none,0.0,0.0,0.0,0.0
+Random,395,2,m_bf,-2.4,2.3,0.0,2.3
+Random,396,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,396,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,397,1,trans_none,0.0,0.0,0.0,0.0
+Random,397,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,398,1,trans_none,0.0,0.0,0.0,0.0
+Random,398,2,m_gru,-2.4,2.3,0.0,2.3
+Random,399,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,399,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,400,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,400,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,401,1,trans_none,0.0,0.0,0.0,0.0
+Random,401,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,402,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,402,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,403,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,403,2,m_random,-0.1,0.0,0.0,0.0
+Random,404,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,404,2,m_gru,-0.1,0.0,0.0,0.0
+Random,405,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,405,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,406,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,406,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,407,1,trans_none,0.0,0.0,0.0,0.0
+Random,407,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,408,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,408,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,409,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,409,2,m_bf,-2.4,2.3,0.0,2.3
+Random,410,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,410,2,m_dbert,-0.7,0.6,0.0,0.6
+Random,411,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,411,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,412,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,412,2,m_random,-0.1,0.0,0.0,0.0
+Random,413,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,413,2,m_bf,-2.4,2.3,0.0,2.3
+Random,414,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,414,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,415,1,trans_none,0.0,0.0,0.0,0.0
+Random,415,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,416,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,416,2,m_random,-0.1,0.0,0.0,0.0
+Random,417,1,trans_none,0.0,0.0,0.0,0.0
+Random,417,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,418,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,418,2,m_gru,-2.4,2.3,0.0,2.3
+Random,419,1,trans_none,0.0,0.0,0.0,0.0
+Random,419,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,420,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,420,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,421,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,421,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,422,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,422,2,m_gru,-0.1,0.0,0.0,0.0
+Random,423,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,423,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,424,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,424,2,m_gru,-0.1,0.0,0.0,0.0
+Random,425,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,425,2,m_bf,-2.4,2.3,0.0,2.3
+Random,426,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,426,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,427,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,427,2,m_gru,-2.4,2.3,0.0,2.3
+Random,428,1,trans_none,0.0,0.0,0.0,0.0
+Random,428,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,429,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,429,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,430,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,430,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,431,1,trans_none,0.0,0.0,0.0,0.0
+Random,431,2,m_gru,-2.4,2.3,0.0,2.3
+Random,432,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,432,2,m_bf,-2.4,2.3,0.0,2.3
+Random,433,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,433,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,434,1,trans_none,0.0,0.0,0.0,0.0
+Random,434,2,m_random,-0.1,0.0,0.0,0.0
+Random,435,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,435,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,436,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,436,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,437,1,trans_none,0.0,0.0,0.0,0.0
+Random,437,2,m_gru,-0.7,0.6,0.0,0.6
+Random,438,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,438,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,439,1,trans_none,0.0,0.0,0.0,0.0
+Random,439,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,440,1,trans_none,0.0,0.0,0.0,0.0
+Random,440,2,m_bf,-2.4,2.3,0.0,2.3
+Random,441,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,441,2,m_gru,-0.1,0.0,0.0,0.0
+Random,442,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,442,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,443,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,443,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,444,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,444,2,m_bf,-2.4,2.3,0.0,2.3
+Random,445,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,445,2,m_gru,-0.7,0.6,0.0,0.6
+Random,446,1,trans_none,0.0,0.0,0.0,0.0
+Random,446,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,447,1,trans_none,0.0,0.0,0.0,0.0
+Random,447,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,448,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,448,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,449,1,trans_none,0.0,0.0,0.0,0.0
+Random,449,2,m_bf,-2.4,2.3,0.0,2.3
+Random,450,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,450,2,m_random,-0.1,0.0,0.0,0.0
+Random,451,1,trans_none,0.0,0.0,0.0,0.0
+Random,451,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,452,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,452,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,453,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,453,2,m_bf,-2.4,2.3,0.0,2.3
+Random,454,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,454,2,m_bf,-2.4,2.3,0.0,2.3
+Random,455,1,trans_none,0.0,0.0,0.0,0.0
+Random,455,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,456,1,trans_none,0.0,0.0,0.0,0.0
+Random,456,2,m_gru,-2.4,2.3,0.0,2.3
+Random,457,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,457,2,m_bf,-2.4,2.3,0.0,2.3
+Random,458,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,458,2,m_gru,-0.1,0.0,0.0,0.0
+Random,459,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,459,2,m_textblob,-2.4,2.3,0.0,2.3
+Random,460,1,trans_none,0.0,0.0,0.0,0.0
+Random,460,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,461,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,461,2,m_random,-0.1,0.0,0.0,0.0
+Random,462,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,462,2,m_random,-2.4,2.3,0.0,2.3
+Random,463,1,trans_none,0.0,0.0,0.0,0.0
+Random,463,2,m_random,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,464,1,trans_none,0.0,0.0,0.0,0.0
+Random,464,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,465,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,465,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,466,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,466,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,467,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,467,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,468,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,468,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,469,1,trans_none,0.0,0.0,0.0,0.0
+Random,469,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,470,1,trans_none,0.0,0.0,0.0,0.0
+Random,470,2,m_gru,-2.4,2.3,0.0,2.3
+Random,471,1,trans_none,0.0,0.0,0.0,0.0
+Random,471,2,m_random,-0.1,0.0,0.0,0.0
+Random,472,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,472,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,473,1,trans_none,0.0,0.0,0.0,0.0
+Random,473,2,m_dbert,-2.4,2.3,0.0,2.3
+Random,474,1,trans_none,0.0,0.0,0.0,0.0
+Random,474,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,475,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,475,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,476,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,476,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,477,1,trans_none,0.0,0.0,0.0,0.0
+Random,477,2,m_gru,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,478,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,478,2,m_bf,-2.4,2.3,0.0,2.3
+Random,479,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,479,2,m_textblob,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,480,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,480,2,m_gru,-2.4,2.3,0.0,2.3
+Random,481,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,481,2,m_gru,-0.1,0.0,0.0,0.0
+Random,482,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,482,2,m_dbert,-1.4,1.2999999999999998,0.0,1.2999999999999998
+Random,483,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,483,2,m_bf,-2.4,2.3,0.0,2.3
+Random,484,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,484,2,m_random,-0.1,0.0,0.0,0.0
+Random,485,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,485,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,486,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,486,2,m_bf,-2.4,2.3,0.0,2.3
+Random,487,1,trans_none,0.0,0.0,0.0,0.0
+Random,487,2,m_gru,-2.4,2.3,0.0,2.3
+Random,488,1,trans_none,0.0,0.0,0.0,0.0
+Random,488,2,m_bf,-2.4,2.3,0.0,2.3
+Random,489,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,489,2,m_textblob,-0.1,0.0,0.0,0.0
+Random,490,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,490,2,m_gru,-0.1,0.0,0.0,0.0
+Random,491,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,491,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,492,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,492,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,493,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,493,2,m_gru,-0.1,0.0,0.0,0.0
+Random,494,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,494,2,m_textblob,-0.7,0.6,0.0,0.6
+Random,495,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,495,2,m_gru,-0.1,0.0,0.0,0.0
+Random,496,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,496,2,m_random,-2.4,2.3,0.0,2.3
+Random,497,1,trans_danish,-0.5,0.0,0.0,0.0
+Random,497,2,m_random,-0.1,0.0,0.0,0.0
+Random,498,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,498,2,m_dbert,-0.1,0.0,0.0,0.0
+Random,499,1,trans_spanish,-0.5,0.0,0.0,0.0
+Random,499,2,m_dbert,-0.1,0.0,0.0,0.0

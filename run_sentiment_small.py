@@ -69,7 +69,7 @@ def run_experiment_trace():
     ])
     
     # Trace File Setup
-    csv_trace_path = "agent_trace_metrics_combined.csv"
+    csv_trace_path = "agent_trace_metrics.csv"
     if os.path.exists(csv_trace_path):
         os.remove(csv_trace_path)
         print(f"  > Cleared previous trace file: {csv_trace_path}")
@@ -217,7 +217,7 @@ def run_experiment_trace():
     df_disp = df[cols].copy()
     pd.set_option('display.max_colwidth', None)
     print(df_disp.to_string(index=False))
-    df.to_csv("sentiment_results_table_combined.csv", index=False)
+    df.to_csv("sentiment_results_table.csv", index=False)
     
     # 4. Generate Plot
     plt.figure(figsize=(12, 6))
@@ -230,9 +230,9 @@ def run_experiment_trace():
         else:
              plt.plot(rew, label=name, color=col)
     
-    plt.title("Evaluation under 'BOTH' mode (WRS + DIE)")
+    plt.title("RTS-Small Evaluation")
     plt.xlabel("Evaluation Episode")
-    plt.ylabel("Total Reward (Penalized by WRS + DIE)")
+    plt.ylabel("Total Reward")
     plt.legend()
     plt.grid(True, alpha=0.3)
     plt.savefig("rts_small_comparison_plot.png")

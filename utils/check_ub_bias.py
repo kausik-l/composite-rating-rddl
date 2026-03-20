@@ -1,53 +1,69 @@
+# diagnostic_wrs.py
 import pandas as pd
-from scipy.stats import chi2_contingency
-import os
+import numpy as np
+import itertools
+from scipy.stats import t
 
-def check_ub_gender_correlation():
-    # Path to your file
-    data_path = "data/input/real_world/master_sentiment_unibot.csv"
-    
-    if not os.path.exists(data_path):
-        print(f"Error: {data_path} not found.")
+def diagnostic_wrs_student(df, protected_col, output_col, min_per_group=2):
+    print(f"Diagnostic for protected='{protected_col}', output='{output_col}'\n")
+    if protected_col not in df.columns:
+        print("-> Protected column not found.")
+        return
+    if output_col not in df.columns:
+        print("-> Output column not found.")
         return
 
-    print(f"Loading {data_path}...")
-    df = pd.read_csv(data_path)
-    
-    # Check if columns exist
-    if 'User_gender' not in df.columns or 'C_num' not in df.columns:
-        print("Error: Columns 'User_gender' or 'C_num' missing.")
-        # It seems your CSV might have 'C_num' instead of 'UB' based on snippets?
-        # Let's check based on your description that UB distinguishes User vs Bot.
-        # If UB is missing, we try to infer it or print available columns.
-        print(f"Available columns: {df.columns.tolist()}")
+    sub = df[[protected_col, output_col]].dropna()
+    if sub.shape[0] == 0:
+        print("-> No rows after dropping NaNs.")
         return
 
-    # 1. Create Contingency Table
-    # Rows: User_gender, Cols: C_num
-    contingency = pd.crosstab(df['User_gender'], df['C_num'])
-    
-    print("\n=== Contingency Table (Counts) ===")
-    print(contingency)
-    
-    # 2. Chi-Square Test of Independence
-    chi2, p, dof, expected = chi2_contingency(contingency)
-    
-    print(f"\n=== Chi-Square Test Results ===")
-    print(f"Chi2 Statistic: {chi2:.4f}")
-    print(f"P-Value:        {p:.4e}")
-    
-    if p < 0.05:
-        print("\n>>> CONCLUSION: SIGNIFICANT CORRELATION DETECTED.")
-        print("    User_gender affects C_num (Text Type).")
-        print("    This confirms Z -> T exists in your dataset.")
-        print("    Your strategy to filter for 'Bot Only' is scientifically necessary.")
-    else:
-        print("\n>>> CONCLUSION: NO SIGNIFICANT CORRELATION.")
-        print("    User_gender and C_num appear independent.")
-    
-    # 3. Normalized Proportions (for easier reading)
-    print("\n=== Proportions (Row-wise %) ===")
-    print(pd.crosstab(df['User_gender'], df['C_num'], normalize='index') * 100)
+    z = sub[protected_col]
+    y = sub[output_col].astype(float)
 
-if __name__ == "__main__":
-    check_ub_gender_correlation()
+    # show unique counts
+    levels = list(pd.unique(z))
+    print("All observed levels (count):")
+    for lvl in levels:
+        cnt = int((z == lvl).sum())
+        mean = None
+        var = None
+        if cnt>0:
+            mean = float(y[z==lvl].mean())
+            var = float(y[z==lvl].var(ddof=1)) if cnt>1 else float('nan')
+        print(f"  Level={repr(lvl):20} count={cnt:4} mean={mean} var(ddof=1)={var}")
+    print()
+
+    # Filter to levels with enough data
+    valid_levels = [lvl for lvl in levels if int((z==lvl).sum()) >= min_per_group]
+    print("Levels with >= min_per_group:", valid_levels)
+    if len(valid_levels) < 2:
+        print("-> Fewer than 2 valid levels; no pairwise tests will be run.")
+        return
+
+    # examine pairwise
+    pairs = list(itertools.combinations(valid_levels, 2))
+    print("\nPairwise checks:")
+    for a,b in pairs:
+        y_a = y[z==a].dropna().astype(float)
+        y_b = y[z==b].dropna().astype(float)
+        n_a = len(y_a); n_b = len(y_b)
+        var_a = y_a.var(ddof=1) if n_a>1 else float('nan')
+        var_b = y_b.var(ddof=1) if n_b>1 else float('nan')
+        pooled_df = n_a + n_b - 2
+        pooled_var = None
+        degenerate = False
+        if pooled_df > 0 and not np.isnan(var_a) and not np.isnan(var_b):
+            pooled_var = ((n_a - 1)*var_a + (n_b - 1)*var_b) / pooled_df
+            if pooled_var <= 0 or np.isnan(pooled_var):
+                degenerate = True
+        else:
+            degenerate = True
+        print(f" Pair {repr(a)} vs {repr(b)}: n={n_a},{n_b} var={var_a},{var_b} pooled_var={pooled_var} degenerate={degenerate}")
+
+    print("\nIf many pairs are degenerate or levels have tiny counts, that's why WRS==0.0.")
+
+
+
+df = pd.read_csv("data/input/real_world/unibot/eng/bf/bf.csv") 
+diagnostic_wrs_student(df, 'User_gender', 'Sentiment', min_per_group=2)
